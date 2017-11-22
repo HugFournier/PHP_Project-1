@@ -55,13 +55,10 @@ class Controleur
 
     function Reinit()
     {
-        global $rep, $vues; // nécessaire pour utiliser variables globales
-
-        $dVue = array(
-            'nom' => "",
-            'age' => 0,
-        );
-        require($rep . $vues['vuephp1']);
+        global $rep, $vues, $base, $login, $mdp; // nécessaire pour utiliser variables globales
+        $bdNews=new NewsGateway(new Connection($base,$login,$mdp));
+        $news=$bdNews->findAll();
+        require($rep . $vues['vueNews.php']);
     }
 
     function ValidationFormulaire(array $dVueEreur)

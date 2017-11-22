@@ -50,12 +50,16 @@ class NewsGateway
             ':id'=>array($id,PDO::PARAM_STR)
         );
         $this->con->executeQuery($query,$argument);
-        return $this->con->getResults();
+        $r = $this->con->getResults();
+        return new News(r['titre'],r['lien'],r['description'],r['date'],r['guid']);
     }
 
     public function findAll(){
         $query = "SELECT * FROM NEWS";
         $this->con->executeQuery($query);
-        return $this->con->getResults();
+        $retour=[];
+        $l = $this->con->getResults();
+        foreach($l as $r)$retour[]=News($r['titre'],$r['lien'],$r['description'],$r['date'],$r['guid']);
+        return $retour;
     }
 }
