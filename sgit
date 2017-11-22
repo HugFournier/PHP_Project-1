@@ -1,0 +1,15 @@
+#!/bin/bash
+
+##########################################################
+# Script pour commit plus vite                           #
+# Utilisation :                                          #
+#   sgit "Commentaire"                                   #
+# /!\ Penser à mettre les quotes pour le commentaire /!\ #
+##########################################################
+
+printf "Commiting with the following comment: $1\n"
+
+git add .
+git commit -m "$1"
+git push
+
