@@ -56,9 +56,10 @@ class Controleur
 
     function Reinit()
     {
-        global $rep, $vues, $base, $login, $mdp; // nécessaire pour utiliser variables globales
-        $bdNews=new NewsGateway(new Connection($base,$login,$mdp));
-        $bdNews=$bdNews->findAll();
+        global $rep, $vues;
+        $bdNews=Modele::listerNews($_GET['page']);
+        $nbPage=Modele::nbPage();
+        $currentPage=$_GET['page'];
         require($rep.$vues['vueNews']);
     }
 

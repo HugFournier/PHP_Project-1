@@ -22,7 +22,10 @@ else{
         echo $news->__toString() . "<br>";
     }
 }
-echo "<br><a href=?action=listerNews>listeNews</a>"
+echo "<br><a href=?action=listerNews?page=1>1</a>";
+echo "<br><a href=?action=listerNews?page=".$currentPage.">précedent</a>";
+echo "<br><a href=?action=listerNews?page=".$currentPage.">suivant</a>";
+echo "<br><a href=?action=listerNews?page=".$nbPage.">".$nbPage."</a>";
 
 ?>
 </body>

@@ -50,14 +50,33 @@ class NewsGateway
             ':id'=>array($id,PDO::PARAM_STR)
         );
         $this->con->executeQuery($query,$argument);
-        $r = $this->con->getResults();
-        return new News(r['titre'],r['lien'],r['description'],r['date'],r['guid']);
+        return NewsFactory::creerNews($this->con->getResults());
     }
 
     public function findAll(){
         $query = "SELECT * FROM NEWS";
         $this->con->executeQuery($query);
-        //foreach($l as $r)$retour[]=new News($r['titre'],$r['lien'],$r['description'],$r['date'],$r['guid']);
-        return (new NewsFactoryBDD())->creerNews($this->con->getResults());
+        return NewsFactory::creerNews($this->con->getResults());
+    }
+
+    public function findN($placement,$nbElt=10){
+        if(isset($placement) || $placement<1)$placement=1;
+        $placement=($placement-1)*$nbElt;
+        echo $placement ."-".$nbElt;
+        $query = "SELECT * FROM NEWS ORDER BY date DESC LIMIT :x, :y";
+        $argument=array(
+            ':x'=>array($placement,PDO::PARAM_INT),
+            ':y'=>array($nbElt,PDO::PARAM_INT)
+        );
+        $this->con->executeQuery($query, $argument);
+        return NewsFactory::creerNews($this->con->getResults());
+    }
+
+    public function nbPage(){
+        $query = "SELECT COUNT * FROM NEWS";
+        echo "test";
+        $this->con->executeQuery($query);
+        echo "test";
+        return $this->con->getResults()/10;
     }
 }

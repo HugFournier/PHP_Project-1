@@ -8,5 +8,15 @@
  */
 class Modele
 {
+    static public function listerNews($nb){
+        global $base, $login, $mdp;
+        $bdNews=new NewsGateway(new Connection($base,$login,$mdp));
+        return $bdNews->findN($nb);
+    }
 
+    static public function nbPage(){
+        global $base, $login, $mdp;
+        $bdNews=new NewsGateway(new Connection($base,$login,$mdp));
+        return $bdNews->nbPage();
+    }
 }
