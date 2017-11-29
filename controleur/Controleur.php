@@ -26,21 +26,26 @@ class Controleur
                     break;
                 case "listerNews":
                     $this->Reinit();
-                    break;/*
-                case "validationFormulaire":
-                    $this->ValidationFormulaire($dVueEreur);
-                    break;*/
+                    break;
+                case "connectionAdmin":
+                    require($rep . $vues['vueConnectionAdmin']);
+                    break;
+                /*
+                 case "validationFormulaire":
+                 $this->ValidationFormulaire($dVueEreur);
+                 break;
+                */
 
 //mauvaise action
                 default:
-                    $dVueEreur[] = "Erreur d'appel php";
-                    require($rep . $vues['vuephp1']);
+                    $dVueEreur[] = "Erreur requette inconnue";
+                    require($rep . $vues['erreur']);
                     break;
             }
 
         } catch (PDOException $e) {
             //si erreur BD, pas le cas ici
-            $dVueEreur[] = "Erreur inattendue!!! ";
+            $dVueEreur[] = "Erreur PDO inattendue!!! ";
             require($rep . $vues['erreur']);
 
         } catch (Exception $e2) {
@@ -58,9 +63,7 @@ class Controleur
     {
         global $rep, $vues;
         $nbPage=Modele::nbPage();
-        //echo "_GET page:".$_GET['page'];
         $currentPage=Validation::val_page($_GET['page'],$nbPage);
-        //echo "currPage : ".$currentPage."<br>";
         $bdNews=Modele::listerNews($currentPage);
         require($rep.$vues['vueNews']);
     }

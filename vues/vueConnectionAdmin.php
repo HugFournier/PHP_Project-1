@@ -15,4 +15,5 @@
         <INPUT TYPE=TEXT NAME="Email"><br><br>
         <INPUT TYPE=SUBMIT NAME="Act" VALUE = "Soumettre">
     </FORM>
+    <INPUT METHOD=POST ACTION="" TYPE=SUBMIT NAME="Act" VALUE = "Retour">
 </center>

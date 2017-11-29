@@ -14,5 +14,4 @@ Autoload::charger();
 
 $cont = new Controleur();
 
-
 ?> 
