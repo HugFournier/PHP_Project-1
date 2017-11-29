@@ -12,15 +12,15 @@ $rep=__DIR__.'/../';
 //BD
 
 /* Damien */
-$base = "mysql:host=localhost/~damsng63; dbname=";
+/*$base = "mysql:host=localhost/~damsng63; dbname=";
 $login = "root";
 $mdp = "./";
-
-/* Hugo
+*/
+/* Hugo*/
 $base="mysql:host=hina;dbname=dbhufournier";
 $login="hufournier";
 $mdp="hufournier";
-*/
+/**/
 
 //Vues
 

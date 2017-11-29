@@ -10,7 +10,9 @@ class Modele
 {
     static public function listerNews($nb){
         global $base, $login, $mdp;
+        echo "testModele";
         $bdNews=new NewsGateway(new Connection($base,$login,$mdp));
+        echo "test";
         return $bdNews->findN($nb);
     }
 

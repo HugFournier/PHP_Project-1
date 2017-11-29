@@ -62,7 +62,7 @@ class NewsGateway
     public function findN($placement,$nbElt=10){
         if(isset($placement) || $placement<1)$placement=1;
         $placement=($placement-1)*$nbElt;
-        echo $placement ."-".$nbElt;
+        //echo $placement ."-".$nbElt;
         $query = "SELECT * FROM NEWS ORDER BY date DESC LIMIT :x, :y";
         $argument=array(
             ':x'=>array($placement,PDO::PARAM_INT),
@@ -73,8 +73,8 @@ class NewsGateway
     }
 
     public function nbPage(){
-        $query = "SELECT COUNT * FROM NEWS";
-        echo "test";
+        $query = "SELECT COUNT(*) FROM NEWS";
+        echo "test000";
         $this->con->executeQuery($query);
         echo "test";
         return $this->con->getResults()/10;
