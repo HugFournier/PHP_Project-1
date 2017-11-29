@@ -1,0 +1,62 @@
+<?php
+/****************************************************************************************************
+ * Created by damsng63
+ * Date: 11/29/17
+ ****************************************************************************************************/
+
+class FluxGateway
+{
+    private $con;
+
+    /**********************************************************************
+     * FluxGateway constructor.
+     * @param $con
+     **********************************************************************/
+    public function __construct($con)
+    {
+        $this->con = $con;
+    }
+
+    public function insertBrut($id, $lien)
+    {
+        $query = "INSERT INTO FLUX VALUES(:id, :lien)";
+
+        $argument = array(
+            ':id'=>array($id, PDO::PARAM_STR),
+            ':lien'=>array($lien, PDO::PARAM_STR)
+        );
+        $this->con->executeQuery($query, $argument);
+
+        return $this->con->lastInsertId();
+    }
+
+    public function insert(Flux $f)
+    {
+        return $this->insertBrut($f->getId(), $f->getLien());
+    }
+
+    public function delete($id){
+        $query = "DELETE FROM FLUX WHERE id=:id";
+        $argument = array(
+            ':id'=>array($id, PDO::PARAM_STR)
+        );
+        $this->con->executeQuery($query, $argument);
+    }
+
+    public function find($id){
+        $query = "SELECT * FROM FLUX WHERE id=:id";
+        $argument = array(
+            ':id'=>array($id, PDO::PARAM_STR)
+        );
+        $this->con->executeQuery($query, $argument);
+        $r = $this->con->getResults();
+        return new Flux(r['id'],r['lien']);
+    }
+
+    public function findAll(){
+        $query = "SELECT * FROM NEWS";
+        $this->con->executeQuery($query);
+        //foreach($l as $r)$retour[]=new News($r['titre'],$r['lien'],$r['description'],$r['date'],$r['guid']);
+        return (new NewsFactory())->creerNews($this->con->getResults());
+    }
+}
