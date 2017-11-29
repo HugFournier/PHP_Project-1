@@ -58,6 +58,6 @@ class NewsGateway
         $query = "SELECT * FROM NEWS";
         $this->con->executeQuery($query);
         //foreach($l as $r)$retour[]=new News($r['titre'],$r['lien'],$r['description'],$r['date'],$r['guid']);
-        return (new NewsFactoryBDD())->creerNews($this->con->getResults());
+        return (new NewsFactory())->creerNews($this->con->getResults());
     }
 }
