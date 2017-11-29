@@ -57,9 +57,7 @@ class NewsGateway
     public function findAll(){
         $query = "SELECT * FROM NEWS";
         $this->con->executeQuery($query);
-        $retour=[];
-        $l = $this->con->getResults();
-        foreach($l as $r)$retour[]=News($r['titre'],$r['lien'],$r['description'],$r['date'],$r['guid']);
-        return $retour;
+        //foreach($l as $r)$retour[]=new News($r['titre'],$r['lien'],$r['description'],$r['date'],$r['guid']);
+        return (new NewsFactoryBDD())->creerNews($this->con->getResults());
     }
 }

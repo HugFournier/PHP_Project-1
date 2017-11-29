@@ -118,7 +118,7 @@ class News
 
     public function __toString()
     {
-        return $this->getId()."|".$this->getDateNews()."|".$this->getTitre()."|".$this->getDescription()."|".$this->getLien();
+        return "|_" . $this->getId()."_|_".$this->getDateNews()."_|_".$this->getTitre()."_|_".$this->getDescription()."_|_<a href=https://".$this->getLien().">Lien</a>_|";
     }
 
 

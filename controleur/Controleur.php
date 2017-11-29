@@ -24,8 +24,9 @@ class Controleur
                 case NULL:
                     $this->Reinit();
                     break;
-
-
+                case "listerNews":
+                    $this->Reinit();
+                    break;
                 case "validationFormulaire":
                     $this->ValidationFormulaire($dVueEreur);
                     break;
@@ -57,8 +58,8 @@ class Controleur
     {
         global $rep, $vues, $base, $login, $mdp; // nécessaire pour utiliser variables globales
         $bdNews=new NewsGateway(new Connection($base,$login,$mdp));
-        $news=$bdNews->findAll();
-        require($rep . $vues['vueNews.php']);
+        $bdNews=$bdNews->findAll();
+        require($rep.$vues['vueNews']);
     }
 
     function ValidationFormulaire(array $dVueEreur)
