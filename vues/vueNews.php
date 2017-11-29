@@ -5,6 +5,7 @@
 </head>
 
 <body>
+<center>
 <?php
 /**
  * Created by PhpStorm.
@@ -22,12 +23,13 @@ else{
         echo $news->__toString() . "<br>";
     }
 }
-echo "<br><a href=?action=listerNews?page=1>1</a>";
-echo "<br><a href=?action=listerNews?page=".$currentPage.">précedent</a>";
-echo "<br><a href=?action=listerNews?page=".$currentPage.">suivant</a>";
-echo "<br><a href=?action=listerNews?page=".$nbPage.">".$nbPage."</a>";
+echo "<br><a href=?action=listerNews&page=1>1</a>|";
+echo "<a href=?action=listerNews&page=".($currentPage-1)."><</a>|";
+echo "<a href=?action=listerNews&page=".($currentPage+1).">></a>|";
+echo "<a href=?action=listerNews&page=".$nbPage.">".$nbPage."</a>";
 
 ?>
+</center>
 </body>
 
 </html>

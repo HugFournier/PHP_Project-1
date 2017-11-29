@@ -43,7 +43,7 @@ class NewsGateway
         );
         $this->con->executeQuery($query,$argument);
     }
-
+/*
     public function find($id){
         $query = "SELECT * FROM NEWS WHERE guid=:id";
         $argument=array(
@@ -52,17 +52,19 @@ class NewsGateway
         $this->con->executeQuery($query,$argument);
         return NewsFactory::creerNews($this->con->getResults());
     }
-
+*/
     public function findAll(){
         $query = "SELECT * FROM NEWS";
         $this->con->executeQuery($query);
         return NewsFactory::creerNews($this->con->getResults());
     }
 
-    public function findN($placement,$nbElt=10){
-        if(isset($placement) || $placement<1)$placement=1;
+    public function findN($placement,$nbElt=2){
+        if(!isset($placement) || $placement<1){
+            $placement=1;
+        }
         $placement=($placement-1)*$nbElt;
-        //echo $placement ."-".$nbElt;
+        //echo "position:".$placement." limite:".$nbElt."<br>";
         $query = "SELECT * FROM NEWS ORDER BY date DESC LIMIT :x, :y";
         $argument=array(
             ':x'=>array($placement,PDO::PARAM_INT),
@@ -73,10 +75,17 @@ class NewsGateway
     }
 
     public function nbPage(){
-        $query = "SELECT COUNT(*) FROM NEWS";
-        echo "test000";
+        $query = "SELECT COUNT(guid) FROM NEWS";
         $this->con->executeQuery($query);
-        echo "test";
-        return $this->con->getResults()/10;
+        $nbNews = $this->con->getResults();
+        /*
+        print_r(array_keys($nbNews));
+        echo "<br>";
+        print_r($nbNews);
+        echo "<br>";
+
+        echo "nbNews=".$nbNews[0][0];
+        */
+        return ceil($nbNews[0][0]/2);
     }
 }

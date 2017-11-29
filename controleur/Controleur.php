@@ -26,10 +26,10 @@ class Controleur
                     break;
                 case "listerNews":
                     $this->Reinit();
-                    break;
+                    break;/*
                 case "validationFormulaire":
                     $this->ValidationFormulaire($dVueEreur);
-                    break;
+                    break;*/
 
 //mauvaise action
                 default:
@@ -57,12 +57,14 @@ class Controleur
     function Reinit()
     {
         global $rep, $vues;
-        $bdNews=Modele::listerNews($_GET['page']);
         $nbPage=Modele::nbPage();
-        $currentPage=$_GET['page'];
+        //echo "_GET page:".$_GET['page'];
+        $currentPage=Validation::val_page($_GET['page'],$nbPage);
+        //echo "currPage : ".$currentPage."<br>";
+        $bdNews=Modele::listerNews($currentPage);
         require($rep.$vues['vueNews']);
     }
-
+/*
     function ValidationFormulaire(array $dVueEreur)
     {
         global $rep, $vues;
@@ -83,6 +85,7 @@ class Controleur
         );
         require($rep . $vues['vuephp1']);
     }
+*/
 
 }//fin class
 
