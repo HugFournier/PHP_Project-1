@@ -34,7 +34,7 @@ class Flux
     /**********************************************************************
      * @param mixed $id
      **********************************************************************/
-    public function setId($id)
+    private function setId($id)
     {
         $this->id = $id;
     }
@@ -50,14 +50,14 @@ class Flux
     /**********************************************************************
      * @param mixed $lien
      **********************************************************************/
-    public function setLien($lien)
+    private function setLien($lien)
     {
         $this->lien = $lien;
     }
 
     public function __toString()
     {
-        return "|_" . $this->getId()."_|_".$this->getLien()."_|";
+        return "|_" . $this->getId()."_|_<a href=https://".$this->getLien().">Lien</a>_|";
     }
 
 

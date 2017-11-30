@@ -64,7 +64,6 @@ class NewsGateway
             $placement=1;
         }
         $placement=($placement-1)*$nbElt;
-        //echo "position:".$placement." limite:".$nbElt."<br>";
         $query = "SELECT * FROM NEWS ORDER BY date DESC LIMIT :x, :y";
         $argument=array(
             ':x'=>array($placement,PDO::PARAM_INT),

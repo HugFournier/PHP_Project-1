@@ -43,20 +43,21 @@ class FluxGateway
         $this->con->executeQuery($query, $argument);
     }
 
+    /*
     public function find($id){
         $query = "SELECT * FROM FLUX WHERE id=:id";
         $argument = array(
             ':id'=>array($id, PDO::PARAM_STR)
         );
         $this->con->executeQuery($query, $argument);
-        $r = $this->con->getResults();
-        return new Flux(r['id'],r['lien']);
+        return (new FluxFactory())->creerFlux($this->con->getResults());
     }
+    */
 
     public function findAll(){
         $query = "SELECT * FROM NEWS";
         $this->con->executeQuery($query);
         //foreach($l as $r)$retour[]=new News($r['titre'],$r['lien'],$r['description'],$r['date'],$r['guid']);
-        return (new NewsFactory())->creerNews($this->con->getResults());
+        return (new FluxFactory())->creerFlux($this->con->getResults());
     }
 }

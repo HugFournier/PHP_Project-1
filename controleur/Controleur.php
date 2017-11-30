@@ -9,7 +9,6 @@ class Controleur
 // on démarre ou reprend la session si necessaire (préférez utiliser un modèle pour gérer vos session ou cookies)
         session_start();
 
-
 //debut
 
 //on initialise un tableau d'erreur
@@ -29,6 +28,18 @@ class Controleur
                     break;
                 case "connectionAdmin":
                     require($rep . $vues['vueConnectionAdmin']);
+                    break;
+                case "soumettreConnexion":
+                    echo "id:".$_REQUEST['id']." mdp:".$_REQUEST['mdp']."<br>";
+                    if(ModeleAdmin::connexion($_REQUEST['id'],$_REQUEST['mdp'])){
+                        $_SESSION['role']='admin';
+                        $_SESSION['login']='id';
+                        new ControleurAdmin();
+                    }
+                    else{
+                        $info="Identifiant et/ou mot de passe incorrects";
+                        require($rep . $vues['vueConnectionAdmin']);
+                    }
                     break;
                 /*
                  case "validationFormulaire":
@@ -67,28 +78,6 @@ class Controleur
         $bdNews=Modele::listerNews($currentPage);
         require($rep.$vues['vueNews']);
     }
-/*
-    function ValidationFormulaire(array $dVueEreur)
-    {
-        global $rep, $vues;
-
-
-//si exception, ca remonte !!!
-        $nom = $_POST['txtNom']; // txtNom = nom du champ texte dans le formulaire
-        $age = $_POST['txtAge'];
-        Validation::val_form($nom, $age, $dVueEreur);
-
-        $model = new Simplemodel();
-        $data = $model->get_data();
-
-        $dVue = array(
-            'nom' => $nom,
-            'age' => $age,
-            'data' => $data,
-        );
-        require($rep . $vues['vuephp1']);
-    }
-*/
 
 }//fin class
 
