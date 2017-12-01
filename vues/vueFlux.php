@@ -35,15 +35,8 @@
         }
         ?>
     </table>
-    <?php/*
-    echo "<br><a href=?action=listerNews&page=1>1</a>|";
-    echo "<a href=?action=listerNews&page=".($currentPage-1)."><</a>|";
-    echo "[".$currentPage."]|";
-    echo "<a href=?action=listerNews&page=".($currentPage+1).">></a>|";
-    echo "<a href=?action=listerNews&page=".$nbPage.">".$nbPage."</a>";
-    */?>
     <br><br>
-    <a href="?action=connectionAdmin">Connection</a>
+    <a href="?action=connectionAdmin">Déconnection</a>
 </center>
 </body>
 

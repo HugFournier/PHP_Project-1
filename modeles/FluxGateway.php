@@ -55,7 +55,7 @@ class FluxGateway
     */
 
     public function findAll(){
-        $query = "SELECT * FROM NEWS";
+        $query = "SELECT * FROM Flux";
         $this->con->executeQuery($query);
         //foreach($l as $r)$retour[]=new News($r['titre'],$r['lien'],$r['description'],$r['date'],$r['guid']);
         return (new FluxFactory())->creerFlux($this->con->getResults());

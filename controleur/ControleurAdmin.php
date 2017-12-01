@@ -28,7 +28,7 @@ class ControleurAdmin
                     $this->Reinit();
                     break;
                 case "listerFlux":
-                    echo "ok";
+                    //echo "ok";
                     $this->Reinit();
                     break;
                 case "deconnectionAdmin":

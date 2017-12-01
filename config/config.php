@@ -26,6 +26,7 @@ $mdp="hufournier";
 
 $vues['erreur']='vues/erreur.php';
 $vues['vueNews']='vues/vueNews.php';
+$vues['vueFlux']='vues/vueFlux.php';
 $vues['vueConnectionAdmin']='vues/vueConnectionAdmin.php';
 
 

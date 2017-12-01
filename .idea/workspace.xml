@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0be913cf-3c07-430f-bdc0-095e7764a5e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/vueFlux.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controleur/Controleur.php" afterPath="$PROJECT_DIR$/controleur/Controleur.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.php" afterPath="$PROJECT_DIR$/config/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controleur/ControleurAdmin.php" afterPath="$PROJECT_DIR$/controleur/ControleurAdmin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modeles/FluxFactory.php" afterPath="$PROJECT_DIR$/modeles/FluxFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modeles/ModeleAdmin.php" afterPath="$PROJECT_DIR$/modeles/ModeleAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/vueNews.php" afterPath="$PROJECT_DIR$/vues/vueNews.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modeles/FluxGateway.php" afterPath="$PROJECT_DIR$/modeles/FluxGateway.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/vueFlux.php" afterPath="$PROJECT_DIR$/vues/vueFlux.php" />
     </list>
     <ignored path="ProjetMCD.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controleur.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controleur.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controleur/Controleur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="79" selection-end-column="5" />
+            <state relative-caret-position="484">
+              <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -42,8 +40,18 @@
       <file leaf-file-name="ControleurAdmin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controleur/ControleurAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+            <state relative-caret-position="870">
+              <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -52,8 +60,8 @@
       <file leaf-file-name="vueFlux.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/vueFlux.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="495">
+              <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -62,8 +70,8 @@
       <file leaf-file-name="ModeleAdmin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modeles/ModeleAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -72,21 +80,9 @@
       <file leaf-file-name="FluxFactory.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modeles/FluxFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="165">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminGateway.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modeles/AdminGateway.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
-              <folding>
-                <marker date="1512054309914" expanded="true" signature="491:541" ph="INSERT INTO FLUX... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -101,16 +97,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FluxGateway.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FluxGateway.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modeles/FluxGateway.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="810">
+              <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
               <folding>
-                <marker date="1512047214521" expanded="true" signature="641:676" ph="INSERT INTO FLUX... " />
-                <marker date="1512047214521" expanded="true" signature="1081:1110" ph="DELETE FROM " />
-                <marker date="1512047214521" expanded="true" signature="1313:1344" ph="SELECT * FRO... FLUX" />
-                <marker date="1512047214521" expanded="true" signature="1620:1638" ph="SELECT * FRO... NEWS" />
+                <marker date="1512139378901" expanded="true" signature="641:676" ph="INSERT INTO FLUX... " />
+                <marker date="1512139378901" expanded="true" signature="1081:1110" ph="DELETE FROM " />
+                <marker date="1512139378901" expanded="true" signature="1313:1344" ph="SELECT * FRO... FLUX" />
+                <marker date="1512139378901" expanded="true" signature="1620:1635" ph="SELECT * FRO... NEWS" />
+                <marker date="1512139378901" expanded="true" signature="1620:1638" ph="SELECT * FRO... Flux" />
               </folding>
             </state>
           </provider>
@@ -152,18 +149,18 @@
         <option value="$PROJECT_DIR$/modeles/NewsFactory.php" />
         <option value="$PROJECT_DIR$/modeles/Connection.php" />
         <option value="$PROJECT_DIR$/config/Validation.php" />
-        <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/modeles/Modele.php" />
         <option value="$PROJECT_DIR$/modeles/Flux.php" />
-        <option value="$PROJECT_DIR$/modeles/FluxGateway.php" />
         <option value="$PROJECT_DIR$/modeles/AdminGateway.php" />
         <option value="$PROJECT_DIR$/modeles/NewsGateway.php" />
         <option value="$PROJECT_DIR$/vues/vueConnectionAdmin.php" />
         <option value="$PROJECT_DIR$/vues/vueNews.php" />
         <option value="$PROJECT_DIR$/controleur/Controleur.php" />
-        <option value="$PROJECT_DIR$/controleur/ControleurAdmin.php" />
         <option value="$PROJECT_DIR$/modeles/ModeleAdmin.php" />
+        <option value="$PROJECT_DIR$/controleur/ControleurAdmin.php" />
+        <option value="$PROJECT_DIR$/modeles/FluxGateway.php" />
+        <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/vues/vueFlux.php" />
         <option value="$PROJECT_DIR$/modeles/FluxFactory.php" />
       </list>
@@ -213,6 +210,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,7 +287,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,11 +382,12 @@
       <workItem from="1512044792595" duration="9703000" />
       <workItem from="1512125766256" duration="144000" />
       <workItem from="1512129378017" duration="1813000" />
+      <workItem from="1512139041514" duration="671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42570000" />
+    <option name="totallyTimeSpent" value="43241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="1174" extended-state="6" />
@@ -640,14 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modeles/News.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="844">
@@ -686,42 +676,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/vueConnectionAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vues/vueNews.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modeles/Flux.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="59" column="86" selection-start-line="59" selection-start-column="86" selection-end-line="59" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/Controleur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="79" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/ControleurAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -744,40 +702,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modeles/Flux.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="59" column="86" selection-start-line="59" selection-start-column="86" selection-end-line="59" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/vueConnectionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modeles/ModeleAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/vueFlux.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modeles/FluxFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modeles/FluxGateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="810">
+          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
           <folding>
-            <marker date="1512047214521" expanded="true" signature="641:676" ph="INSERT INTO FLUX... " />
-            <marker date="1512047214521" expanded="true" signature="1081:1110" ph="DELETE FROM " />
-            <marker date="1512047214521" expanded="true" signature="1313:1344" ph="SELECT * FRO... FLUX" />
-            <marker date="1512047214521" expanded="true" signature="1620:1638" ph="SELECT * FRO... NEWS" />
+            <marker date="1512139378901" expanded="true" signature="641:676" ph="INSERT INTO FLUX... " />
+            <marker date="1512139378901" expanded="true" signature="1081:1110" ph="DELETE FROM " />
+            <marker date="1512139378901" expanded="true" signature="1313:1344" ph="SELECT * FRO... FLUX" />
+            <marker date="1512139378901" expanded="true" signature="1620:1635" ph="SELECT * FRO... NEWS" />
+            <marker date="1512139378901" expanded="true" signature="1620:1638" ph="SELECT * FRO... Flux" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/ControleurAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/vueFlux.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeles/FluxFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/Controleur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
