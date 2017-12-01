@@ -30,10 +30,10 @@ class Controleur
                     require($rep . $vues['vueConnectionAdmin']);
                     break;
                 case "soumettreConnexion":
-                    echo "id:".$_REQUEST['id']." mdp:".$_REQUEST['mdp']."<br>";
                     if(ModeleAdmin::connexion($_REQUEST['id'],$_REQUEST['mdp'])){
                         $_SESSION['role']='admin';
                         $_SESSION['login']='id';
+                        $_REQUEST['action']='listerFlux';
                         new ControleurAdmin();
                     }
                     else{

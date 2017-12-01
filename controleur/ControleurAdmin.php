@@ -28,6 +28,7 @@ class ControleurAdmin
                     $this->Reinit();
                     break;
                 case "listerFlux":
+                    echo "ok";
                     $this->Reinit();
                     break;
                 case "deconnectionAdmin":
@@ -50,4 +51,11 @@ class ControleurAdmin
             require($rep . $vues['erreur']);
         }
     }//fin constructeur
+
+    function Reinit()
+    {
+        global $rep, $vues;
+        $bdFlux=ModeleAdmin::listerFlux();
+        require($rep.$vues['vueFlux']);
+    }
 }

@@ -10,9 +10,10 @@ class FluxFactory
 {
     public static function creerFlux($listeAttributFlux)
     {
+        var_dump($listeAttributFlux);
         $listeRetour=[];
         foreach($listeAttributFlux as $r)
-            $listeRetour[]=new Flux($r['id'],$r['lien']);
+            $listeRetour[]=new Flux($r['ID'],$r['lien']);
         return $listeRetour;
     }
 }

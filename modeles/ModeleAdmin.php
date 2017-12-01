@@ -13,4 +13,10 @@ class ModeleAdmin
         $bdAdmin=new AdminGateway(new Connection($base,$login,$mdp));
         return $bdAdmin->verifConnection($id,$motDePasse);
     }
+
+    public static function listerFlux(){
+        global $base, $login, $mdp;
+        $bdFlux=new FluxGateway(new Connection($base,$login,$mdp));
+        return $bdFlux->findAll();
+    }
 }
