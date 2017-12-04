@@ -3,37 +3,21 @@
 class Validation
 {
 
-    static function val_action($action)
+    static function val_actionAdmin($action)
     {
-
-        if (!isset($action)) {
-            throw new Exception('pas d\'action');
-            //on pourrait aussi utiliser
-//$action = $_GET['action'] ?? 'no';
-            // This is equivalent to:
-            //$action =  if (isset($_GET['action'])) $action=$_GET['action']  else $action='no';
-        }
+        global $actionAdmin;
+        return in_array($action,$actionAdmin);
     }
 
-    static function val_form(string &$nom, string &$age, array &$dVueEreur)
+    static function val_actionUser($action)
     {
+        global $actionUser;
+        return in_array($action,$actionUser);
+    }
 
-        if (!isset($nom) || $nom == "") {
-            $dVueEreur[] = "pas de nom";
-            $nom = "";
-        }
-
-        if ($nom != filter_var($nom, FILTER_SANITIZE_STRING)) {
-            $dVueEreur[] = "testative d'injection de code (attaque sécurité)";
-            $nom = "";
-
-        }
-
-        if (!isset($age) || $age == "" || !filter_var($age, FILTER_VALIDATE_INT)) {
-            $dVueEreur[] = "pas d'age ";
-            $age = 0;
-        }
-
+    static function val_string(string $mot)
+    {
+        return isset($mot) && $mot != "" && $mot==filter_var($mot, FILTER_SANITIZE_STRING);
     }
 
     static function val_page($current, $nbPage){

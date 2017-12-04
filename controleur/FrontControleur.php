@@ -11,36 +11,29 @@ class FrontControleur
     function __construct()
     {
         global $rep, $vues; // nécessaire pour utiliser variables globales
-// on démarre ou reprend la session si necessaire (préférez utiliser un modèle pour gérer vos session ou cookies)
-        session_start();
 
-
-//debut
-
+        if(!isset($_SESSION)){
+            $_SESSION=array();
+        }
 //on initialise un tableau d'erreur
         $dVueEreur = array();
 
         try {
-            $action = $_REQUEST['action'];
-
-            switch ($action) {
-
-//pas d'action, on r�initialise 1er appel
-                case NULL:
-                    $this->Reinit();
-                    break;
-                case "listerNews":
-                    $this->Reinit();
-                    break;
-                case "validationFormulaire":
-                    $this->ValidationFormulaire($dVueEreur);
-                    break;
-
-//mauvaise action
-                default:
-                    $dVueEreur[] = "Erreur d'appel php";
-                    require($rep . $vues['vuephp1']);
-                    break;
+            if(Validation::val_actionAdmin($_REQUEST['action'])){
+                //ctrlAdmin
+                /*if(!ModeleAdmin::isAdmin()){
+                    $_REQUEST['action']="connectionAdmin";
+                }*/
+                new ControleurAdmin();
+            }
+            else if(Validation::val_actionUser($_REQUEST['action'])){
+                //ctrlUser
+                new Controleur();
+            }
+            else{
+                //erreur
+                $dVueEreur[] = "Erreur d'appel php";
+                require($rep . $vues['vuephp1']);
             }
 
         } catch (PDOException $e) {
@@ -52,8 +45,6 @@ class FrontControleur
             $dVueEreur[] = "Erreur inattendue!!! ";
             require($rep . $vues['erreur']);
         }
-
-
 //fin
         exit(0);
     }//fin constructeur

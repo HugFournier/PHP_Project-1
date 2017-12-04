@@ -10,29 +10,40 @@ class ControleurAdmin
 {
     function __construct()
     {
-        global $rep, $vues; // nécessaire pour utiliser variables globales
-// on démarre ou reprend la session si necessaire (préférez utiliser un modèle pour gérer vos session ou cookies)
+        global $rep, $vues;
 
-//debut
+        session_start();
 
 //on initialise un tableau d'erreur
         if(!isset($dVueEreur)) $dVueEreur = array();
 
         try {
             $action = $_REQUEST['action'];
+            /*if($action!="connectionAdmin" && !ModeleAdmin::isAdmin()){
+                $action="connectionAdmin";
+            }*/
 
             switch ($action) {
-
-//pas d'action, on r�initialise 1er appel
                 case NULL:
                     $this->Reinit();
                     break;
-                case "listerFlux":
-                    //echo "ok";
+                case "connectionAdmin":
                     $this->Reinit();
                     break;
+                case "soumettreConnexion":
+                    if(ModeleAdmin::connexion($_REQUEST['id'],$_REQUEST['mdp'], $info)){
+                        $this->ListerFlux();
+                    }
+                    else{
+                        $this->Reinit($info);
+                    }
+                    break;
+                case "listerFlux":
+                    $this->ListerFlux();
+                    break;
                 case "deconnectionAdmin":
-                    require($rep . $vues['vueConnectionAdmin']);
+                    ModeleAdmin::deconnexion();
+                    $this->Reinit();
                     break;
 //mauvaise action
                 default:
@@ -52,10 +63,15 @@ class ControleurAdmin
         }
     }//fin constructeur
 
-    function Reinit()
+    function ListerFlux()
     {
         global $rep, $vues;
         $bdFlux=ModeleAdmin::listerFlux();
         require($rep.$vues['vueFlux']);
+    }
+
+    function Reinit($info=NULL){
+        global $rep, $vues;
+        require($rep.$vues['vueConnectionAdmin']);
     }
 }

@@ -12,7 +12,7 @@ class Controleur
 //debut
 
 //on initialise un tableau d'erreur
-        $dVueEreur = array();
+        if(!isset($dVueEreur)) $dVueEreur = array();
 
         try {
             $action = $_REQUEST['action'];
@@ -25,21 +25,6 @@ class Controleur
                     break;
                 case "listerNews":
                     $this->Reinit();
-                    break;
-                case "connectionAdmin":
-                    require($rep . $vues['vueConnectionAdmin']);
-                    break;
-                case "soumettreConnexion":
-                    if(ModeleAdmin::connexion($_REQUEST['id'],$_REQUEST['mdp'])){
-                        $_SESSION['role']='admin';
-                        $_SESSION['login']='id';
-                        $_REQUEST['action']='listerFlux';
-                        new ControleurAdmin();
-                    }
-                    else{
-                        $info="Identifiant et/ou mot de passe incorrects";
-                        require($rep . $vues['vueConnectionAdmin']);
-                    }
                     break;
                 /*
                  case "validationFormulaire":
