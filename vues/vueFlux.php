@@ -6,6 +6,7 @@
 
 <body>
 <center>
+    <h1>Liste des Flux</h1>
     <?php
     /**
      * Created by PhpStorm.
@@ -19,26 +20,45 @@
     }
     else{
     ?>
-    <h1>Liste des Flux</h1>
     <table border="2">
         <tr>
             <th>ID</th>
             <th>Lien</th>
-            <th>Supprimer</th>
+            <th>Action</th>
         </tr>
         <?php
         foreach ($bdFlux as $flux) {
             echo "<tr><td>" . $flux->getId()."</td>";
             echo "<td><a href=https://".$flux->getLien().">" . $flux->getLien()."</a></td>";
-            echo   "<td>
+            echo   "<td><center>
                         <FORM METHOD=POST action='index.php?action=supprimerFlux'>
-                            <INPUT TYPE=SUBMIT VALUE = \"suppr\" NAME=\"idFlux\" VALUE = ".$flux->getId().">
+                            <INPUT hidden='true' NAME=\"idFlux\" VALUE = ".$flux->getId().">
+                            <INPUT TYPE=SUBMIT VALUE = \"Supprimer\">
                         </FORM>
-                    </td>
+                    </center></td>
                   </tr>";
         }
         }
         ?>
+        <tr>
+            <FORM METHOD=POST action='index.php?action=ajouterFlux'>
+            <td>
+                <INPUT TYPE=TEXT NAME="idFlux" required>
+            </td>
+            <td>
+                <INPUT TYPE=TEXT NAME="lienFlux" required>
+            </td>
+            <td>
+                <INPUT TYPE=SUBMIT VALUE = "Ajouter">
+            </td>
+            </FORM>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Lien</th>
+            <th>Action</th>
+        </tr>
     </table>
     <br><br>
     <a href="?action=connectionAdmin">Déconnection</a>

@@ -41,6 +41,15 @@ class ControleurAdmin
                 case "listerFlux":
                     $this->ListerFlux();
                     break;
+                case "ajouterFlux":
+                    //echo $_REQUEST["idFlux"]." ".$_REQUEST["lienFlux"];
+                    ModeleAdmin::ajouterFlux($_REQUEST["idFlux"],$_REQUEST["lienFlux"]);
+                    $this->ListerFlux();
+                    break;
+                case "supprimerFlux":
+                    ModeleAdmin::supprimerFlux($_REQUEST['idFlux']);
+                    $this->ListerFlux();
+                    break;
                 case "deconnectionAdmin":
                     ModeleAdmin::deconnexion();
                     $this->Reinit();

@@ -38,6 +38,29 @@ class ModeleAdmin
         return $bdFlux->findAll();
     }
 
+    public static function supprimerFlux($idFlux){
+        global $base, $login, $mdp;
+        if(Validation::val_string($idFlux)) {
+            $bdFlux = new FluxGateway(new Connection($base, $login, $mdp));
+            $bdFlux->delete($idFlux);
+        }
+        else throw new Exception("ID flux incorrect");
+    }
+
+    public static function ajouterFlux($idFlux,$lienFlux){
+        global $base, $login, $mdp;
+        if(!Validation::val_string($idFlux) || !Validation::val_string($lienFlux)){
+            $info="Attention tentative de piratage ! (sécurisé)";
+            return;
+        }
+        $bdFlux=new FluxGateway(new Connection($base,$login,$mdp));
+        try{
+            $bdFlux->insertBrut($idFlux,$lienFlux);
+        }catch (Exception $e){
+            echo $e->getMessage();
+        }
+    }
+
     public static function isAdmin(){
         return isset($_SESSION['login']) && isset($_SESSION['role']) && Validation::val_string($_SESSION['login']) && Validation::val_string($_SESSION['role']);
     }

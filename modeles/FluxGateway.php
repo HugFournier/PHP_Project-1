@@ -19,7 +19,7 @@ class FluxGateway
 
     public function insertBrut($id, $lien)
     {
-        $query = "INSERT INTO FLUX VALUES(:id, :lien)";
+        $query = "INSERT INTO `Flux` (`ID`, `lien`) VALUES (:id, :lien)";
 
         $argument = array(
             ':id'=>array($id, PDO::PARAM_STR),
@@ -36,7 +36,7 @@ class FluxGateway
     }
 
     public function delete($id){
-        $query = "DELETE FROM FLUX WHERE id=:id";
+        $query = "DELETE FROM `Flux` WHERE `Flux`.`ID` = :id";
         $argument = array(
             ':id'=>array($id, PDO::PARAM_STR)
         );
