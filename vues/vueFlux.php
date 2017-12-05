@@ -30,7 +30,12 @@
         foreach ($bdFlux as $flux) {
             echo "<tr><td>" . $flux->getId()."</td>";
             echo "<td><a href=https://".$flux->getLien().">" . $flux->getLien()."</a></td>";
-            echo "<td><a href=></a></td></tr>";
+            echo   "<td>
+                        <FORM METHOD=POST action='index.php?action=supprimerFlux'>
+                            <INPUT TYPE=SUBMIT VALUE = \"suppr\" NAME=\"idFlux\" VALUE = ".$flux->getId().">
+                        </FORM>
+                    </td>
+                  </tr>";
         }
         }
         ?>

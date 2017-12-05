@@ -33,7 +33,7 @@ class FrontControleur
             else{
                 //erreur
                 $dVueEreur[] = "Erreur d'appel php";
-                require($rep . $vues['vuephp1']);
+                require($rep . $vues['erreur']);
             }
 
         } catch (PDOException $e) {
