@@ -47,7 +47,7 @@ class ModeleAdmin
         else throw new Exception("ID flux incorrect");
     }
 
-    public static function ajouterFlux($idFlux,$lienFlux){
+    public static function ajouterFlux($idFlux,$lienFlux, &$info){
         global $base, $login, $mdp;
         if(!Validation::val_string($idFlux) || !Validation::val_string($lienFlux)){
             $info="Attention tentative de piratage ! (sécurisé)";
@@ -57,7 +57,12 @@ class ModeleAdmin
         try{
             $bdFlux->insertBrut($idFlux,$lienFlux);
         }catch (Exception $e){
-            echo $e->getMessage();
+            if($e->getMessage()=="violation contrainte"){
+                $info="Ajout impossible : ID et lien doivent être uniques";
+            }
+            else {
+                throw $e;
+            }
         }
     }
 

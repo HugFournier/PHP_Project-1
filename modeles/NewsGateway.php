@@ -53,12 +53,13 @@ class NewsGateway
         return NewsFactory::creerNews($this->con->getResults());
     }
 */
+/*
     public function findAll(){
         $query = "SELECT * FROM NEWS";
         $this->con->executeQuery($query);
         return NewsFactory::creerNews($this->con->getResults());
     }
-
+*/
     public function findN($placement,$nbElt=2){
         if(!isset($placement) || $placement<1){
             $placement=1;

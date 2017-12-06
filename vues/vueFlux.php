@@ -68,6 +68,7 @@ global $front;
             <th>Action</th>
         </tr>
     </table>
+    <?php if(isset($info)) echo "<h5>".$info."</h5>";?>
     <br><br>
     <a href="?action=connectionAdmin">Déconnection</a>
 </center>

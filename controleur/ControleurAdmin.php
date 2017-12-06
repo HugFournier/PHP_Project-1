@@ -18,8 +18,7 @@ class ControleurAdmin
         try {
             $action = $_REQUEST['action'];
             if(!ModeleAdmin::isAdmin()){
-                $action="connectionAdmin";
-                new FrontControleur();
+                $this->Reinit();
             }
 
             switch ($action) {
@@ -30,9 +29,8 @@ class ControleurAdmin
                     $this->ListerFlux();
                     break;
                 case "ajouterFlux":
-                    //echo $_REQUEST["idFlux"]." ".$_REQUEST["lienFlux"];
-                    ModeleAdmin::ajouterFlux($_REQUEST["idFlux"],$_REQUEST["lienFlux"]);
-                    $this->ListerFlux();
+                    ModeleAdmin::ajouterFlux($_REQUEST["idFlux"],$_REQUEST["lienFlux"],$info);
+                    $this->ListerFlux($info);
                     break;
                 case "supprimerFlux":
                     ModeleAdmin::supprimerFlux($_REQUEST['idFlux']);
@@ -49,18 +47,19 @@ class ControleurAdmin
                     break;
             }
 
-        } catch (PDOException $e) {
+        /*
+         } catch (PDOException $e) {
             //si erreur BD, pas le cas ici
             $dVueEreur[] = "Erreur PDO inattendue!!! ";
             require($rep . $vues['erreur']);
-
+        */
         } catch (Exception $e2) {
-            $dVueEreur[] = "Erreur inattendue!!! ";
+            $dVueEreur[] = "Erreur inattendue : ".$e2->getMessage();
             require($rep . $vues['erreur']);
         }
     }//fin constructeur
 
-    function ListerFlux()
+    function ListerFlux($info=NULL)
     {
         global $rep, $vues;
         $bdFlux=ModeleAdmin::listerFlux();
@@ -68,7 +67,7 @@ class ControleurAdmin
     }
 
     function Reinit($info=NULL){
-        global $rep, $vues;
-        require($rep.$vues['vueConnectionAdmin']);
+        $action="connectionAdmin";
+        new FrontControleur();
     }
 }
