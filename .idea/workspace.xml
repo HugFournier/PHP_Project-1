@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0be913cf-3c07-430f-bdc0-095e7764a5e5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/PHP_Project.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProjetMCD.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/vues/erreur.php" afterPath="$PROJECT_DIR$/vues/erreur.php" />
-      <change beforePath="$PROJECT_DIR$/vues/vueConnectionAdmin.php" afterPath="$PROJECT_DIR$/vues/vueConnectionAdmin.php" />
       <change beforePath="$PROJECT_DIR$/vues/vueNews.php" afterPath="$PROJECT_DIR$/vues/vueNews.php" />
     </list>
     <ignored path="ProjetMCD.iws" />
@@ -109,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/vues/vueNews.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+              <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -368,12 +359,12 @@
       <workItem from="1512406184250" duration="5788000" />
       <workItem from="1512473009087" duration="2718000" />
       <workItem from="1512492139918" duration="5950000" />
-      <workItem from="1512552207027" duration="1350000" />
+      <workItem from="1512552207027" duration="1514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59191000" />
+    <option name="totallyTimeSpent" value="59355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="6" />
@@ -766,7 +757,7 @@
     <entry file="file://$PROJECT_DIR$/vues/vueNews.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
           <folding />
         </state>
       </provider>
