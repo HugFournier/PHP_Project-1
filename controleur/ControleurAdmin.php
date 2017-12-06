@@ -12,8 +12,6 @@ class ControleurAdmin
     {
         global $rep, $vues;
 
-        session_start();
-
 //on initialise un tableau d'erreur
         if(!isset($dVueEreur)) $dVueEreur = array();
 
@@ -26,17 +24,6 @@ class ControleurAdmin
             switch ($action) {
                 case NULL:
                     $this->Reinit();
-                    break;
-                case "connectionAdmin":
-                    $this->Reinit();
-                    break;
-                case "soumettreConnexion":
-                    if(ModeleAdmin::connexion($_REQUEST['id'],$_REQUEST['mdp'], $info)){
-                        $this->ListerFlux();
-                    }
-                    else{
-                        $this->Reinit($info);
-                    }
                     break;
                 case "listerFlux":
                     $this->ListerFlux();

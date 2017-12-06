@@ -24,8 +24,8 @@ $vues['vueConnectionAdmin']='vues/vueConnectionAdmin.php';
 
 //Actions:
 //User:
-$actionUser=[NULL,"listerNews"];
+$actionUser=[NULL,"listerNews","connectionAdmin","soumettreConnexion"];
 //Admin:
-$actionAdmin=["connectionAdmin","soumettreConnexion","listerFlux","deconnectionAdmin","supprimerFlux","ajouterFlux"];
+$actionAdmin=["listerFlux","deconnectionAdmin","supprimerFlux","ajouterFlux"];
 
 ?>

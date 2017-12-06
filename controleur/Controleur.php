@@ -7,7 +7,6 @@ class Controleur
     {
         global $rep, $vues; // nécessaire pour utiliser variables globales
 // on démarre ou reprend la session si necessaire (préférez utiliser un modèle pour gérer vos session ou cookies)
-        session_start();
 
 //debut
 
@@ -26,11 +25,18 @@ class Controleur
                 case "listerNews":
                     $this->Reinit();
                     break;
-                /*
-                 case "validationFormulaire":
-                 $this->ValidationFormulaire($dVueEreur);
-                 break;
-                */
+                case "connectionAdmin":
+                    $this->FormulaireConnexion();
+                    break;
+                case "soumettreConnexion":
+                    if(ModeleAdmin::connexion($_REQUEST['id'],$_REQUEST['mdp'], $info)){
+                        $_REQUEST['action']="listerFlux";
+                        new FrontControleur();
+                    }
+                    else{
+                        $this->FormulaireConnexion($info);
+                    }
+                    break;
 
 //mauvaise action
                 default:
@@ -62,6 +68,11 @@ class Controleur
         $currentPage=Validation::val_page($_GET['page'],$nbPage);
         $bdNews=Modele::listerNews($currentPage);
         require($rep.$vues['vueNews']);
+    }
+
+    function FormulaireConnexion($info=NULL){
+        global $rep, $vues;
+        require($rep.$vues['vueConnectionAdmin']);
     }
 
 }//fin class

@@ -2,19 +2,6 @@
 
 class Validation
 {
-
-    static function val_actionAdmin($action)
-    {
-        global $actionAdmin;
-        return in_array($action,$actionAdmin);
-    }
-
-    static function val_actionUser($action)
-    {
-        global $actionUser;
-        return in_array($action,$actionUser);
-    }
-
     static function val_string(string $mot)
     {
         return isset($mot) && $mot != "" && $mot==filter_var($mot, FILTER_SANITIZE_STRING);
@@ -37,5 +24,3 @@ class Validation
 }
 
 ?>
-
-        
