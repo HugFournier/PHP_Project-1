@@ -23,7 +23,7 @@ if (!isset($bdNews) || empty($bdNews)) {
 else{
     ?>
     <h1>Liste des News</h1>
-    <table border="2">
+    <table class="table-bordered">
         <tr>
             <th>Date</th>
             <th>Nom</th>

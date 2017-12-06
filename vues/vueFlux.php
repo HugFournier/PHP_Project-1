@@ -23,7 +23,7 @@
     }
     else{
     ?>
-    <table border="2">
+    <table class="table-bordered">
         <tr>
             <th>ID</th>
             <th>Lien</th>
