@@ -17,9 +17,10 @@ class ControleurAdmin
 
         try {
             $action = $_REQUEST['action'];
-            /*if($action!="connectionAdmin" && !ModeleAdmin::isAdmin()){
+            if(!ModeleAdmin::isAdmin()){
                 $action="connectionAdmin";
-            }*/
+                new FrontControleur();
+            }
 
             switch ($action) {
                 case NULL:
