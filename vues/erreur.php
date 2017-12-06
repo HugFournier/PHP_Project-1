@@ -2,8 +2,8 @@
 <head>
     <meta charset="utf-8">
     <title>Erreur</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="http://damiennguyen.com/PHP_Project/css/style.css">
+    <link rel="stylesheet" href="http://damiennguyen.com/PHP_Project/css/bootstrap.css">
 </head>
 
 <body>

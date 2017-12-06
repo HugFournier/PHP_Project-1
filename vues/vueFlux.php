@@ -1,7 +1,10 @@
 <html>
 
 <head>
-    <title>News</title>
+    <meta charset="utf-8">
+    <title>Flux</title>
+    <link rel="stylesheet" href="http://damiennguyen.com/PHP_Project/css/style.css">
+    <link rel="stylesheet" href="http://damiennguyen.com/PHP_Project/css/bootstrap.css">
 </head>
 
 <body>
