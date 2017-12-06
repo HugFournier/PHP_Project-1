@@ -5,7 +5,7 @@
  * Time: 17:18
  */-->
 <?php
-global $rep, $front;
+global $front;
 
 ?>
 
@@ -14,8 +14,8 @@ global $rep, $front;
 <head>
     <meta charset="utf-8">
     <title>Connexion</title>
-    <link rel="stylesheet" href="<?php echo $rep . $front['style']?>">
-    <link rel="stylesheet" href="<?php echo $rep . $front['bootstrap']?>">
+    <link rel="stylesheet" href="<?php echo $front['style']?>">
+    <link rel="stylesheet" href="<?php echo $front['bootstrap']?>">
 </head>
 
 <center>
