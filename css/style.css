@@ -5,6 +5,8 @@
  * 1. Additional properties
  *    - Tables
  *    - Horizontal line
+ * 2. News properties
+ *    - Tables
  ****************************************************************************************************************************************************************/
 
 /* Imports
@@ -20,6 +22,23 @@
  * Tables
  * Horizontal line
  */
+html,
+body,
+.container {
+    background: #EEE!important;
+    text-align: center;
+    width: 100%
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 20px
+}
 
 ::selection {
     background: rgba(0, 0, 0, .5) /* WebKit/Blink Browsers */
@@ -27,6 +46,10 @@
 
 ::-moz-selection {
     background: rgba(0, 0, 0, .5) /* Gecko Browsers */
+}
+
+.full-width {
+    width: 100%
 }
 
 td, th {
@@ -38,4 +61,24 @@ hr {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box
+}
+
+/* 2. News properties
+ ****************************
+ * Tables
+ */
+table {
+    background-color: #FFF;
+}
+
+[name="date"] {
+    width: 20%
+}
+
+[name="nom"] {
+    width: 20%
+}
+
+[name="description"] {
+    width: 60%
 }
