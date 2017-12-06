@@ -1,5 +1,9 @@
 <html>
-<head><title>Erreur</title>
+<head>
+    <meta charset="utf-8">
+    <title>Erreur</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
@@ -7,12 +11,11 @@
 <h1>ERREUR !!!!!</h1>
 <?php
 if (isset($dVueEreur)) {
-foreach ($dVueEreur as $value){
-    echo $value;
-}
+    foreach ($dVueEreur as $value) {
+        echo $value;
+    }
 }
 ?>
 
-
-
-</body> </html>
+</body>
+</html>
