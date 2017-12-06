@@ -7,7 +7,9 @@ $rep=__DIR__.'/../';
 
 //$dConfig['includes']= array('controleur/Validation.php');
 
-
+// Bootstrap
+$front['style'] = "css/style.css";
+$front['bootstrap'] = "css/bootstrap.css";
 
 //BD
 $base="mysql:host=localhost;dbname=dbhufournier";

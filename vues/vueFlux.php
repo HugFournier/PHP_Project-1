@@ -1,10 +1,15 @@
+<?php
+global $rep, $front;
+
+?>
+
 <html>
 
 <head>
     <meta charset="utf-8">
     <title>Flux</title>
-    <link rel="stylesheet" href="http://damiennguyen.com/PHP_Project/css/style.css">
-    <link rel="stylesheet" href="http://damiennguyen.com/PHP_Project/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo $rep . $front['style']?>">
+    <link rel="stylesheet" href="<?php echo $rep . $front['bootstrap']?>">
 </head>
 
 <body>
