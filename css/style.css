@@ -22,6 +22,16 @@
  * Tables
  * Horizontal line
  */
+a {
+    color: #A00 !important;
+    text-decoration: none !important;
+    transition: .5s
+}
+
+a:hover {
+    color: #D00 !important;
+}
+
 html,
 body,
 .container {
@@ -37,15 +47,20 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "Sarala", "Trebuchet MS", Arial, sans-serif !important;
     padding: 20px
 }
 
+h1 {
+    font-weight: 700 !important;
+}
+
 ::selection {
-    background: rgba(0, 0, 0, .5) /* WebKit/Blink Browsers */
+    background: rgba(0, 0, 0, .2) /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background: rgba(0, 0, 0, .5) /* Gecko Browsers */
+    background: rgba(0, 0, 0, .2) /* Gecko Browsers */
 }
 
 .full-width {
@@ -63,12 +78,28 @@ hr {
     box-sizing: content-box
 }
 
+.no-margin {
+    margin: 0
+}
+
 /* 2. News properties
  ****************************
  * Tables
  */
 table {
-    background-color: #FFF;
+    background-color: #FFF
+}
+
+tr {
+    transition: .5s
+}
+
+tr:hover {
+    background-color: rgba(200, 200, 200, .1);
+}
+
+[name="action"] {
+    width: 10%
 }
 
 [name="date"] {
@@ -81,4 +112,16 @@ table {
 
 [name="description"] {
     width: 60%
+}
+
+[name="guid"],
+[name="lien"] {
+    width: 45%
+}
+
+input[name="addOrRemove"],
+input[name="idFlux"],
+input[name="lienFlux"] {
+    text-align: center !important;
+    width: 100%
 }
