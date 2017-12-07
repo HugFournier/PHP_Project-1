@@ -122,6 +122,7 @@ tr:hover {
 input[name="addOrRemove"],
 input[name="idFlux"],
 input[name="lienFlux"] {
+    margin: auto !important;
     text-align: center !important;
     width: 100%
 }
