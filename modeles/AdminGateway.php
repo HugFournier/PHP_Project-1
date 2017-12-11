@@ -21,15 +21,15 @@ class AdminGateway
 
     public function verifConnection($id, $mdp)
     {
-        $query = "SELECT * FROM Admin WHERE ID LIKE :id AND mdp LIKE :mdp ";
+        $query = "SELECT COUNT(*) FROM Admin WHERE ID LIKE :id AND mdp LIKE :mdp ";
 
         $argument = array(
-            ':id'=>array($id, PDO::PARAM_STR),
-            ':mdp'=>array($mdp, PDO::PARAM_STR)
+            ':id' => array($id, PDO::PARAM_STR),
+            ':mdp' => array($mdp, PDO::PARAM_STR)
         );
 
         $this->con->executeQuery($query, $argument);
 
-        return (count($this->con->getResults())==1);
+        return ($this->con->getResults()[0]["COUNT(*)"] == 1);
     }
 }
