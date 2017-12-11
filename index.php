@@ -12,6 +12,6 @@ require_once(__DIR__.'/config/Autoload.php');
 
 Autoload::charger();
 
-new FrontControleur();
+session_start();
 
-?> 
+new FrontControleur();

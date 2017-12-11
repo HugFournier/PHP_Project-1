@@ -12,7 +12,6 @@ class FrontControleur
     {
         global $rep, $vues; // nécessaire pour utiliser variables globales
 
-        session_start();
 
         //on initialise un tableau d'erreur
         $dVueEreur = array();
