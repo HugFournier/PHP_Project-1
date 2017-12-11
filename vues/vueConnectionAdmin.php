@@ -22,7 +22,7 @@ global $front;
     <h1>Connexion</h1>
     <?php if(isset($info)) echo "<h2>".$info."</h2>";?>
     <FORM METHOD=POST action ="index.php?action=soumettreConnexion">
-        <P class="no-margin">Identifiant Admin</P>
+        <P class="no-margin">Identifiant</P>
         <INPUT TYPE=TEXT NAME="id" required>
         <P class="no-margin">Mot de passe</P>
         <INPUT TYPE=password NAME="mdp" required><br><br>
