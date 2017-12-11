@@ -21,14 +21,17 @@ global $front;
 <center>
     <h1>Connexion</h1>
     <?php if(isset($info)) echo "<h2>".$info."</h2>";?>
-    <FORM METHOD=POST action ="index.php?action=soumettreConnexion">
-        <P class="no-margin">Identifiant</P>
-        <INPUT TYPE=TEXT NAME="id" required>
-        <P class="no-margin">Mot de passe</P>
-        <INPUT TYPE=password NAME="mdp" required><br><br>
-        <INPUT TYPE=SUBMIT value="Connection">
-    </FORM>
-    <a href="?action=listerNews&page=0">Retour</a>
+    <form METHOD=POST action ="index.php?action=soumettreConnexion">
+        <p class="no-margin">Identifiant</p>
+        <input TYPE=TEXT NAME="id" required>
+        <p class="no-margin">Mot de passe</p>
+        <input TYPE=password NAME="mdp" required><br><br>
+        <button TYPE=SUBMIT>Connexion</button>
+    </form>
+    <form>
+        <input type="button" class="button" onclick="window.location.href='?action=listerNews&page=0'" value="Retour">
+    </form>
+    <!--<button><a href="?action=listerNews&page=0">Retour</a></button>-->
 </center>
 
 </html>

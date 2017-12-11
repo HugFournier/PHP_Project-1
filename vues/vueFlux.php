@@ -39,27 +39,27 @@ global $front;
             echo "<tr><td>" . $flux->getId() . "</td>";
             echo "<td><a href=https://" . $flux->getLien() . ">" . $flux->getLien() . "</a></td>";
             echo "<td>
-                        <FORM METHOD=POST action='index.php?action=supprimerFlux'>
-                            <INPUT hidden='true' NAME=\"idFlux\" VALUE = " . $flux->getId() . ">
-                            <INPUT NAME=\"addOrRemove\" TYPE=SUBMIT VALUE = \"Supprimer\">
-                        </FORM>
+                        <form METHOD=POST action='index.php?action=supprimerFlux'>
+                            <input hidden='true' NAME=\"idFlux\" VALUE = " . $flux->getId() . ">
+                            <button NAME=\"addOrRemove\" TYPE=SUBMIT ATTR=\"rem\">Supprimer</button>
+                        </form>
                   </td>
                   </tr>";
         }
         }
         ?>
         <tr>
-            <FORM METHOD=POST action='index.php?action=ajouterFlux'>
+            <form METHOD=POST action='index.php?action=ajouterFlux'>
                 <td>
-                    <INPUT TYPE=TEXT NAME="idFlux" required>
+                    <input TYPE=TEXT NAME="idFlux" required>
                 </td>
                 <td>
-                    <INPUT TYPE=TEXT NAME="lienFlux" required>
+                    <input TYPE=TEXT NAME="lienFlux" required>
                 </td>
                 <td>
-                    <INPUT NAME="addOrRemove" TYPE=SUBMIT VALUE="Ajouter">
+                    <button NAME="addOrRemove" TYPE=SUBMIT ATTR="add">Ajouter</button>
                 </td>
-            </FORM>
+            </form>
         </tr>
 
         <tr>
@@ -70,7 +70,10 @@ global $front;
     </table>
     <?php if (isset($info)) echo "<h5>" . $info . "</h5>"; ?>
     <br><br>
-    <a href="?action=connectionAdmin">Déconnection</a>
+    <form>
+        <input type="button" class="button" onclick="window.location.href='?action=connectionAdmin'" value="Déconnexion">
+    </form>
+    <!--<a href="?action=connectionAdmin">Déconnexion</a></button>-->
 </div>
 </body>
 

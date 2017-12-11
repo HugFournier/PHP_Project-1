@@ -28,18 +28,40 @@
  * Horizontal line
  */
 a {
-    color: #A00 !important;
-    text-decoration: none !important;
+    color: #A00;
+    text-decoration: none;
     transition: .5s
 }
 
 a:hover {
-    color: #D00 !important;
+    color: #D00
+}
+
+button a {
+    color: inherit
+}
+
+button a:hover {
+    color: inherit;
+}
+
+button,
+input.button {
+    background-color: #DDD;
+    font-size: 11pt;
+    font-weight: 500;
+    margin: 1px;
+    padding: 5px;
+    transition: .5s
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 html,
 body {
-    background: #EEE !important;
+    background: #EEE;
     margin: 0;
     text-align: center;
     width: 100%
@@ -48,11 +70,12 @@ body {
 
 .container {
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 15px
 }
 
 * {
     font-family: "Montserrat", "Trebuchet MS", Arial, sans-serif;
+    margin: 0
 }
 
 h1,
@@ -66,7 +89,7 @@ h6 {
 }
 
 h1 {
-    font-weight: 700 !important;
+    font-weight: 700
 }
 
 ::selection {
@@ -96,10 +119,6 @@ hr {
     margin: 0
 }
 
-/* 2. News properties
- ****************************
- * Tables
- */
 table,
 td,
 th,
@@ -110,14 +129,10 @@ tr {
     text-align: center
 }
 
-tr {
-    transition: .5s
-}
-
-tr:hover {
-    background-color: rgba(200, 200, 200, .1);
-}
-
+/* 2. News properties
+ ****************************
+ * Tables
+ */
 [name="date"] {
     width: 20%
 }
@@ -157,10 +172,25 @@ input[name="mdp"] {
     width: 10%
 }
 
-input[name="addOrRemove"],
+button[name="addOrRemove"],
 input[name="idFlux"],
 input[name="lienFlux"] {
-    margin: auto !important;
-    text-align: center !important;
+    text-align: center;
     width: 100%
+}
+
+button[ATTR="rem"] {
+    background-color: #FBB
+}
+
+button[ATTR="rem"]:hover {
+    background-color: #F99
+}
+
+button[ATTR="add"] {
+    background-color: #BFB;
+}
+
+button[ATTR="add"]:hover {
+    background-color: #9F9
 }

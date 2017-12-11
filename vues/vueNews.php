@@ -27,7 +27,9 @@ global $front;
     }
     else{
     ?>
-    <h1>Liste des News</h1>
+    <h1>
+        Liste des News
+    </h1>
     <table class="table-bordered full-width">
         <tr>
             <th name="date">Date</th>
@@ -51,7 +53,10 @@ global $front;
     echo "<a href=?action=listerNews&page=" . $nbPage . ">" . $nbPage . "</a>";
     ?>
     <br><br>
-    <a href="?action=connectionAdmin">Connection</a>
+    <form>
+        <input type="button" class="button" onclick="window.location.href='?action=connectionAdmin'" value="Connexion">
+    </form>
+
 </div>
 </body>
 
