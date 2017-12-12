@@ -30,11 +30,11 @@
 a {
     color: #A00;
     text-decoration: none;
-    transition: .5s
+    transition: .2s
 }
 
 a:hover {
-    color: #D00
+    color: #D00;
 }
 
 button a {
@@ -52,11 +52,12 @@ input.button {
     font-weight: 500;
     margin: 1px;
     padding: 5px;
-    transition: .5s
+    transition: .2s
 }
 
-button:hover {
-    cursor: pointer;
+button:hover,
+input.button:hover {
+    cursor: pointer
 }
 
 html,

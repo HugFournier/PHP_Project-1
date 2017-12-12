@@ -15,7 +15,6 @@ global $front;
     <meta charset="utf-8">
     <title>Connexion</title>
     <link rel="stylesheet" href="<?php echo $front['style']?>">
-    <link rel="stylesheet" href="<?php echo $front['bootstrap']?>">
 </head>
 
 <center>
