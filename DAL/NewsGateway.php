@@ -60,11 +60,15 @@ class NewsGateway
         return NewsFactory::creerNews($this->con->getResults());
     }
 */
-    public function findN($placement,$nbElt=2){
+    public function findN($placement){
+        $nbElt=intval(Modele::getTaillePage());
+        //var_dump($nbElt);
+        //echo "cookie: ".$nbElt."<br>";
         if(!isset($placement) || $placement<1){
             $placement=1;
         }
         $placement=($placement-1)*$nbElt;
+        //var_dump($placement);
         $query = "SELECT * FROM NEWS ORDER BY date DESC LIMIT :x, :y";
         $argument=array(
             ':x'=>array($placement,PDO::PARAM_INT),
@@ -78,14 +82,7 @@ class NewsGateway
         $query = "SELECT COUNT(guid) FROM NEWS";
         $this->con->executeQuery($query);
         $nbNews = $this->con->getResults();
-        /*
-        print_r(array_keys($nbNews));
-        echo "<br>";
-        print_r($nbNews);
-        echo "<br>";
-
-        echo "nbNews=".$nbNews[0][0];
-        */
-        return ceil($nbNews[0][0]/2);
+        $taillePage=Modele::getTaillePage();
+        return ceil($nbNews[0][0]/$taillePage);
     }
 }

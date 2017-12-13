@@ -56,6 +56,10 @@ class ModeleAdmin
             $info = "Attention tentative de piratage ! (sécurisé)";
             return;
         }
+        if(!Validation::val_url($lienFlux)){
+            $info = "Attention lien non valide";
+            return;
+        }
         $bdFlux = new FluxGateway(new Connection($base, $login, $mdp));
         try {
             $bdFlux->insertBrut($idFlux, $lienFlux);

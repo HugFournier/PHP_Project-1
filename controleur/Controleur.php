@@ -28,6 +28,10 @@ class Controleur
                 case "connectionAdmin":
                     $this->FormulaireConnexion();
                     break;
+                case "changerTaillePage":
+                    Modele::setTaillePage($_REQUEST['taillePage']);
+                    header('Location: index.php');
+                    break;
                 case "soumettreConnexion":
                     if(ModeleAdmin::connexion($_REQUEST['id'],$_REQUEST['mdp'], $info)){
                         $_REQUEST['action']="listerFlux";
@@ -51,7 +55,7 @@ class Controleur
             require($rep . $vues['erreur']);
         */
         } catch (Exception $e2) {
-            $dVueEreur[] = "Erreur inattendue!!! ";
+            $dVueEreur[] = "Erreur inattendue!!! ".$e2->getMessage();
             require($rep . $vues['erreur']);
         }
 

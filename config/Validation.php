@@ -37,4 +37,8 @@ class Validation
             $url != "" &&
             filter_var($url, FILTER_SANITIZE_URL);
     }
+
+    static function val_taille_page($taille){
+        return self::val_int($taille) && $taille>0 && $taille<21;
+    }
 }

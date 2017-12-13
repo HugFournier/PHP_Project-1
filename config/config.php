@@ -3,9 +3,7 @@
 //gen
 $rep=__DIR__.'/../';
 
-// liste des modules à inclure
-
-//$dConfig['includes']= array('controleur/Validation.php');
+$taillePage=10;
 
 // Bootstrap
 $front['style'] = "css/style.css";
@@ -24,7 +22,7 @@ $vues['vueConnectionAdmin']='vues/vueConnectionAdmin.php';
 
 //Actions:
 //User:
-$actionUser=[NULL,"listerNews","connectionAdmin","soumettreConnexion"];
+$actionUser=[NULL,"listerNews","connectionAdmin","soumettreConnexion","changerTaillePage"];
 //Admin:
 $actionAdmin=["listerFlux","deconnectionAdmin","supprimerFlux","ajouterFlux"];
 

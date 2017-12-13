@@ -51,7 +51,14 @@ global $front;
     echo "<a href=?action=listerNews&page=" . ($currentPage + 1) . ">></a> | ";
     echo "<a href=?action=listerNews&page=" . $nbPage . ">" . $nbPage . "</a>";
     ?>
-    <br><br>
+    <br>
+    <br>
+    <form METHOD=POST action='index.php?action=changerTaillePage&page=0'>
+        <p>Nombre de news par page</p>
+        <input name="taillePage" type="number" class="button" min="1" max="20">
+        <button TYPE=SUBMIT>Appliquer</button>
+    </form>
+    <br>
     <form>
         <input type="button" class="button" onclick="window.location.href='?action=connectionAdmin'" value="Connexion">
     </form>
