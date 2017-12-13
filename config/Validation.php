@@ -35,7 +35,7 @@ class Validation
         return
             isset($url) &&
             $url != "" &&
-            filter_var($url, FILTER_SANITIZE_URL);
+            filter_var($url, FILTER_VALIDATE_URL);
     }
 
     static function val_taille_page($taille){
