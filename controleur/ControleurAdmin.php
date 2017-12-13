@@ -67,7 +67,7 @@ class ControleurAdmin
     }
 
     function Reinit($info=NULL){
-        $action="connectionAdmin";
+        $_REQUEST['action']="connectionAdmin";
         new FrontControleur();
     }
 }
