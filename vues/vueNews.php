@@ -12,7 +12,7 @@ global $front;
 </head>
 
 <body>
-<div class="container">
+<div class="container text-center">
     <?php
     /**
      * Created by PhpStorm.
@@ -26,10 +26,8 @@ global $front;
     }
     else{
     ?>
-    <h1>
-        Liste des News
-    </h1>
-    <table class="table-bordered full-width">
+    <h1>Liste des news</h1>
+    <table class="full-width">
         <tr>
             <th name="date">Date</th>
             <th name="nom">Nom</th>
@@ -51,18 +49,13 @@ global $front;
     echo "<a href=?action=listerNews&page=" . ($currentPage + 1) . ">></a> | ";
     echo "<a href=?action=listerNews&page=" . $nbPage . ">" . $nbPage . "</a>";
     ?>
-    <br>
-    <br>
-    <form METHOD=POST action='index.php?action=changerTaillePage&page=0'>
-        <p>Nombre de news par page</p>
-        <input name="taillePage" type="number" class="button" min="1" max="20">
-        <button TYPE=SUBMIT>Appliquer</button>
+    <form method="POST" action='index.php?action=changerTaillePage&page=0'>
+        <p>Choisir le nombre de news par page</p>
+        <p>Je te ferai des boutons pour les pages demain, promis !</p>
+        <input class="border-dark inline" type="NUMBER" name="taillePage" min="1" max="20">
+        <input class="border-dark inline" type="SUBMIT" value="Appliquer">
+        <input class="border-dark" type="BUTTON" onclick="window.location.href='?action=connectionAdmin'" value="Connexion">
     </form>
-    <br>
-    <form>
-        <input type="button" class="button" onclick="window.location.href='?action=connectionAdmin'" value="Connexion">
-    </form>
-
 </div>
 </body>
 

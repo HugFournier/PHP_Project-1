@@ -12,8 +12,8 @@ global $front;
 </head>
 
 <body>
-<div class="container">
-    <h1>Liste des Flux</h1>
+<div class="container text-center">
+    <h1>Liste des flux</h1>
     <?php
     /**
      * Created by PhpStorm.
@@ -27,7 +27,7 @@ global $front;
     }
     else{
     ?>
-    <table class="table-bordered full-width text-center">
+    <table class="flux-table full-width text-center">
         <tr>
             <th name="guid">ID</th>
             <th name="lien">Lien</th>
@@ -38,9 +38,9 @@ global $front;
             echo "<tr><td>" . $flux->getId() . "</td>";
             echo "<td><a href=https://" . $flux->getLien() . ">" . $flux->getLien() . "</a></td>";
             echo "<td>
-                        <form METHOD=POST action='index.php?action=supprimerFlux'>
-                            <input hidden='true' NAME=\"idFlux\" VALUE = " . $flux->getId() . ">
-                            <button NAME=\"addOrRemove\" TYPE=SUBMIT ATTR=\"rem\">Supprimer</button>
+                        <form method='POST' action='index.php?action=supprimerFlux'>
+                            <input hidden='true' name=\"idFlux\" value=" . $flux->getId() . ">
+                            <input class='border-dark' name=\"addOrRemove\" type=\"SUBMIT\" attr=\"rem\" value='Supprimer'>
                         </form>
                   </td>
                   </tr>";
@@ -48,15 +48,15 @@ global $front;
         }
         ?>
         <tr>
-            <form METHOD=POST action='index.php?action=ajouterFlux'>
+            <form method="POST" action='index.php?action=ajouterFlux'>
                 <td>
-                    <input TYPE=TEXT NAME="idFlux" required>
+                    <input class="border-dark" type="INPUT" name="idFlux" required>
                 </td>
                 <td>
-                    <input TYPE=TEXT NAME="lienFlux" required>
+                    <input class="border-dark" type="INPUT" name="lienFlux" required>
                 </td>
                 <td>
-                    <button NAME="addOrRemove" TYPE=SUBMIT ATTR="add">Ajouter</button>
+                    <input class="border-dark" name="addOrRemove" type="SUBMIT" attr="add" value="Ajouter">
                 </td>
             </form>
         </tr>
@@ -70,7 +70,7 @@ global $front;
     <?php if (isset($info)) echo "<h5>" . $info . "</h5>"; ?>
     <br><br>
     <form>
-        <input type="button" class="button" onclick="window.location.href='?action=connectionAdmin'" value="Déconnexion">
+        <input class="border-dark" type="button" onclick="window.location.href='?action=connectionAdmin'" value="Déconnexion">
     </form>
     <!--<a href="?action=connectionAdmin">Déconnexion</a></button>-->
 </div>

@@ -9,7 +9,8 @@ global $front;
 
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -17,20 +18,17 @@ global $front;
     <link rel="stylesheet" href="<?php echo $front['style']?>">
 </head>
 
-<center>
-    <h1>Connexion</h1>
-    <?php if(isset($info)) echo "<h2>".$info."</h2>";?>
-    <form METHOD=POST action ="index.php?action=soumettreConnexion">
-        <p class="no-margin">Identifiant</p>
-        <input TYPE=TEXT NAME="id" required>
-        <p class="no-margin">Mot de passe</p>
-        <input TYPE=password NAME="mdp" required><br><br>
-        <button TYPE=SUBMIT>Connexion</button>
+<div class="container-flex">
+    <form class="connection-form" method="POST" action="index.php?action=soumettreConnexion">
+        <h1 class="text-center">Connexion</h1>
+        <?php if(isset($info)) echo "<h2>".$info."</h2>";?>
+        <p>Identifiant</p>
+        <input class="border-dark" type="INPUT" name="id">
+        <p>Mot de passe</p>
+        <input class="border-dark" type="PASSWORD" name="mdp">
+        <input class="border-dark" type="SUBMIT" name="login" value="Connexion">
+        <input class="border-dark" type="BUTTON" onclick="window.location.href='?action=listerNews&page=0'" value="Retour">
     </form>
-    <form>
-        <input type="button" class="button" onclick="window.location.href='?action=listerNews&page=0'" value="Retour">
-    </form>
-    <!--<button><a href="?action=listerNews&page=0">Retour</a></button>-->
-</center>
+</div>
 
 </html>

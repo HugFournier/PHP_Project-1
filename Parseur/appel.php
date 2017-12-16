@@ -2,9 +2,9 @@
 <body>
 <?php
  
-include ('XmlParserExample1.php');
+include('Parseur.php');
          
-$parser = new XmlParserExample1(dirname(__FILE__).'/rss.xml');
+$parser = new Parseur(dirname(__FILE__).'/rss.xml');
 $parser ->parse();
 $result = $parser ->getResult();
 echo $result;

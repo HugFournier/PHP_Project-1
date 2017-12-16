@@ -2,16 +2,6 @@
  * Summary
  ****************************************************************************************************************************************************************
  * Imports
- * 1. Additional properties
- *    - Tables
- *    - Horizontal line
- * 2. News properties
- *    - Tables
- * 3. Connection properties
- *    - Inputs
- * 4. Flux properties
- *    - Tables
- *    - Inputs
  ****************************************************************************************************************************************************************/
 
 /* Imports
@@ -21,62 +11,60 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarala:400,700');
 
-/* 1. Additional properties
- ****************************
- * Selection
- * Tables
- * Horizontal line
+/* 1. Default properties
+ **************************
+ * Colors
+ * Font properties
+ * Margins
+ * ...
  */
-a {
-    color: #A00;
-    text-decoration: none;
-    transition: .2s
-}
-
-a:hover {
-    color: #D00;
-}
-
-button a {
-    color: inherit
-}
-
-button a:hover {
-    color: inherit;
-}
-
-button,
-input.button {
-    background-color: #DDD;
+* {
+    color: #FFF; /* if dark background */
+    font-family: "Montserrat", "Trebuchet MS", sans-serif;
     font-size: 11pt;
-    font-weight: 500;
-    margin: 1px;
-    padding: 5px;
-    transition: .2s
+    line-height: 1.5;
+    margin: 0
 }
 
-button:hover,
-input.button:hover {
-    cursor: pointer
+::selection {
+    background: rgba(0, 70, 100, .5) /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: rgba(0, 70, 100, .5) /* Gecko Browsers */
+}
+
+html {
+    overflow-x: hidden
 }
 
 html,
 body {
-    background: #EEE;
+    height: 100%;
     margin: 0;
-    text-align: center;
     width: 100%
-
 }
 
-.container {
-    margin-left: 15px;
-    margin-right: 15px
+.container,
+.container-flex {
+    padding: 10px 15px
 }
 
-* {
-    font-family: "Montserrat", "Trebuchet MS", Arial, sans-serif;
-    margin: 0
+.container-flex {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%
+}
+
+body {
+    background: rgba(0, 40, 50, 1)
+}
+
+a {
+    color: #0AC;
+    text-decoration: none
 }
 
 h1,
@@ -85,27 +73,44 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Sarala", "Trebuchet MS", Arial, sans-serif;
-    padding: 20px
+    font-family: "Sarala", Arial, sans-serif;
+    font-weight: 800
 }
 
 h1 {
-    font-weight: 700
+    font-size: 28pt
 }
 
-::selection {
-    background: rgba(0, 0, 0, .2) /* WebKit/Blink Browsers */
+h2 {
+    font-size: 24pt
 }
 
-::-moz-selection {
-    background: rgba(0, 0, 0, .2) /* Gecko Browsers */
+h3 {
+    font-size: 20pt
 }
 
-.full-width {
-    width: 100%
+p,
+span,
+a {
+    line-height: 1.5;
+    margin: 0
 }
 
-td, th {
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table,
+td,
+th,
+tr {
+    border: 1px solid #666;
+}
+
+td,
+th,
+tr {
     padding: 5px
 }
 
@@ -116,54 +121,152 @@ hr {
     box-sizing: content-box
 }
 
-.no-margin {
-    margin: 0
-}
-
-table,
-td,
-th,
-tr {
-    background-color: #FFF;
-    border: 1px solid #AAA;
-    border-collapse: collapse;
+/* 2. Text formatting
+ **************************
+ * Superscript
+ * Subscript
+ * Left
+ * Center
+ * Right
+ * Justify
+ */
+.big-title {
+    font-family: "Sarala", Arial, sans-serif;
+    font-size: 48pt;
+    font-weight: 500;
+    margin: 20px auto;
     text-align: center
 }
 
-/* 2. News properties
- ****************************
- * Tables
+sub,
+sup {
+    position: relative;
+    font-size: 75%
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-justify {
+    text-align: justify
+}
+
+/* 3. General formatting
+ **************************
+ * Borders
+ * Forms and inputs
  */
-[name="date"] {
-    width: 20%
+.block {
+    display: block;
+    max-width: 70%
 }
 
-[name="nom"] {
-    width: 20%
+.border-light {
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    padding: 8px
 }
 
-[name="description"] {
-    width: 60%
+.border-dark {
+    border: 1px solid rgba(190, 190, 190, .2);
+    border-radius: 10px;
+    padding: 8px
 }
 
-/* 3. Connection properties
- ****************************
- * Inputs
- */
-input[name="id"],
-input[name="mdp"] {
-    font-weight: 700;
-    margin: 5px;
+.full-width {
+    width: 100%;
+}
+
+.inline {
+    display: inline;
+}
+
+input {
+    background-color: rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+    display: block;
+    margin: 5px auto;
     padding: 5px;
-    text-align: center;
-    width: 30%
+    transition: .4s
 }
 
-/* 4. Flux properties
- ****************************
- * Tables
- * Inputs
+input:hover {
+    background-color: rgba(150, 150, 150, .3);
+    cursor: pointer
+}
+
+/* 4. News properties
+ **************************
+ *
  */
+[name="date"],
+[name="nom"] {
+    width: 15%
+}
+
+/* 5. Connection properties
+ **************************
+ *
+ */
+.connection-form {
+    background-color: rgba(0, 0, 0, .2);
+    border: 2px solid;
+    border-color: rgba(190, 190, 190, .2);
+    border-radius: 16px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    transition: .4s;
+    width: 20%
+}
+
+.connection-form:hover {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.connection-form input {
+    width: 100%
+}
+
+.connection-form input[type="PASSWORD"] {
+    margin-bottom: 20px;
+}
+
+/* 6. Flux properties
+ **************************
+ *
+ */
+.flux-table input[hidden="true"] {
+    display: none
+}
+.flux-table input {
+    width: 100%;
+}
+
+.flux-table input[attr="rem"]:hover {
+    background-color: rgba(150, 0, 0, .3)
+}
+
+.flux-table input[attr="add"]:hover {
+    background-color: rgba(0, 150, 0, .3)
+}
+
 [name="guid"],
 [name="lien"] {
     width: 45%
@@ -171,27 +274,4 @@ input[name="mdp"] {
 
 [name="action"] {
     width: 10%
-}
-
-button[name="addOrRemove"],
-input[name="idFlux"],
-input[name="lienFlux"] {
-    text-align: center;
-    width: 100%
-}
-
-button[ATTR="rem"] {
-    background-color: #FBB
-}
-
-button[ATTR="rem"]:hover {
-    background-color: #F99
-}
-
-button[ATTR="add"] {
-    background-color: #BFB;
-}
-
-button[ATTR="add"]:hover {
-    background-color: #9F9
 }
