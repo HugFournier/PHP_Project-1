@@ -1,24 +1,34 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
-<channel>
-<title>Engadget</title>
-<link>http://www.engadget.com</link>
-<description>Engadget</description>
-<image>
-<url>http://www.engadget.com/media/feedlogo.gif</url>
-<title>Engadget</title>
-<link>http://www.engadget.com</link>
-</image>
-<language>en-us</language>
-<copyright>Copyright 2014 AOL Inc. The contents of this feed are available for non-commercial use only.</copyright>
-<generator>Blogsmith http://www.blogsmith.com/</generator>
-<itunes:author>Terrence O'Brien and Ben Gilbert</itunes:author><itunes:image href="http://www.engadget.com/media/engadget-classic-1400.jpg" /><itunes:summary>Join Terrence O'Brien, Ben Gilbert, Joseph Volpe and a rotating cast of Engadget editors as they break down the latest news, reviews and goings-on in the world of smartphones, laptops, tablets and more</itunes:summary><itunes:category text="Technology"><itunes:category text="Gadgets" /></itunes:category>
-<item>
-<title><![CDATA[NPR One delivers personalized public radio on the go]]></title>
-<link>http://www.engadget.com/2014/07/28/npr-one-app/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/07/28/npr-one-app/</guid>
-<comments>http://www.engadget.com/2014/07/28/npr-one-app/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <title>Engadget</title>
+        <link>http://www.engadget.com</link>
+        <description>Engadget</description>
+        <image>
+            <url>http://www.engadget.com/media/feedlogo.gif</url>
+            <title>Engadget</title>
+            <link>http://www.engadget.com</link>
+        </image>
+        <language>en-us</language>
+        <copyright>Copyright 2014 AOL Inc. The contents of this feed are available for non-commercial use only.
+        </copyright>
+        <generator>Blogsmith http://www.blogsmith.com/</generator>
+        <itunes:author>Terrence O'Brien and Ben Gilbert</itunes:author>
+        <itunes:image href="http://www.engadget.com/media/engadget-classic-1400.jpg"/>
+        <itunes:summary>Join Terrence O'Brien, Ben Gilbert, Joseph Volpe and a rotating cast of Engadget editors as they
+            break down the latest news, reviews and goings-on in the world of smartphones, laptops, tablets and more
+        </itunes:summary>
+        <itunes:category text="Technology">
+            <itunes:category text="Gadgets"/>
+        </itunes:category>
+        <item>
+            <title><![CDATA[NPR One delivers personalized public radio on the go]]></title>
+            <link>http://www.engadget.com/2014/07/28/npr-one-app/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/07/28/npr-one-app/</guid>
+            <comments>http://www.engadget.com/2014/07/28/npr-one-app/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a>, <a href="http://www.engadget.com/category/software/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Software</a>, <a href="http://www.engadget.com/category/mobile/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Mobile</a></p>
 <div style="text-align: center;"><a href="http://www.engadget.com/2014/07/28/npr-one-app/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" src="http://o.aolcdn.com/hss/storage/midas/c2fa350a96e792e2f69666cc3edd440d/200491884/nprone.jpg" data-mep="370420" alt="" /></a></div>
 
@@ -32,24 +42,27 @@
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/07/28/npr-one-app/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>app</category><category>mobilepostcross</category><category>npr</category><category>nprone</category><category>publicradio</category><category>software</category>
+            </description>
+            <category>app</category>
+            <category>mobilepostcross</category>
+            <category>npr</category>
+            <category>nprone</category>
+            <category>publicradio</category>
+            <category>software</category>
 
-<dc:creator><![CDATA[Billy Steele]]></dc:creator>
-<pubDate>Mon, 28 Jul 2014 14:03:00 -0400</pubDate>
+            <dc:creator><![CDATA[Billy Steele]]></dc:creator>
+            <pubDate>Mon, 28 Jul 2014 14:03:00 -0400</pubDate>
 
-</item>
-
-
+        </item>
 
 
-
-<item>
-<title><![CDATA[Engadget Podcast 399 - 5.30.14]]></title>
-<link>http://www.engadget.com/2014/05/30/engadget-podcast-399/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/05/30/engadget-podcast-399/</guid>
-<comments>http://www.engadget.com/2014/05/30/engadget-podcast-399/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 399 - 5.30.14]]></title>
+            <link>http://www.engadget.com/2014/05/30/engadget-podcast-399/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/05/30/engadget-podcast-399/</guid>
+            <comments>http://www.engadget.com/2014/05/30/engadget-podcast-399/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/05/30/engadget-podcast-399/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="278070" src="http://o.aolcdn.com/hss/storage/midas/3917ef8128aada8618681b144933455b/200164391/engadget-classic-630.jpg" alt="" /></a></p>
 We're taking the elephant in the room for a ride this week and jumping right into Apple's <a href="http://www.engadget.com/2014/05/28/apple-acquires-beats-electronics-for-3-billion/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget">purchase of Beats</a>, including both its Electronics and Music divisions. Since we're back in cramped confines of our NYC "studio," that scenario is more implausible than usual, especially with our guest Edgar Alvarez adding to the head count. Space issues like this may soon be forgotten as Oculus is picking up some heavy hitting partners for expansion of its virtual reality plans. This time it's <a href="http://www.engadget.com/2014/05/30/samsung-oculus-partnership/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget">joined forces with Samsung</a> to work on a mobile device-based platform that plans to put VR into the hands of everyday smartphone users. Ben also chats about his visit to the <a href="http://www.engadget.com/2014/05/29/white-house-science-fair-2014/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget">White House Science Fair</a>, where young minds are delivering some serious research and engineering projects. With our future in good hands and delicious waffles on the horizon, we wish you a happy Friday and leave you with another edition of the Engadget Podcast.
@@ -71,21 +84,30 @@ We're taking the elephant in the room for a ride this week and jumping right int
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/05/30/engadget-podcast-399/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>engadget podcast</category><category>engadget podcast 399</category><category>minipost</category><category>podcast</category><category>podcasts</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_399.mp3" length="49919081" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Fri, 30 May 2014 18:29:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 399</itunes:subtitle><itunes:author>Ben Gilbert, Terrence O'Brien, Edgar Alvarez</itunes:author><itunes:duration>56:00</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>engadget podcast</category>
+            <category>engadget podcast 399</category>
+            <category>minipost</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_399.mp3" length="49919081"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Fri, 30 May 2014 18:29:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 399</itunes:subtitle>
+            <itunes:author>Ben Gilbert, Terrence O'Brien, Edgar Alvarez</itunes:author>
+            <itunes:duration>56:00</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
 
-<item>
-<title><![CDATA[Engadget Podcast 398 - 5.26.14]]></title>
-<link>http://www.engadget.com/2014/05/26/engadget-podcast-398/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/05/26/engadget-podcast-398/</guid>
-<comments>http://www.engadget.com/2014/05/26/engadget-podcast-398/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 398 - 5.26.14]]></title>
+            <link>http://www.engadget.com/2014/05/26/engadget-podcast-398/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/05/26/engadget-podcast-398/</guid>
+            <comments>http://www.engadget.com/2014/05/26/engadget-podcast-398/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a>, <a href="http://www.engadget.com/category/microsoft/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Microsoft</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/05/26/engadget-podcast-398/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="272173" src="http://o.aolcdn.com/hss/storage/midas/3917ef8128aada8618681b144933455b/200164391/engadget-classic-630.jpg" alt="" /></a></p>
 It's all happening in San Francisco this week, as your hosts are joined by Tim Seppala and Mat Smith to talk NSA reform, <a href="http://www.engadget.com/2014/05/23/surface-pro-3-review/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget">Surface Pro 3</a>, burritos and.. Guy Fieri? Terrence takes the time to detail the <a href="http://www.engadget.com/2014/05/22/gutted-nsa-reform-bill-passes-the-house-but-sheds-supporters/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget">recent bill</a> that passed in the house, which makes steps in the right direction to rein in the NSA's snooping, but fails to make a serious impact. There's also Microsoft's new "slate-top," a combination of tablet and laptop that's much improved over the previous Surface generation, but at a wallet-busting price. We have plenty more fun and news packed into this edition -- and at least one office dog -- so join us at the streaming links below for our slightly delayed, but worth-the-wait episode of the Engadget Podcast.
@@ -107,22 +129,31 @@ It's all happening in San Francisco this week, as your hosts are joined by Tim S
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/05/26/engadget-podcast-398/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>engadget podcast</category><category>episode 398</category><category>microsoft</category><category>minipost</category><category>podcast</category><category>podcasts</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_398.mp3" length="51470338" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Mon, 26 May 2014 20:01:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 398</itunes:subtitle><itunes:author>Ben Gilbert, Terrence O'Brien, Tim Seppala, Mat Smith</itunes:author><itunes:duration>53:37</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>engadget podcast</category>
+            <category>episode 398</category>
+            <category>microsoft</category>
+            <category>minipost</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_398.mp3" length="51470338"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Mon, 26 May 2014 20:01:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 398</itunes:subtitle>
+            <itunes:author>Ben Gilbert, Terrence O'Brien, Tim Seppala, Mat Smith</itunes:author>
+            <itunes:duration>53:37</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
 
-
-<item>
-<title><![CDATA[Engadget Podcast 397 - 5.16.14]]></title>
-<link>http://www.engadget.com/2014/05/16/engadget-podcast-397/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/05/16/engadget-podcast-397/</guid>
-<comments>http://www.engadget.com/2014/05/16/engadget-podcast-397/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 397 - 5.16.14]]></title>
+            <link>http://www.engadget.com/2014/05/16/engadget-podcast-397/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/05/16/engadget-podcast-397/</guid>
+            <comments>http://www.engadget.com/2014/05/16/engadget-podcast-397/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/05/16/engadget-podcast-397/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="260641" src="http://o.aolcdn.com/hss/storage/midas/1b0e839ea92d70a8dd1ea0cc05e5765b/200046458/engadget-classic-630.jpg" alt="" /></a></p>
 It's been a long and busy week, leaving a newly nicotine-free Terrence a tad more irritable than usual. Ben's been busy too, but that just means long hours of playing <em>Mario Kart 8</em>. Both of these factors seem to cancel each other out and the result is a pleasant stroll through the world of Xbox One, this time <a href="http://www.engadget.com/2014/05/13/xbox-one-400-dollars/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget">sporting a lower price tag</a> and one less peripheral. Is it Microsoft's way to boost sales, or are there more complex plans afoot? It depends on who you listen too, but the Redmond camp believes it's doing gamers with tight budgets <a href="http://www.engadget.com/2014/05/13/xbox-one-price-interview/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget">a big favor</a>. We also dig into the issue of <a href="http://www.engadget.com/2014/05/12/smart-gun-explainer/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget">smart guns</a>: how they work and what it could mean for the future of firearms. So plop on down in your comfiest chair and get ready for the smooth sounds of tech news, brought to you by the Engadget Podcast crew.
@@ -142,20 +173,30 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/05/16/engadget-podcast-397/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>engadget podcast</category><category>engadgetpodcast</category><category>episode 397</category><category>minipost</category><category>podcast</category><category>podcasts</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_397.mp3" length="51747917" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Fri, 16 May 2014 18:46:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 397</itunes:subtitle><itunes:author>Ben Gilbert, Terrence O'Brien</itunes:author><itunes:duration>58:29</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>engadget podcast</category>
+            <category>engadgetpodcast</category>
+            <category>episode 397</category>
+            <category>minipost</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_397.mp3" length="51747917"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Fri, 16 May 2014 18:46:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 397</itunes:subtitle>
+            <itunes:author>Ben Gilbert, Terrence O'Brien</itunes:author>
+            <itunes:duration>58:29</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
-<item>
-<title><![CDATA[The Engadget Podcast is live at 12PM ET!]]></title>
-<link>http://www.engadget.com/2014/05/16/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/05/16/engadget-podcast/</guid>
-<comments>http://www.engadget.com/2014/05/16/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[The Engadget Podcast is live at 12PM ET!]]></title>
+            <link>http://www.engadget.com/2014/05/16/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/05/16/engadget-podcast/</guid>
+            <comments>http://www.engadget.com/2014/05/16/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <div style="text-align: center;"><a href="http://www.engadget.com/2014/05/16/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img alt="" src="http://o.aolcdn.com/hss/storage/midas/92b1fedfff21cb1742fed1f755d20dba/200128376/xb1_engpodcast_630pxhedimg.jpg" /></a></div>
 
@@ -169,22 +210,23 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/05/16/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>podcast</category><category>podcasts</category>
+            </description>
+            <category>podcast</category>
+            <category>podcasts</category>
 
-<dc:creator><![CDATA[Ben Gilbert]]></dc:creator>
-<pubDate>Fri, 16 May 2014 12:30:00 -0400</pubDate>
+            <dc:creator><![CDATA[Ben Gilbert]]></dc:creator>
+            <pubDate>Fri, 16 May 2014 12:30:00 -0400</pubDate>
 
-</item>
+        </item>
 
 
-
-<item>
-<title><![CDATA[Engadget Podcast 396 - 5.9.14]]></title>
-<link>http://www.engadget.com/2014/05/09/engadget-podcast-396/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/05/09/engadget-podcast-396/</guid>
-<comments>http://www.engadget.com/2014/05/09/engadget-podcast-396/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 396 - 5.9.14]]></title>
+            <link>http://www.engadget.com/2014/05/09/engadget-podcast-396/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/05/09/engadget-podcast-396/</guid>
+            <comments>http://www.engadget.com/2014/05/09/engadget-podcast-396/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/05/09/engadget-podcast-396/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="251701" src="http://o.aolcdn.com/hss/storage/midas/1b0e839ea92d70a8dd1ea0cc05e5765b/200046458/engadget-classic-630.jpg" alt="" /></a></p>
 
@@ -205,20 +247,30 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/05/09/engadget-podcast-396/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>engadget podcast</category><category>engadgetpodcast</category><category>episode 396</category><category>minipost</category><category>podcast</category><category>podcasts</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_396-2.mp3" length="49985446" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Fri, 09 May 2014 18:57:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 396</itunes:subtitle><itunes:author>Ben Gilbert, Joseph Volpe</itunes:author><itunes:duration>58:03</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>engadget podcast</category>
+            <category>engadgetpodcast</category>
+            <category>episode 396</category>
+            <category>minipost</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_396-2.mp3" length="49985446"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Fri, 09 May 2014 18:57:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 396</itunes:subtitle>
+            <itunes:author>Ben Gilbert, Joseph Volpe</itunes:author>
+            <itunes:duration>58:03</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
-<item>
-<title><![CDATA[The Engadget Podcast is live at 12PM ET!]]></title>
-<link>http://www.engadget.com/2014/05/09/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/05/09/engadget-podcast/</guid>
-<comments>http://www.engadget.com/2014/05/09/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[The Engadget Podcast is live at 12PM ET!]]></title>
+            <link>http://www.engadget.com/2014/05/09/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/05/09/engadget-podcast/</guid>
+            <comments>http://www.engadget.com/2014/05/09/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/05/09/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img alt="Beats By Dr. Dre &amp; GRAFF Diamonds Special Event" data-caption="NEW YORK, NY - JANUARY 31:  The Million Dollar Headphones by Beats by Dr. Dre &amp; GRAFF Diamonds on January 31, 2014 in New York City.  (Photo by Noam Galai/Getty Images for Beats by Dr. Dre)" data-credit="Getty" data-mep="251077" src="http://o.aolcdn.com/hss/storage/midas/d447afa82729aff588e03269dc64bbc3/200103878/beatsdiamonds_630pxhedimg.jpg" /></a></p>
 
@@ -232,22 +284,24 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/05/09/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>engadgetpodcast</category><category>podcast</category><category>podcasts</category>
+            </description>
+            <category>engadgetpodcast</category>
+            <category>podcast</category>
+            <category>podcasts</category>
 
-<dc:creator><![CDATA[Ben Gilbert]]></dc:creator>
-<pubDate>Fri, 09 May 2014 12:30:00 -0400</pubDate>
+            <dc:creator><![CDATA[Ben Gilbert]]></dc:creator>
+            <pubDate>Fri, 09 May 2014 12:30:00 -0400</pubDate>
 
-</item>
+        </item>
 
 
-
-<item>
-<title><![CDATA[Engadget Podcast 395 - 5.2.14]]></title>
-<link>http://www.engadget.com/2014/05/02/engadget-podcast-395/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/05/02/engadget-podcast-395/</guid>
-<comments>http://www.engadget.com/2014/05/02/engadget-podcast-395/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 395 - 5.2.14]]></title>
+            <link>http://www.engadget.com/2014/05/02/engadget-podcast-395/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/05/02/engadget-podcast-395/</guid>
+            <comments>http://www.engadget.com/2014/05/02/engadget-podcast-395/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/05/02/engadget-podcast-395/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="242814" src="http://o.aolcdn.com/hss/storage/midas/1b0e839ea92d70a8dd1ea0cc05e5765b/200046458/engadget-classic-630.jpg" alt="" /></a></p>
 
@@ -268,21 +322,35 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/05/02/engadget-podcast-395/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>atari</category><category>atari 2600</category><category>e.t. the extra terrestrial</category><category>engadget podcast</category><category>engadgetpodcast</category><category>episode 395</category><category>minipost</category><category>podcast</category><category>podcasts</category><category>yars revenge</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_395.mp3" length="51404839" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Fri, 02 May 2014 18:45:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 395</itunes:subtitle><itunes:author>Terrence O'Brien, Ben Gilbert</itunes:author><itunes:duration>58:12</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>atari</category>
+            <category>atari 2600</category>
+            <category>e.t. the extra terrestrial</category>
+            <category>engadget podcast</category>
+            <category>engadgetpodcast</category>
+            <category>episode 395</category>
+            <category>minipost</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <category>yars revenge</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_395.mp3" length="51404839"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Fri, 02 May 2014 18:45:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 395</itunes:subtitle>
+            <itunes:author>Terrence O'Brien, Ben Gilbert</itunes:author>
+            <itunes:duration>58:12</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
 
-<item>
-<title><![CDATA[Engadget Podcast 394 - 4.25.14]]></title>
-<link>http://www.engadget.com/2014/04/25/engadget-podcast-394/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/04/25/engadget-podcast-394/</guid>
-<comments>http://www.engadget.com/2014/04/25/engadget-podcast-394/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 394 - 4.25.14]]></title>
+            <link>http://www.engadget.com/2014/04/25/engadget-podcast-394/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/04/25/engadget-podcast-394/</guid>
+            <comments>http://www.engadget.com/2014/04/25/engadget-podcast-394/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/04/25/engadget-podcast-394/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="232113" src="http://o.aolcdn.com/hss/storage/midas/1b0e839ea92d70a8dd1ea0cc05e5765b/200046458/engadget-classic-630.jpg" alt="" /></a></p>
 
@@ -305,21 +373,33 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/04/25/engadget-podcast-394/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>aereo</category><category>engadget podcast</category><category>fcc</category><category>minipost</category><category>net neutrality</category><category>podcast</category><category>podcasts</category><category>supreme court</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_394.mp3" length="49694743" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Fri, 25 Apr 2014 19:30:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 394</itunes:subtitle><itunes:author>Ben Gilbert, Terrence O'Brien, Michael Gorman</itunes:author><itunes:duration>59:53</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>aereo</category>
+            <category>engadget podcast</category>
+            <category>fcc</category>
+            <category>minipost</category>
+            <category>net neutrality</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <category>supreme court</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_394.mp3" length="49694743"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Fri, 25 Apr 2014 19:30:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 394</itunes:subtitle>
+            <itunes:author>Ben Gilbert, Terrence O'Brien, Michael Gorman</itunes:author>
+            <itunes:duration>59:53</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
 
-<item>
-<title><![CDATA[Engadget Podcast 393 - 4.18.14]]></title>
-<link>http://www.engadget.com/2014/04/18/engadget-podcast-393/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/04/18/engadget-podcast-393/</guid>
-<comments>http://www.engadget.com/2014/04/18/engadget-podcast-393/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 393 - 4.18.14]]></title>
+            <link>http://www.engadget.com/2014/04/18/engadget-podcast-393/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/04/18/engadget-podcast-393/</guid>
+            <comments>http://www.engadget.com/2014/04/18/engadget-podcast-393/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/04/18/engadget-podcast-393/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="223885" src="http://o.aolcdn.com/hss/storage/midas/1b0e839ea92d70a8dd1ea0cc05e5765b/200046458/engadget-classic-630.jpg" alt="" /></a></p>
 
@@ -340,22 +420,35 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/04/18/engadget-podcast-393/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>engadget podcast</category><category>heartbleed</category><category>minipost</category><category>podcast</category><category>podcasts</category><category>project ara</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_393.mp3" length="46997222" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Fri, 18 Apr 2014 17:01:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 393</itunes:subtitle><itunes:author>Terrence O'Brien, Ben Gilbert</itunes:author><itunes:duration>52:30</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>engadget podcast</category>
+            <category>heartbleed</category>
+            <category>minipost</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <category>project ara</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_393.mp3" length="46997222"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Fri, 18 Apr 2014 17:01:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 393</itunes:subtitle>
+            <itunes:author>Terrence O'Brien, Ben Gilbert</itunes:author>
+            <itunes:duration>52:30</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
 
-
-<item>
-<title><![CDATA[Engadget Podcast 392: The whiskey 'sode]]></title>
-<link>http://www.engadget.com/2014/04/14/engadget-podcast-392-whiskey-edition/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/04/14/engadget-podcast-392-whiskey-edition/</guid>
-<comments>http://www.engadget.com/2014/04/14/engadget-podcast-392-whiskey-edition/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 392: The whiskey 'sode]]></title>
+            <link>
+                http://www.engadget.com/2014/04/14/engadget-podcast-392-whiskey-edition/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget
+            </link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/04/14/engadget-podcast-392-whiskey-edition/</guid>
+            <comments>
+                http://www.engadget.com/2014/04/14/engadget-podcast-392-whiskey-edition/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments
+            </comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <div style="text-align: center;"><a href="http://www.engadget.com/2014/04/14/engadget-podcast-392-whiskey-edition/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="Alamy" data-mep="217156" src="http://o.aolcdn.com/hss/storage/midas/17241cc68b7271c846a26bf8314804d5/200030940/podcast-392-hed-3.jpg" alt="" /></a></div>
 
@@ -378,22 +471,36 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/04/14/engadget-podcast-392-whiskey-edition/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>discovery app</category><category>distiller</category><category>engadget podcast</category><category>engadgetpodcast</category><category>minipost</category><category>podcast</category><category>podcasts</category><category>very special episode</category><category>veryspecialepisode</category><category>vse</category><category>whiskey</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_392.mp3" length="53593986" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Mon, 14 Apr 2014 17:00:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 392 (Whiskey edition)</itunes:subtitle><itunes:author>Joseph Volpe, Terrence O'Brien, Ben Gilbert</itunes:author><itunes:duration>1:07:45</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>discovery app</category>
+            <category>distiller</category>
+            <category>engadget podcast</category>
+            <category>engadgetpodcast</category>
+            <category>minipost</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <category>very special episode</category>
+            <category>veryspecialepisode</category>
+            <category>vse</category>
+            <category>whiskey</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_392.mp3" length="53593986"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Mon, 14 Apr 2014 17:00:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 392 (Whiskey edition)</itunes:subtitle>
+            <itunes:author>Joseph Volpe, Terrence O'Brien, Ben Gilbert</itunes:author>
+            <itunes:duration>1:07:45</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
 
-
-<item>
-<title><![CDATA[Engadget Podcast 391 - 4.4.14]]></title>
-<link>http://www.engadget.com/2014/04/04/engadget-podcast-391/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/04/04/engadget-podcast-391/</guid>
-<comments>http://www.engadget.com/2014/04/04/engadget-podcast-391/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 391 - 4.4.14]]></title>
+            <link>http://www.engadget.com/2014/04/04/engadget-podcast-391/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/04/04/engadget-podcast-391/</guid>
+            <comments>http://www.engadget.com/2014/04/04/engadget-podcast-391/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/04/04/engadget-podcast-391/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" src="http://o.aolcdn.com/hss/storage/midas/1b0e839ea92d70a8dd1ea0cc05e5765b/200046458/engadget-classic-630.jpg" data-mep="223887" alt="" /></a></p>
 
@@ -414,20 +521,29 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/04/04/engadget-podcast-391/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>engadget podcast</category><category>engadgetpodcast</category><category>minipost</category><category>podcast</category><category>podcasts</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_391.mp3" length="68726106" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Fri, 04 Apr 2014 19:48:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 391</itunes:subtitle><itunes:author>Joseph Volpe, Ben Gilbert, Terrence O'Brien</itunes:author><itunes:duration>1:18:47</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>engadget podcast</category>
+            <category>engadgetpodcast</category>
+            <category>minipost</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_391.mp3" length="68726106"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Fri, 04 Apr 2014 19:48:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 391</itunes:subtitle>
+            <itunes:author>Joseph Volpe, Ben Gilbert, Terrence O'Brien</itunes:author>
+            <itunes:duration>1:18:47</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
-<item>
-<title><![CDATA[The Engadget Podcast is live at 12PM ET!]]></title>
-<link>http://www.engadget.com/2014/04/04/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/04/04/engadget-podcast/</guid>
-<comments>http://www.engadget.com/2014/04/04/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[The Engadget Podcast is live at 12PM ET!]]></title>
+            <link>http://www.engadget.com/2014/04/04/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/04/04/engadget-podcast/</guid>
+            <comments>http://www.engadget.com/2014/04/04/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/gaming/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Gaming</a>, <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a>, <a href="http://www.engadget.com/category/microsoft/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Microsoft</a>, <a href="http://www.engadget.com/category/amazon/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Amazon</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/04/04/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img alt="" src="http://o.aolcdn.com/hss/storage/midas/690e40155fc7287874bfc777dfdca27a/200008437/aliciakeys_firetv_FIARRRRRRR.jpg" /></a></p>
 
@@ -443,22 +559,27 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/04/04/engadget-podcast/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>amazon</category><category>build2014</category><category>firetv</category><category>microsoft</category><category>podcast</category><category>podcasts</category>
+            </description>
+            <category>amazon</category>
+            <category>build2014</category>
+            <category>firetv</category>
+            <category>microsoft</category>
+            <category>podcast</category>
+            <category>podcasts</category>
 
-<dc:creator><![CDATA[Ben Gilbert]]></dc:creator>
-<pubDate>Fri, 04 Apr 2014 12:30:00 -0400</pubDate>
+            <dc:creator><![CDATA[Ben Gilbert]]></dc:creator>
+            <pubDate>Fri, 04 Apr 2014 12:30:00 -0400</pubDate>
 
-</item>
+        </item>
 
 
-
-<item>
-<title><![CDATA[Engadget Podcast 390 - 3.28.14]]></title>
-<link>http://www.engadget.com/2014/03/28/engadget-podcast-390/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/03/28/engadget-podcast-390/</guid>
-<comments>http://www.engadget.com/2014/03/28/engadget-podcast-390/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 390 - 3.28.14]]></title>
+            <link>http://www.engadget.com/2014/03/28/engadget-podcast-390/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/03/28/engadget-podcast-390/</guid>
+            <comments>http://www.engadget.com/2014/03/28/engadget-podcast-390/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p><a href="http://www.engadget.com/2014/03/28/engadget-podcast-390/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="194496" src="http://o.aolcdn.com/hss/storage/adam/a4bc6fecbd2d04b593b919594b31e15b/engadget-classic-630.jpg" alt="" /></a></p>
 
@@ -479,20 +600,31 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/03/28/engadget-podcast-390/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>engadget podcast</category><category>engadgetpodcast</category><category>minipost</category><category>podcast</category><category>podcasts</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_390.mp3" length="56910710" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Fri, 28 Mar 2014 17:52:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 390</itunes:subtitle><itunes:author>Joseph Volpe, Ben Gilbert, Terrence O'Brien</itunes:author><itunes:duration>1:04:42</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>engadget podcast</category>
+            <category>engadgetpodcast</category>
+            <category>minipost</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_390.mp3" length="56910710"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Fri, 28 Mar 2014 17:52:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 390</itunes:subtitle>
+            <itunes:author>Joseph Volpe, Ben Gilbert, Terrence O'Brien</itunes:author>
+            <itunes:duration>1:04:42</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
-<item>
-<title><![CDATA[The Engadget Podcast is live at 12PM ET!]]></title>
-<link>http://www.engadget.com/2014/03/28/engadget-podcast-oculus-facebook/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/03/28/engadget-podcast-oculus-facebook/</guid>
-<comments>http://www.engadget.com/2014/03/28/engadget-podcast-oculus-facebook/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[The Engadget Podcast is live at 12PM ET!]]></title>
+            <link>http://www.engadget.com/2014/03/28/engadget-podcast-oculus-facebook/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/03/28/engadget-podcast-oculus-facebook/</guid>
+            <comments>
+                http://www.engadget.com/2014/03/28/engadget-podcast-oculus-facebook/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments
+            </comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <div style="text-align: center;"><a href="http://www.engadget.com/2014/03/28/engadget-podcast-oculus-facebook/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="193763" src="http://o.aolcdn.com/hss/storage/adam/833e0171ec817c421717599a5cac7ba3/engadget-classic-630.jpg" alt="" /></a></div>
 
@@ -510,23 +642,31 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/03/28/engadget-podcast-oculus-facebook/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>engadgetpodcast</category><category>facebook</category><category>htcone2014</category><category>oculus</category><category>OculusRift</category><category>PalmerLuckey</category><category>Podcasts</category><category>poll</category><category>vr</category><category>wedgies</category>
+            </description>
+            <category>engadgetpodcast</category>
+            <category>facebook</category>
+            <category>htcone2014</category>
+            <category>oculus</category>
+            <category>OculusRift</category>
+            <category>PalmerLuckey</category>
+            <category>Podcasts</category>
+            <category>poll</category>
+            <category>vr</category>
+            <category>wedgies</category>
 
-<dc:creator><![CDATA[Joseph Volpe]]></dc:creator>
-<pubDate>Fri, 28 Mar 2014 12:30:00 -0400</pubDate>
+            <dc:creator><![CDATA[Joseph Volpe]]></dc:creator>
+            <pubDate>Fri, 28 Mar 2014 12:30:00 -0400</pubDate>
 
-</item>
-
-
+        </item>
 
 
-<item>
-<title><![CDATA[Engadget Podcast 389 - 3.21.14]]></title>
-<link>http://www.engadget.com/2014/03/21/engadget-podcast-389/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/03/21/engadget-podcast-389/</guid>
-<comments>http://www.engadget.com/2014/03/21/engadget-podcast-389/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[Engadget Podcast 389 - 3.21.14]]></title>
+            <link>http://www.engadget.com/2014/03/21/engadget-podcast-389/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/03/21/engadget-podcast-389/</guid>
+            <comments>http://www.engadget.com/2014/03/21/engadget-podcast-389/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p><a href="http://www.engadget.com/2014/03/21/engadget-podcast-389/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="181644" src="http://o.aolcdn.com/hss/storage/adam/a4bc6fecbd2d04b593b919594b31e15b/engadget-classic-630.jpg" alt="" /></a></p>
 
@@ -547,20 +687,29 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/03/21/engadget-podcast-389/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>engadget podcast</category><category>engadgetpodcast</category><category>minipost</category><category>podcast</category><category>podcasts</category>
-<enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_389.mp3" length="50820231" type="audio/mpeg"/>
-<dc:creator><![CDATA[Jon Turi]]></dc:creator>
-<pubDate>Fri, 21 Mar 2014 18:30:00 -0400</pubDate>
-<itunes:subtitle>Engadget Podcast 389</itunes:subtitle><itunes:author>Joseph Volpe, Terrence O'Brien, Ben Gilbert</itunes:author><itunes:duration>1:00:41</itunes:duration><itunes:keywords>podcasts</itunes:keywords>
-</item>
+            </description>
+            <category>engadget podcast</category>
+            <category>engadgetpodcast</category>
+            <category>minipost</category>
+            <category>podcast</category>
+            <category>podcasts</category>
+            <enclosure url="http://www.engadget.com/podcasts/Engadget_Podcast_389.mp3" length="50820231"
+                       type="audio/mpeg"/>
+            <dc:creator><![CDATA[Jon Turi]]></dc:creator>
+            <pubDate>Fri, 21 Mar 2014 18:30:00 -0400</pubDate>
+            <itunes:subtitle>Engadget Podcast 389</itunes:subtitle>
+            <itunes:author>Joseph Volpe, Terrence O'Brien, Ben Gilbert</itunes:author>
+            <itunes:duration>1:00:41</itunes:duration>
+            <itunes:keywords>podcasts</itunes:keywords>
+        </item>
 
-<item>
-<title><![CDATA[The Engadget Podcast is live at 11AM ET!]]></title>
-<link>http://www.engadget.com/2014/03/21/engadget-podcast-vr/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
-<guid isPermaLink="false">http://www.engadget.com/2014/03/21/engadget-podcast-vr/</guid>
-<comments>http://www.engadget.com/2014/03/21/engadget-podcast-vr/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments><description>
-<![CDATA[
+        <item>
+            <title><![CDATA[The Engadget Podcast is live at 11AM ET!]]></title>
+            <link>http://www.engadget.com/2014/03/21/engadget-podcast-vr/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget</link>
+            <guid isPermaLink="false">http://www.engadget.com/2014/03/21/engadget-podcast-vr/</guid>
+            <comments>http://www.engadget.com/2014/03/21/engadget-podcast-vr/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments</comments>
+            <description>
+                <![CDATA[
 <p>Filed under: <a href="http://www.engadget.com/category/podcasts/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget" rel="tag">Podcasts</a></p>
 <p class="image-container" style="text-align: center;"><a href="http://www.engadget.com/2014/03/21/engadget-podcast-vr/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget"><img data-credit="AOL" data-mep="182061" src="http://o.aolcdn.com/hss/storage/adam/38b7df6c98fffc2542ec6699671a383/engadget-classic-630.jpg" alt="" /></a></p>
 
@@ -574,12 +723,17 @@ It's been a long and busy week, leaving a newly nicotine-free Terrence a tad mor
 &nbsp;|&nbsp;
 <a href="http://www.engadget.com/2014/03/21/engadget-podcast-vr/?utm_source=Classic_Podcasts_Mp3&amp;utm_medium=feed&amp;utm_campaign=Engadget#comments" title="View reader comments on this entry">Comments</a>
 ]]>
-</description>
-<category>EngadgetPodcast</category><category>podcasts</category><category>poll</category><category>vr</category><category>wedgies</category>
+            </description>
+            <category>EngadgetPodcast</category>
+            <category>podcasts</category>
+            <category>poll</category>
+            <category>vr</category>
+            <category>wedgies</category>
 
-<dc:creator><![CDATA[Joseph Volpe]]></dc:creator>
-<pubDate>Fri, 21 Mar 2014 11:30:00 -0400</pubDate>
+            <dc:creator><![CDATA[Joseph Volpe]]></dc:creator>
+            <pubDate>Fri, 21 Mar 2014 11:30:00 -0400</pubDate>
 
-</item>
+        </item>
 
-</channel></rss>
+    </channel>
+</rss>

@@ -11,7 +11,7 @@ class Controleur
 //debut
 
 //on initialise un tableau d'erreur
-        if(!isset($dVueEreur)) $dVueEreur = array();
+        if (!isset($dVueEreur)) $dVueEreur = array();
 
         try {
             $action = $_REQUEST['action'];
@@ -33,11 +33,10 @@ class Controleur
                     header('Location: index.php');
                     break;
                 case "soumettreConnexion":
-                    if(ModeleAdmin::connexion($_REQUEST['id'],$_REQUEST['mdp'], $info)){
-                        $_REQUEST['action']="listerFlux";
+                    if (ModeleAdmin::connexion($_REQUEST['id'], $_REQUEST['mdp'], $info)) {
+                        $_REQUEST['action'] = "listerFlux";
                         new FrontControleur();
-                    }
-                    else{
+                    } else {
                         $this->FormulaireConnexion($info);
                     }
                     break;
@@ -49,13 +48,13 @@ class Controleur
                     break;
             }
 
-        /*} catch (PDOException $e) {
-            //si erreur BD, pas le cas ici
-            $dVueEreur[] = "Erreur PDO inattendue!!! ";
-            require($rep . $vues['erreur']);
-        */
+            /*} catch (PDOException $e) {
+                //si erreur BD, pas le cas ici
+                $dVueEreur[] = "Erreur PDO inattendue!!! ";
+                require($rep . $vues['erreur']);
+            */
         } catch (Exception $e2) {
-            $dVueEreur[] = "Erreur inattendue!!! ".$e2->getMessage();
+            $dVueEreur[] = "Erreur inattendue!!! " . $e2->getMessage();
             require($rep . $vues['erreur']);
         }
 
@@ -68,15 +67,16 @@ class Controleur
     function Reinit()
     {
         global $rep, $vues;
-        $nbPage=Modele::nbPage();
-        $currentPage=Validation::val_page($_GET['page'],$nbPage);
-        $bdNews=Modele::listerNews($currentPage);
-        require($rep.$vues['vueNews']);
+        $nbPage = Modele::nbPage();
+        $currentPage = Validation::val_page($_GET['page'], $nbPage);
+        $bdNews = Modele::listerNews($currentPage);
+        require($rep . $vues['vueNews']);
     }
 
-    function FormulaireConnexion($info=NULL){
+    function FormulaireConnexion($info = NULL)
+    {
         global $rep, $vues;
-        require($rep.$vues['vueConnectionAdmin']);
+        require($rep . $vues['vueConnectionAdmin']);
     }
 
 }//fin class

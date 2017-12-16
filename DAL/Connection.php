@@ -28,7 +28,7 @@ class Connection extends PDO
                 $this->stmt->bindValue($name, $value[0], $value[1]);
             return $this->stmt->execute();
         } catch (PDOException $e) {
-            if($e->getCode()==23000){
+            if ($e->getCode() == 23000) {
                 throw new Exception("violation contrainte");
             }
             throw new Exception("Requête SQL impossible");
@@ -39,7 +39,7 @@ class Connection extends PDO
     {
         try {
             return $this->stmt->fetchall();
-        }catch(PDOException $e){
+        } catch (PDOException $e) {
             throw new Exception("Problème résultat requête SQL");
         }
     }

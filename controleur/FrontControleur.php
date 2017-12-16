@@ -17,29 +17,27 @@ class FrontControleur
         $dVueEreur = array();
 
         try {
-            if(self::val_actionAdmin($_REQUEST['action'])){
+            if (self::val_actionAdmin($_REQUEST['action'])) {
                 //ctrlAdmin
-                if(!ModeleAdmin::isAdmin()){
-                    $_REQUEST['action']="connectionAdmin";
+                if (!ModeleAdmin::isAdmin()) {
+                    $_REQUEST['action'] = "connectionAdmin";
                     new Controleur();
                 }
                 new ControleurAdmin();
-            }
-            else if(self::val_actionUser($_REQUEST['action'])){
+            } else if (self::val_actionUser($_REQUEST['action'])) {
                 //ctrlUser
                 new Controleur();
-            }
-            else{
+            } else {
                 //erreur
                 $dVueEreur[] = "Erreur d'appel php";
                 require($rep . $vues['erreur']);
             }
 
-        /*} catch (PDOException $e) {
-            //si erreur BD, pas le cas ici
-            $dVueEreur[] = "Erreur inattendue!!! ";
-            require($rep . $vues['erreur']);
-        */
+            /*} catch (PDOException $e) {
+                //si erreur BD, pas le cas ici
+                $dVueEreur[] = "Erreur inattendue!!! ";
+                require($rep . $vues['erreur']);
+            */
         } catch (Exception $e2) {
             $dVueEreur[] = "Erreur inattendue!!! ";
             require($rep . $vues['erreur']);
@@ -49,17 +47,16 @@ class FrontControleur
     }//fin constructeur
 
 
-
     static function val_actionAdmin($action)
     {
         global $actionAdmin;
-        return in_array($action,$actionAdmin);
+        return in_array($action, $actionAdmin);
     }
 
     static function val_actionUser($action)
     {
         global $actionUser;
-        return in_array($action,$actionUser);
+        return in_array($action, $actionUser);
     }
 
 }

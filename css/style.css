@@ -255,6 +255,7 @@ input:hover {
 .flux-table input[hidden="true"] {
     display: none
 }
+
 .flux-table input {
     width: 100%;
 }

@@ -57,7 +57,7 @@ class Flux
 
     public function __toString()
     {
-        return "|_" . $this->getId()."_|_<a href=https://".$this->getLien().">Lien</a>_|";
+        return "|_" . $this->getId() . "_|_<a href=https://" . $this->getLien() . ">Lien</a>_|";
     }
 
 

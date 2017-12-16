@@ -28,8 +28,8 @@ class AdminGateway
         );
 
         $this->con->executeQuery($query, $argument);
-        $result=$this->con->getResults();
+        $result = $this->con->getResults();
 
-        return password_verify($mdp,$result[0]['mdp']);
+        return password_verify($mdp, $result[0]['mdp']);
     }
 }

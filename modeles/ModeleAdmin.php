@@ -56,7 +56,7 @@ class ModeleAdmin
             $info = "Attention tentative de piratage ! (sécurisé)";
             return;
         }
-        if(!Validation::val_url($lienFlux)){
+        if (!Validation::val_url($lienFlux)) {
             $info = "Attention lien non valide";
             return;
         }

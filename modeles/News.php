@@ -21,13 +21,13 @@ class News
      * @param $titre
      * @param $lien
      */
-    public function __construct($titre, $lien, $description, $dateNews=null, $id=null)
+    public function __construct($titre, $lien, $description, $dateNews = null, $id = null)
     {
-        if($dateNews==null){
-            $dateNews=date('Y-m-d h:i:s');
+        if ($dateNews == null) {
+            $dateNews = date('Y-m-d h:i:s');
         }
-        if($id==null){
-            $id=$lien;
+        if ($id == null) {
+            $id = $lien;
         }
         $this->id = $id;
         $this->dateNews = $dateNews;
@@ -118,7 +118,7 @@ class News
 
     public function __toString()
     {
-        return "|_" . $this->getId()."_|_".$this->getDateNews()."_|_".$this->getTitre()."_|_".$this->getDescription()."_|_<a href=https://".$this->getLien().">Lien</a>_|";
+        return "|_" . $this->getId() . "_|_" . $this->getDateNews() . "_|_" . $this->getTitre() . "_|_" . $this->getDescription() . "_|_<a href=https://" . $this->getLien() . ">Lien</a>_|";
     }
 
 

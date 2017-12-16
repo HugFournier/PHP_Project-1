@@ -54,7 +54,8 @@ global $front;
         <p>Je te ferai des boutons pour les pages demain, promis !</p>
         <input class="border-dark inline" type="NUMBER" name="taillePage" min="1" max="20">
         <input class="border-dark inline" type="SUBMIT" value="Appliquer">
-        <input class="border-dark" type="BUTTON" onclick="window.location.href='?action=connectionAdmin'" value="Connexion">
+        <input class="border-dark" type="BUTTON" onclick="window.location.href='?action=connectionAdmin'"
+               value="Connexion">
     </form>
 </div>
 </body>

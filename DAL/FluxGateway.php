@@ -22,8 +22,8 @@ class FluxGateway
         $query = "INSERT INTO `Flux` (`ID`, `lien`) VALUES (:id, :lien)";
 
         $argument = array(
-            ':id'=>array($id, PDO::PARAM_STR),
-            ':lien'=>array($lien, PDO::PARAM_STR)
+            ':id' => array($id, PDO::PARAM_STR),
+            ':lien' => array($lien, PDO::PARAM_STR)
         );
         $this->con->executeQuery($query, $argument);
 
@@ -35,10 +35,11 @@ class FluxGateway
         return $this->insertBrut($f->getId(), $f->getLien());
     }
 
-    public function delete($id){
+    public function delete($id)
+    {
         $query = "DELETE FROM `Flux` WHERE `Flux`.`ID` = :id";
         $argument = array(
-            ':id'=>array($id, PDO::PARAM_STR)
+            ':id' => array($id, PDO::PARAM_STR)
         );
         $this->con->executeQuery($query, $argument);
     }
@@ -54,7 +55,8 @@ class FluxGateway
     }
     */
 
-    public function findAll(){
+    public function findAll()
+    {
         $query = "SELECT * FROM Flux";
         $this->con->executeQuery($query);
         //foreach($l as $r)$retour[]=new News($r['titre'],$r['lien'],$r['description'],$r['date'],$r['guid']);

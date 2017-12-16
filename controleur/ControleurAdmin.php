@@ -13,11 +13,11 @@ class ControleurAdmin
         global $rep, $vues;
 
 //on initialise un tableau d'erreur
-        if(!isset($dVueEreur)) $dVueEreur = array();
+        if (!isset($dVueEreur)) $dVueEreur = array();
 
         try {
             $action = $_REQUEST['action'];
-            if(!ModeleAdmin::isAdmin()){
+            if (!ModeleAdmin::isAdmin()) {
                 $this->Reinit();
             }
 
@@ -29,7 +29,7 @@ class ControleurAdmin
                     $this->ListerFlux();
                     break;
                 case "ajouterFlux":
-                    ModeleAdmin::ajouterFlux($_REQUEST["idFlux"],$_REQUEST["lienFlux"],$info);
+                    ModeleAdmin::ajouterFlux($_REQUEST["idFlux"], $_REQUEST["lienFlux"], $info);
                     $this->ListerFlux($info);
                     break;
                 case "supprimerFlux":
@@ -47,27 +47,28 @@ class ControleurAdmin
                     break;
             }
 
-        /*
-         } catch (PDOException $e) {
-            //si erreur BD, pas le cas ici
-            $dVueEreur[] = "Erreur PDO inattendue!!! ";
-            require($rep . $vues['erreur']);
-        */
+            /*
+             } catch (PDOException $e) {
+                //si erreur BD, pas le cas ici
+                $dVueEreur[] = "Erreur PDO inattendue!!! ";
+                require($rep . $vues['erreur']);
+            */
         } catch (Exception $e2) {
-            $dVueEreur[] = "Erreur inattendue : ".$e2->getMessage();
+            $dVueEreur[] = "Erreur inattendue : " . $e2->getMessage();
             require($rep . $vues['erreur']);
         }
     }//fin constructeur
 
-    function ListerFlux($info=NULL)
+    function ListerFlux($info = NULL)
     {
         global $rep, $vues;
-        $bdFlux=ModeleAdmin::listerFlux();
-        require($rep.$vues['vueFlux']);
+        $bdFlux = ModeleAdmin::listerFlux();
+        require($rep . $vues['vueFlux']);
     }
 
-    function Reinit($info=NULL){
-        $_REQUEST['action']="connectionAdmin";
+    function Reinit($info = NULL)
+    {
+        $_REQUEST['action'] = "connectionAdmin";
         new FrontControleur();
     }
 }

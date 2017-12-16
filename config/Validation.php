@@ -25,10 +25,11 @@ class Validation
     {
         return
             isset($entier) &&
-            $entier != ""&&
+            $entier != "" &&
             filter_var($entier, FILTER_SANITIZE_NUMBER_INT) &&
             filter_var($entier, FILTER_VALIDATE_INT);
     }
+
 
     static function val_url($url)
     {
@@ -38,7 +39,8 @@ class Validation
             filter_var($url, FILTER_VALIDATE_URL);
     }
 
-    static function val_taille_page($taille){
-        return self::val_int($taille) && $taille>0 && $taille<21;
+    static function val_taille_page($taille)
+    {
+        return self::val_int($taille) && $taille > 0 && $taille < 21;
     }
 }
