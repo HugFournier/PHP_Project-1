@@ -27,7 +27,7 @@ global $front;
     else{
     ?>
     <h1>Liste des news</h1>
-    <table class="full-width">
+    <table attr-top="SPACED" attr-bottom="SPACED" class="full-width">
         <tr>
             <th name="date">Date</th>
             <th name="nom">Nom</th>
@@ -49,7 +49,7 @@ global $front;
     <input class='border-intermediate inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo ($currentPage + 1) ?>'" value='Suivant'>
     <input class='border-intermediate inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo $nbPage ?>'" value='<?php echo $nbPage ?>'>
 
-    <form method="POST" action='index.php?action=changerTaillePage&page=0'>
+    <form attr-top="SPACED" attr-bottom="SPACED" method="POST" action='index.php?action=changerTaillePage&page=0'>
         <p>Choisir le nombre de news par page</p>
         <input class="border-intermediate inline" type="NUMBER" name="taillePage" min="1" max="20">
         <input class="border-intermediate inline" type="SUBMIT" value="Appliquer">

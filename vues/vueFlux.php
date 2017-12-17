@@ -70,9 +70,9 @@ global $front;
     <?php if (isset($info)) echo "<h5>" . $info . "</h5>"; ?>
     <br><br>
     <form>
-        <input class="border-intermediate" type="button" onclick="window.location.href='?action=connectionAdmin'" value="Déconnexion">
+        <input class="border-intermediate" type="button" onclick="window.location.href='?action=connectionAdmin'"
+               value="Déconnexion">
     </form>
-    <!--<a href="?action=connectionAdmin">Déconnexion</a></button>-->
 </div>
 </body>
 

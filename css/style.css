@@ -2,6 +2,11 @@
  * Summary
  ****************************************************************************************************************************************************************
  * Imports
+ * 1. Default properties
+ * 2. Text formatting
+ * 3. News properties
+ * 4. Connection properties
+ * 5. Flux properties
  ****************************************************************************************************************************************************************/
 
 /* Imports
@@ -100,6 +105,7 @@ a {
 table {
     border-spacing: 0;
     border-collapse: collapse;
+    margin-top: 48px;
     margin-bottom: 48px
 }
 
@@ -206,6 +212,26 @@ sub {
     display: inline;
 }
 
+[attr-top="SPACED"] {
+    margin-top: 32px
+}
+
+[attr-bottom="SPACED"] {
+    margin-bottom: 32px
+}
+
+[attr-left="SPACED"] {
+    margin-left: 32px
+}
+
+[attr-right="SPACED"] {
+    margin-right: 32px
+}
+
+.error {
+    color: #A00
+}
+
 input {
     background-color: rgba(0, 0, 0, .3);
     box-sizing: border-box;
@@ -258,10 +284,6 @@ input[type="TEXT"] {
 
 .connection-form input {
     width: 100%
-}
-
-.connection-form input[type="PASSWORD"] {
-    margin-bottom: 20px;
 }
 
 /* 6. Flux properties
