@@ -50,7 +50,7 @@ global $front;
     <input class='border-intermediate inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo $nbPage ?>'" value='<?php echo $nbPage ?>'>
 
     <form attr-top="SPACED" attr-bottom="SPACED" method="POST" action='index.php?action=changerTaillePage&page=0'>
-        <p>Choisir le nombre de news par page</p>
+        <p>Nombre de news par page (1-20)</p>
         <input class="border-intermediate inline" type="NUMBER" name="taillePage" min="1" max="20">
         <input class="border-intermediate inline" type="SUBMIT" value="Appliquer">
         <input class="border-intermediate" type="BUTTON" onclick="window.location.href='?action=connectionAdmin'"
