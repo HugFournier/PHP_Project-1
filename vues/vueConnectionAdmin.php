@@ -1,9 +1,3 @@
-<!--/**
- * Created by PhpStorm.
- * User: hufournier
- * Date: 29/11/17
- * Time: 17:18
- */-->
 <?php
 global $front;
 

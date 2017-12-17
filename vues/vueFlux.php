@@ -3,7 +3,8 @@ global $front;
 
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -47,6 +48,8 @@ global $front;
         }
         }
         ?>
+        
+        <!-- Ligne du tableau où on ajoute un flux -->
         <tr>
             <form method="POST" action='index.php?action=ajouterFlux'>
                 <td>

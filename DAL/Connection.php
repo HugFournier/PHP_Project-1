@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: hufournier
- * Date: 15/11/17
- * Time: 15:16
- */
 class Connection extends PDO
 {
     private $stmt;

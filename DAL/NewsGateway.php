@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: hufournier
- * Date: 16/11/17
- * Time: 15:23
- */
 class NewsGateway
 {
     private $con;

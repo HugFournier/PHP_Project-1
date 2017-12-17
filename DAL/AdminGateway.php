@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: hufournier
- * Date: 30/11/17
- * Time: 14:25
- */
 class AdminGateway
 {
     private $con;

@@ -1,6 +1,6 @@
 <?php
 
-//gen
+// Root
 $rep = __DIR__ . '/../';
 
 $taillePage = 10;
@@ -9,21 +9,21 @@ $taillePage = 10;
 $front['style'] = "css/style.css";
 $front['bootstrap'] = "css/bootstrap.css";
 
-//BD
+// BD
 $base = "mysql:host=localhost;dbname=dbhufournier";
 $login = "hufournier";
 $mdp = "hufournier";
 
-//Vues
+// Vues
 $vues['erreur'] = 'vues/erreur.php';
 $vues['vueNews'] = 'vues/vueNews.php';
 $vues['vueFlux'] = 'vues/vueFlux.php';
 $vues['vueConnectionAdmin'] = 'vues/vueConnectionAdmin.php';
 
-//Actions:
-//User:
+/** Actions: **/
+// User:
 $actionUser = [NULL, "listerNews", "connectionAdmin", "soumettreConnexion", "changerTaillePage"];
-//Admin:
+// Admin:
 $actionAdmin = ["listerFlux", "deconnectionAdmin", "supprimerFlux", "ajouterFlux"];
 
 ?>
