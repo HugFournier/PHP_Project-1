@@ -23,11 +23,11 @@ global $front;
         <h1 class="text-center">Connexion</h1>
         <?php if (isset($info)) echo "<h2>" . $info . "</h2>"; ?>
         <p>Identifiant</p>
-        <input class="border-dark" type="INPUT" name="id">
+        <input class="border-intermediate" type="INPUT" name="id">
         <p>Mot de passe</p>
-        <input class="border-dark" type="PASSWORD" name="mdp">
-        <input class="border-dark" type="SUBMIT" name="login" value="Connexion">
-        <input class="border-dark" type="BUTTON" onclick="window.location.href='?action=listerNews&page=0'"
+        <input class="border-intermediate" type="PASSWORD" name="mdp">
+        <input class="border-intermediate" type="SUBMIT" name="login" value="Connexion">
+        <input class="border-intermediate" type="BUTTON" onclick="window.location.href='?action=listerNews&page=0'"
                value="Retour">
     </form>
 </div>

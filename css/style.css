@@ -59,7 +59,7 @@ body {
 }
 
 body {
-    background: url("http://i.imgur.com/mU8icCf.jpg")
+    background: url("../img/bg.jpg") center/cover #000 /* Original picture: http://i.imgur.com/mU8icCf.jpg */
 }
 
 a {
@@ -186,6 +186,12 @@ sub {
     padding: 8px
 }
 
+.border-intermediate {
+    border: 1px solid rgba(190, 190, 190, .4);
+    border-radius: 10px;
+    padding: 8px
+}
+
 .border-dark {
     border: 1px solid rgba(190, 190, 190, .2);
     border-radius: 10px;
@@ -205,21 +211,14 @@ input {
     box-sizing: border-box;
     display: block;
     margin: 5px auto;
-    padding: 5px
-}
-
-input:hover {
-    cursor: pointer
-}
-
-input[type="BUTTON"],
-input[type="SUBMIT"] {
+    padding: 5px;
+    text-align: center;
     transition: .2s
 }
 
-input[type="BUTTON"]:hover,
-input[type="SUBMIT"]:hover {
+input:hover {
     background-color: rgba(150, 150, 150, .3);
+    cursor: pointer
 }
 
 input[type="INPUT"],
@@ -278,11 +277,11 @@ input[type="TEXT"] {
 }
 
 .flux-table input[attr="rem"]:hover {
-    background-color: rgba(150, 0, 0, .3)
+    background-color: rgba(250, 0, 0, .4)
 }
 
 .flux-table input[attr="add"]:hover {
-    background-color: rgba(0, 150, 0, .3)
+    background-color: rgba(0, 250, 0, .4)
 }
 
 [name="guid"],

@@ -40,7 +40,7 @@ global $front;
             echo "<td>
                         <form method='POST' action='index.php?action=supprimerFlux'>
                             <input hidden='true' name=\"idFlux\" value=" . $flux->getId() . ">
-                            <input class='border-dark' name=\"addOrRemove\" type=\"SUBMIT\" attr=\"rem\" value='Supprimer'>
+                            <input class='border-intermediate' name=\"addOrRemove\" type=\"SUBMIT\" attr=\"rem\" value='Supprimer'>
                         </form>
                   </td>
                   </tr>";
@@ -50,13 +50,13 @@ global $front;
         <tr>
             <form method="POST" action='index.php?action=ajouterFlux'>
                 <td>
-                    <input class="border-dark" type="INPUT" name="idFlux" required>
+                    <input class="border-intermediate" type="INPUT" name="idFlux" required>
                 </td>
                 <td>
-                    <input class="border-dark" type="INPUT" name="lienFlux" required>
+                    <input class="border-intermediate" type="INPUT" name="lienFlux" required>
                 </td>
                 <td>
-                    <input class="border-dark" name="addOrRemove" type="SUBMIT" attr="add" value="Ajouter">
+                    <input class="border-intermediate" name="addOrRemove" type="SUBMIT" attr="add" value="Ajouter">
                 </td>
             </form>
         </tr>
@@ -70,7 +70,7 @@ global $front;
     <?php if (isset($info)) echo "<h5>" . $info . "</h5>"; ?>
     <br><br>
     <form>
-        <input class="border-dark" type="button" onclick="window.location.href='?action=connectionAdmin'" value="Déconnexion">
+        <input class="border-intermediate" type="button" onclick="window.location.href='?action=connectionAdmin'" value="Déconnexion">
     </form>
     <!--<a href="?action=connectionAdmin">Déconnexion</a></button>-->
 </div>

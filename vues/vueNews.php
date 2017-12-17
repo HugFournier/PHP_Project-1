@@ -43,18 +43,17 @@ global $front;
         ?>
     </table>
 
-    <input class='border-dark inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=1'" value='1'>
-    <input class='border-dark inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo ($currentPage - 1) ?>'" value='Précédent'>
-    <input class='border-dark inline' type='BUTTON' value='<?php echo $currentPage ?>'>
-    <input class='border-dark inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo ($currentPage + 1) ?>'" value='Suivant'>
-    <input class='border-dark inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo $nbPage ?>'" value='<?php echo $nbPage ?>'>
+    <input class='border-intermediate inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=1'" value='1'>
+    <input class='border-intermediate inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo ($currentPage - 1) ?>'" value='Précédent'>
+    <input class='border-intermediate inline' type='BUTTON' value='<?php echo $currentPage ?>'>
+    <input class='border-intermediate inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo ($currentPage + 1) ?>'" value='Suivant'>
+    <input class='border-intermediate inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo $nbPage ?>'" value='<?php echo $nbPage ?>'>
 
     <form method="POST" action='index.php?action=changerTaillePage&page=0'>
         <p>Choisir le nombre de news par page</p>
-        <p>Je te ferai des boutons pour les pages demain, promis !</p>
-        <input class="border-dark inline" type="NUMBER" name="taillePage" min="1" max="20">
-        <input class="border-dark inline" type="SUBMIT" value="Appliquer">
-        <input class="border-dark" type="BUTTON" onclick="window.location.href='?action=connectionAdmin'"
+        <input class="border-intermediate inline" type="NUMBER" name="taillePage" min="1" max="20">
+        <input class="border-intermediate inline" type="SUBMIT" value="Appliquer">
+        <input class="border-intermediate" type="BUTTON" onclick="window.location.href='?action=connectionAdmin'"
                value="Connexion">
     </form>
 </div>
