@@ -42,12 +42,12 @@ global $front;
 
     <!-- Les boutons que tu voulais tant -->
     <input class='border-intermediate inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=1'"
-           value='Début'>
+           value='Début [1]'>
     <input class='border-intermediate inline' type='BUTTON'
-           onclick="window.location.href='?action=listerNews&page=<?php echo($currentPage - 1) ?>'" value='Précédent'>
+           onclick="window.location.href='?action=listerNews&page=<?php echo($currentPage - 1) ?>'" value='<< Précédent'>
     <input class='border-intermediate inline' type='BUTTON' value='Page actuelle [<?php echo $currentPage ?>]'>
     <input class='border-intermediate inline' type='BUTTON'
-           onclick="window.location.href='?action=listerNews&page=<?php echo($currentPage + 1) ?>'" value='Suivant'>
+           onclick="window.location.href='?action=listerNews&page=<?php echo($currentPage + 1) ?>'" value='Suivant >>'>
     <input class='border-intermediate inline' type='BUTTON'
            onclick="window.location.href='?action=listerNews&page=<?php echo $nbPage ?>'" value='Fin [<?php echo $nbPage ?>]'>
 
