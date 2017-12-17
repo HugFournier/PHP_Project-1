@@ -45,7 +45,7 @@ global $front;
            value='Début'>
     <input class='border-intermediate inline' type='BUTTON'
            onclick="window.location.href='?action=listerNews&page=<?php echo($currentPage - 1) ?>'" value='Précédent'>
-    <input class='border-intermediate inline' type='BUTTON' value='<?php echo $currentPage ?>'>
+    <input class='border-intermediate inline' type='BUTTON' value='Page actuelle [<?php echo $currentPage ?>]'>
     <input class='border-intermediate inline' type='BUTTON'
            onclick="window.location.href='?action=listerNews&page=<?php echo($currentPage + 1) ?>'" value='Suivant'>
     <input class='border-intermediate inline' type='BUTTON'
