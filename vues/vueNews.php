@@ -49,7 +49,7 @@ global $front;
     <input class='border-intermediate inline' type='BUTTON'
            onclick="window.location.href='?action=listerNews&page=<?php echo($currentPage + 1) ?>'" value='Suivant'>
     <input class='border-intermediate inline' type='BUTTON'
-           onclick="window.location.href='?action=listerNews&page=<?php echo $nbPage ?>'" value='Fin : <?php echo $nbPage ?>'>
+           onclick="window.location.href='?action=listerNews&page=<?php echo $nbPage ?>'" value='Fin [<?php echo $nbPage ?>]'>
 
     <!-- Changement de taille et bouton de connexion -->
     <form attr-top="SPACED" attr-bottom="SPACED" method="POST" action='index.php?action=changerTaillePage&page=0'>
