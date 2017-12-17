@@ -263,6 +263,10 @@ input[type="TEXT"] {
     width: 15%
 }
 
+table[name="news-table"] td {
+    text-align: justify;
+}
+
 /* 5. Connection properties
  **************************
  *

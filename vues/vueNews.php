@@ -24,7 +24,7 @@ global $front;
 
     <h1>Liste des news</h1>
 
-    <table attr-top="SPACED" attr-bottom="SPACED" class="full-width">
+    <table attr-top="SPACED" attr-bottom="SPACED" class="full-width" name="news-table">
         <tr>
             <th name="date">Date</th>
             <th name="nom">Nom</th>
