@@ -42,14 +42,14 @@ global $front;
 
     <!-- Les boutons que tu voulais tant -->
     <input class='border-intermediate inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=1'"
-           value='1'>
+           value='Début'>
     <input class='border-intermediate inline' type='BUTTON'
            onclick="window.location.href='?action=listerNews&page=<?php echo($currentPage - 1) ?>'" value='Précédent'>
     <input class='border-intermediate inline' type='BUTTON' value='<?php echo $currentPage ?>'>
     <input class='border-intermediate inline' type='BUTTON'
            onclick="window.location.href='?action=listerNews&page=<?php echo($currentPage + 1) ?>'" value='Suivant'>
     <input class='border-intermediate inline' type='BUTTON'
-           onclick="window.location.href='?action=listerNews&page=<?php echo $nbPage ?>'" value='<?php echo $nbPage ?>'>
+           onclick="window.location.href='?action=listerNews&page=<?php echo $nbPage ?>'" value='Fin'>
 
     <!-- Changement de taille et bouton de connexion -->
     <form attr-top="SPACED" attr-bottom="SPACED" method="POST" action='index.php?action=changerTaillePage&page=0'>
