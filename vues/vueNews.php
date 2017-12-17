@@ -42,13 +42,13 @@ global $front;
         }
         ?>
     </table>
-    <?php
-    echo "<br><a href=?action=listerNews&page=1>1</a> | ";
-    echo "<a href=?action=listerNews&page=" . ($currentPage - 1) . "><</a> | ";
-    echo "[" . $currentPage . "] | ";
-    echo "<a href=?action=listerNews&page=" . ($currentPage + 1) . ">></a> | ";
-    echo "<a href=?action=listerNews&page=" . $nbPage . ">" . $nbPage . "</a>";
-    ?>
+
+    <input class='border-dark inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=1'" value='1'>
+    <input class='border-dark inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo ($currentPage - 1) ?>'" value='Précédent'>
+    <input class='border-dark inline' type='BUTTON' value='<?php echo $currentPage ?>'>
+    <input class='border-dark inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo ($currentPage + 1) ?>'" value='Suivant'>
+    <input class='border-dark inline' type='BUTTON' onclick="window.location.href='?action=listerNews&page=<?php echo $nbPage ?>'" value='<?php echo $nbPage ?>'>
+
     <form method="POST" action='index.php?action=changerTaillePage&page=0'>
         <p>Choisir le nombre de news par page</p>
         <p>Je te ferai des boutons pour les pages demain, promis !</p>

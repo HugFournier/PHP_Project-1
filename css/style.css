@@ -27,11 +27,11 @@
 }
 
 ::selection {
-    background: rgba(0, 70, 100, .5) /* WebKit/Blink Browsers */
+    background: rgba(0, 120, 180, .5) /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background: rgba(0, 70, 100, .5) /* Gecko Browsers */
+    background: rgba(0, 120, 180, .5) /* Gecko Browsers */
 }
 
 html {
@@ -59,11 +59,11 @@ body {
 }
 
 body {
-    background: rgba(0, 40, 50, 1)
+    background: url("http://i.imgur.com/mU8icCf.jpg")
 }
 
 a {
-    color: #0AC;
+    color: #C00;
     text-decoration: none
 }
 
@@ -100,6 +100,7 @@ a {
 table {
     border-spacing: 0;
     border-collapse: collapse;
+    margin-bottom: 48px
 }
 
 table,
@@ -204,13 +205,28 @@ input {
     box-sizing: border-box;
     display: block;
     margin: 5px auto;
-    padding: 5px;
-    transition: .4s
+    padding: 5px
 }
 
 input:hover {
-    background-color: rgba(150, 150, 150, .3);
     cursor: pointer
+}
+
+input[type="BUTTON"],
+input[type="SUBMIT"] {
+    transition: .2s
+}
+
+input[type="BUTTON"]:hover,
+input[type="SUBMIT"]:hover {
+    background-color: rgba(150, 150, 150, .3);
+}
+
+input[type="INPUT"],
+input[type="NUMBER"],
+input[type="PASSWORD"],
+input[type="TEXT"] {
+    cursor: text
 }
 
 /* 4. News properties
@@ -233,7 +249,7 @@ input:hover {
     border-radius: 16px;
     margin: 0 auto;
     padding: 40px 30px;
-    transition: .4s;
+    transition: .2s;
     width: 20%
 }
 
@@ -275,5 +291,6 @@ input:hover {
 }
 
 [name="action"] {
+    transition: .2s;
     width: 10%
 }
