@@ -1,9 +1,11 @@
 <?php
 
-class Connection extends PDO {
+class Connection extends PDO
+{
     private $stmt;
 
-    public function __construct($dsn, $username, $passwd) {
+    public function __construct($dsn, $username, $passwd)
+    {
         try {
             parent::__construct($dsn, $username, $passwd);
             $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -12,7 +14,8 @@ class Connection extends PDO {
         }
     }
 
-    public function executeQuery($query, array $parameters = []) {
+    public function executeQuery($query, array $parameters = [])
+    {
         try {
             $this->stmt = parent::prepare($query);
             foreach ($parameters as $name => $value)
@@ -26,7 +29,8 @@ class Connection extends PDO {
         }
     }
 
-    public function getResults() {
+    public function getResults()
+    {
         try {
             return $this->stmt->fetchall();
         } catch (PDOException $e) {

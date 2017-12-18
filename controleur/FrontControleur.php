@@ -1,7 +1,9 @@
 <?php
 
-class FrontControleur {
-    function __construct() {
+class FrontControleur
+{
+    function __construct()
+    {
         global $rep, $vues; // nécessaire pour utiliser variables globales
 
 
@@ -39,12 +41,14 @@ class FrontControleur {
     }//fin constructeur
 
 
-    static function val_actionAdmin($action) {
+    static function val_actionAdmin($action)
+    {
         global $actionAdmin;
         return in_array($action, $actionAdmin);
     }
 
-    static function val_actionUser($action) {
+    static function val_actionUser($action)
+    {
         global $actionUser;
         return in_array($action, $actionUser);
     }

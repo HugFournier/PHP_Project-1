@@ -4,7 +4,8 @@
  * Classe parsant un fichier xml et affichant les informations sous la forme
  * d'une hierarchie de texte
  */
-class Parseur {
+class Parseur
+{
     private $path;
     private $result;
     private $depth;
@@ -12,19 +13,22 @@ class Parseur {
     private $bTitle, $bLink, $bDesc, $bDate, $bGuid;
     private $news;
 
-    public function __construct($path) {
+    public function __construct($path)
+    {
         $this->path = $path;
         $this->depth = 0;
     }
 
-    public function getResult() {
+    public function getResult()
+    {
         return $this->result;
     }
 
     /**
      * Parse le fichier et met le resultat dans Result
      */
-    public function parse() {
+    public function parse()
+    {
         ob_start();
         $xml_parser = xml_parser_create();
         xml_set_object($xml_parser, $this);
@@ -48,7 +52,8 @@ class Parseur {
         xml_parser_free($xml_parser);
     }
 
-    private function startElement($parser, $name, $attrs) {
+    private function startElement($parser, $name, $attrs)
+    {
         for ($i = 0; $i < $this->depth; $i++) {
             echo "  ";
         }
@@ -75,7 +80,8 @@ class Parseur {
         }
     }
 
-    private function displayAttribute($attribute, $text) {
+    private function displayAttribute($attribute, $text)
+    {
         for ($i = 0; $i < $this->depth; $i++) {
             echo "  ";
         }
@@ -83,13 +89,15 @@ class Parseur {
         echo "A - $attribute = $text\n";
     }
 
-    private function endElement($parser, $name) {
+    private function endElement($parser, $name)
+    {
         $this->depth--;
         echo "<p style='color:red'> $name</p>\n";
 
     }
 
-    private function characterData($parser, $data) {
+    private function characterData($parser, $data)
+    {
         $data = trim($data);
 
         if (strlen($data) > 0) {

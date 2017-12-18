@@ -1,14 +1,17 @@
 <?php
 
-class Validation {
-    static function val_string(string $mot) {
+class Validation
+{
+    static function val_string(string $mot)
+    {
         return
             isset($mot) &&
             $mot != "" &&
             $mot == filter_var($mot, FILTER_SANITIZE_STRING);
     }
 
-    static function val_page($current, $nbPage) {
+    static function val_page($current, $nbPage)
+    {
         if (Validation::val_int($current)) {
             if ($current < 1) return 1;
             if ($current > $nbPage) return $nbPage;
@@ -18,7 +21,8 @@ class Validation {
         }
     }
 
-    static function val_int($entier) {
+    static function val_int($entier)
+    {
         return
             isset($entier) &&
             $entier != "" &&
@@ -27,14 +31,16 @@ class Validation {
     }
 
 
-    static function val_url($url) {
+    static function val_url($url)
+    {
         return
             isset($url) &&
             $url != "" &&
             filter_var($url, FILTER_VALIDATE_URL);
     }
 
-    static function val_taille_page($taille) {
+    static function val_taille_page($taille)
+    {
         return self::val_int($taille) && $taille > 0 && $taille < 21;
     }
 }
