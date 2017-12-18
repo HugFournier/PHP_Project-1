@@ -1,0 +1,322 @@
+/****************************************************************************************************************************************************************
+ * Summary
+ ****************************************************************************************************************************************************************
+ * Imports
+ * 1. Default properties
+ * 2. Text formatting
+ * 3. News properties
+ * 4. Connection properties
+ * 5. Flux properties
+ ****************************************************************************************************************************************************************/
+
+/* Imports
+ **************************
+ * Title font:   Sarala
+ * Regular font: Montserrat
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarala:400,700');
+
+/* 1. Default properties
+ **************************
+ * Colors
+ * Font properties
+ * Margins
+ * ...
+ */
+* {
+    color: #FFF; /* if dark background */
+    font-family: "Montserrat", "Trebuchet MS", sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    margin: 0
+}
+
+::selection {
+    background: rgba(0, 120, 180, .5) /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: rgba(0, 120, 180, .5) /* Gecko Browsers */
+}
+
+html {
+    overflow-x: hidden
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    width: 100%
+}
+
+.container,
+.container-flex {
+    padding: 10px 15px
+}
+
+.container-flex {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%
+}
+
+body {
+    background: url("../img/bg.jpg") center/cover #000 /* Original picture: https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-73719.jpg */
+}
+
+a {
+    color: #C00;
+    text-decoration: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sarala", Arial, sans-serif;
+    font-weight: 800
+}
+
+h1 {
+    font-size: 28pt;
+    margin: 20px
+}
+
+h2 {
+    font-size: 24pt
+}
+
+h3 {
+    font-size: 20pt
+}
+
+p,
+span,
+a {
+    line-height: 1.5;
+    margin: 0
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    background: rgba(0, 0, 0, .4)
+}
+
+table,
+td,
+th,
+tr {
+    border: 1px solid #666;
+}
+
+td,
+th,
+tr {
+    padding: 5px
+}
+
+hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+/* 2. Text formatting
+ **************************
+ * Superscript
+ * Subscript
+ * Left
+ * Center
+ * Right
+ * Justify
+ */
+.big-title {
+    font-family: "Sarala", Arial, sans-serif;
+    font-size: 48pt;
+    font-weight: 500;
+    margin: 20px auto;
+    text-align: center
+}
+
+sub,
+sup {
+    position: relative;
+    font-size: 75%
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-justify {
+    text-align: justify
+}
+
+/* 3. General formatting
+ **************************
+ * Borders
+ * Forms and inputs
+ */
+.block {
+    display: block;
+    max-width: 70%
+}
+
+.border-light {
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    padding: 8px
+}
+
+.border-intermediate {
+    border: 1px solid rgba(190, 190, 190, .4);
+    border-radius: 10px;
+    padding: 8px
+}
+
+.border-dark {
+    border: 1px solid rgba(190, 190, 190, .2);
+    border-radius: 10px;
+    padding: 8px
+}
+
+.full-width {
+    width: 100%;
+}
+
+.inline {
+    display: inline;
+}
+
+[attr-top="SPACED"] {
+    margin-top: 32px
+}
+
+[attr-bottom="SPACED"] {
+    margin-bottom: 32px
+}
+
+[attr-left="SPACED"] {
+    margin-left: 32px
+}
+
+[attr-right="SPACED"] {
+    margin-right: 32px
+}
+
+.error {
+    color: #A00
+}
+
+input {
+    background-color: rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+    transition: .2s
+}
+
+input:hover {
+    background-color: rgba(150, 150, 150, .3);
+    cursor: pointer
+}
+
+input[type="INPUT"],
+input[type="NUMBER"],
+input[type="PASSWORD"],
+input[type="TEXT"] {
+    cursor: text
+}
+
+/* 4. News properties
+ **************************
+ *
+ */
+[name="date"],
+[name="nom"] {
+    width: 15%
+}
+
+table[name="news-table"] td {
+    text-align: justify;
+}
+
+/* 5. Connection properties
+ **************************
+ *
+ */
+.connection-form {
+    background-color: rgba(0, 0, 0, .2);
+    border: 2px solid;
+    border-color: rgba(190, 190, 190, .2);
+    border-radius: 16px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    transition: .2s;
+    width: 20%
+}
+
+.connection-form:hover {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.connection-form input {
+    width: 100%
+}
+
+/* 6. Flux properties
+ **************************
+ *
+ */
+.flux-table input[hidden="true"] {
+    display: none
+}
+
+.flux-table input {
+    width: 100%;
+}
+
+.flux-table input[attr="rem"]:hover {
+    background-color: rgba(250, 0, 0, .4)
+}
+
+.flux-table input[attr="add"]:hover {
+    background-color: rgba(0, 250, 0, .4)
+}
+
+[name="guid"],
+[name="lien"] {
+    width: 45%
+}
+
+[name="action"] {
+    transition: .2s;
+    width: 10%
+}

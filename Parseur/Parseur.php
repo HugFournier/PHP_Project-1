@@ -7,27 +7,24 @@
 class Parseur
 {
     private $path;
-    private $result;
-    private $depth;
-    private $title, $link, $desc, $date, $guid;
-    private $bTitle, $bLink, $bDesc, $bDate, $bGuid;
+    private $element;
     private $news;
+    private $listeNews;
 
-    public function __construct($path)
+    public function __construct(String $path)
     {
         $this->path = $path;
-        $this->depth = 0;
+        $this->listeNews=array();
+        $this->initialiseElement();
     }
 
-    public function getResult()
-    {
-        return $this->result;
+    private function initialiseElement():void{
+        $element=array("title"=>array(false,null), "link"=>array(false,null), "desc"=>array(false,null), "date"=>array(false,null), "guid"=>array(false,null));
     }
-
     /**
      * Parse le fichier et met le resultat dans Result
      */
-    public function parse()
+    public function parse():void
     {
         ob_start();
         $xml_parser = xml_parser_create();
@@ -52,20 +49,11 @@ class Parseur
         xml_parser_free($xml_parser);
     }
 
-    private function startElement($parser, $name, $attrs)
+    private function startElement($parser, $name, $attrs):void
     {
-        for ($i = 0; $i < $this->depth; $i++) {
-            echo "  ";
-        }
-        if ($name = "ITEM") {
-            $news = array(
-                ':origine' => null,
-                ':titre' => null,
-                ':lien' => null,
-                ':description' => null,
-                ':guid' => null,
-                ':date' => null
-            );
+        $name = strtolower($name);
+        if ($name = "item") {
+            $this->initialiseElement();
         }
         if (isset($news))
             switch ($name) {
