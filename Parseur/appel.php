@@ -1,14 +1,14 @@
 <html>
 <body>
-<?php
+    <?php
 
-include('Parseur.php');
+    include('Parseur.php');
 
-$parser = new Parseur(dirname(__FILE__) . '/rss.xml');
-$parser->parse();
-$result = $parser->getResult();
-echo $result;
+    $parser = new Parseur(dirname(__FILE__) . '/rss.xml');
+    $parser->parse();
+    $result = $parser->getResult();
+    echo $result;
 
-?>
+    ?>
 </body>
 </html>

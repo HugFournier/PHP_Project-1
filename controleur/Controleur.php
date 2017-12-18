@@ -1,10 +1,8 @@
 <?php
 
-class Controleur
-{
+class Controleur {
 
-    function __construct()
-    {
+    function __construct() {
         global $rep, $vues; // nécessaire pour utiliser variables globales
 // on démarre ou reprend la session si necessaire (préférez utiliser un modèle pour gérer vos session ou cookies)
 
@@ -64,8 +62,7 @@ class Controleur
     }//fin constructeur
 
 
-    function Reinit()
-    {
+    function Reinit() {
         global $rep, $vues;
         $nbPage = Modele::nbPage();
         $currentPage = Validation::val_page($_GET['page'], $nbPage);
@@ -73,8 +70,7 @@ class Controleur
         require($rep . $vues['vueNews']);
     }
 
-    function FormulaireConnexion($info = NULL)
-    {
+    function FormulaireConnexion($info = NULL) {
         global $rep, $vues;
         require($rep . $vues['vueConnectionAdmin']);
     }

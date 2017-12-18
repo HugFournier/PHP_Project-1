@@ -1,20 +1,17 @@
 <?php
 
-class NewsGateway
-{
+class NewsGateway {
     private $con;
 
     /**
      * NewsGateway constructor.
      * @param $con
      */
-    public function __construct($con)
-    {
+    public function __construct($con) {
         $this->con = $con;
     }
 
-    public function insertBrut($titre, $lien, $description, $dateNews, $id)
-    {
+    public function insertBrut($titre, $lien, $description, $dateNews, $id) {
         $query = "INSERT INTO NEWS VALUES(:id,:dateNews,:description,:titre,:lien)";
         $argument = array(
             ':id' => array($id, PDO::PARAM_STR),
@@ -27,13 +24,11 @@ class NewsGateway
         return $this->con->lastInsertId();
     }
 
-    public function insert(News $n)
-    {
+    public function insert(News $n) {
         return $this->insertBrut($n->getTitre(), $n->getLien(), $n->getDescription(), $n->getDateNews(), $n->getId());
     }
 
-    public function delete($id)
-    {
+    public function delete($id) {
         $query = "DELETE FROM NEWS WHERE guid=:id";
         $argument = array(
             ':id' => array($id, PDO::PARAM_STR)
@@ -57,8 +52,7 @@ class NewsGateway
             return NewsFactory::creerNews($this->con->getResults());
         }
     */
-    public function findN($placement)
-    {
+    public function findN($placement) {
         $nbElt = intval(Modele::getTaillePage());
         //var_dump($nbElt);
         //echo "cookie: ".$nbElt."<br>";
@@ -76,8 +70,7 @@ class NewsGateway
         return NewsFactory::creerNews($this->con->getResults());
     }
 
-    public function nbPage()
-    {
+    public function nbPage() {
         $query = "SELECT COUNT(guid) FROM NEWS";
         $this->con->executeQuery($query);
         $nbNews = $this->con->getResults();

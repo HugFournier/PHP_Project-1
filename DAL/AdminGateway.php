@@ -1,20 +1,17 @@
 <?php
 
-class AdminGateway
-{
+class AdminGateway {
     private $con;
 
     /**********************************************************************
      * FluxGateway constructor.
      * @param $con
      **********************************************************************/
-    public function __construct($con)
-    {
+    public function __construct($con) {
         $this->con = $con;
     }
 
-    public function verifConnection($id, $mdp)
-    {
+    public function verifConnection($id, $mdp) {
         $query = "SELECT mdp FROM Admin WHERE ID LIKE :id";
 
         $argument = array(

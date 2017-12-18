@@ -1,9 +1,7 @@
 <?php
 
-class ControleurAdmin
-{
-    function __construct()
-    {
+class ControleurAdmin {
+    function __construct() {
         global $rep, $vues;
 
 //on initialise un tableau d'erreur
@@ -53,15 +51,13 @@ class ControleurAdmin
         }
     }//fin constructeur
 
-    function ListerFlux($info = NULL)
-    {
+    function ListerFlux($info = NULL) {
         global $rep, $vues;
         $bdFlux = ModeleAdmin::listerFlux();
         require($rep . $vues['vueFlux']);
     }
 
-    function Reinit($info = NULL)
-    {
+    function Reinit($info = NULL) {
         $_REQUEST['action'] = "connectionAdmin";
         new FrontControleur();
     }
