@@ -22,7 +22,7 @@ global $front;
         else{
         ?>
 
-        <h1>Liste des news</h1>
+        <h1 class="big-title">Liste des news</h1>
 
         <table attr-top="SPACED" attr-bottom="SPACED" class="full-width" name="news-table">
             <tr>

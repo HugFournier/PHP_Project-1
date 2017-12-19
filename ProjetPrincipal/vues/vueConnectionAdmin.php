@@ -15,7 +15,7 @@ global $front;
 <body>
     <div class="container-flex">
         <form class="connection-form" method="POST" action="index.php?action=soumettreConnexion">
-            <h1 class="text-center">Connexion</h1>
+            <h1 class="text-center big-title">Connexion</h1>
             <?php if (isset($info)) echo "<h4 attr-top='SPACED' attr-bottom='SPACED' class='error'>" . $info . "</h4>"; ?>
             <p>Identifiant</p>
             <input class="border-intermediate" type="INPUT" name="id">

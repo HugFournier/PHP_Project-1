@@ -6,8 +6,7 @@ $rep = __DIR__ . '/../';
 $taillePage = 10;
 
 // Bootstrap
-$front['style'] = "css/style.css";
-$front['bootstrap'] = "css/bootstrap.css";
+$front['style'] = "vues/css/style.css";
 
 // BD
 $base = "mysql:host=localhost;dbname=dbhufournier";

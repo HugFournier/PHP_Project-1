@@ -14,7 +14,7 @@ global $front;
 
 <body>
     <div class="container text-center">
-        <h1>Liste des flux</h1>
+        <h1 class="big-title">Liste des flux</h1>
         <?php
         /**
          * Created by PhpStorm.

@@ -10,10 +10,10 @@
  ****************************************************************************************************************************************************************/
 /* Imports
  *********************************
- * Title font:   Source Code Pro
+ * Title font:   Crimson
  * Regular font: Montserrat
  */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Code+Pro:200,300,400,500,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Spectral+SC:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
 
 /* 1. Default properties
  **************************
@@ -30,11 +30,11 @@
 }
 
 ::selection {
-    background: rgba(0, 120, 180, .5) /* WebKit/Blink Browsers */
+    background: rgba(160, 160, 160, .4) /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background: rgba(0, 120, 180, .5) /* Gecko Browsers */
+    background: rgba(160, 160, 160, .4) /* Gecko Browsers */
 }
 
 html {
@@ -62,11 +62,11 @@ body {
 }
 
 body {
-    background: url("../img/bg.png") center/cover #000 /* Original picture: https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-73719.jpg */
+    background: url("../../img/bg.png") center/cover #000 /* Original picture: https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-73719.jpg */
 }
 
 a {
-    color: #C00;
+    color: #C22;
     text-decoration: none
 }
 
@@ -76,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Source Code Pro", Arial, sans-serif;
+    font-family: "Crimson Text", Arial, sans-serif;
     font-weight: 700
 }
 
@@ -105,7 +105,12 @@ table {
     border-collapse: collapse;
     margin-top: 48px;
     margin-bottom: 48px;
-    background: rgba(0, 0, 0, .4)
+    background: rgba(0, 0, 0, .3)
+}
+
+table th {
+    font-family: "Spectral SC", Arial, sans-serif;
+    font-size: 13pt
 }
 
 table,
@@ -138,9 +143,9 @@ hr {
  * Justify
  */
 .big-title {
-    font-family: "Source Code Pro", Arial, sans-serif;
-    font-size: 48pt;
-    font-weight: 500;
+    font-family: "Crimson Text", Arial, sans-serif;
+    font-size: 32pt;
+    font-weight: 700;
     margin: 20px auto;
     text-align: center
 }
@@ -306,11 +311,11 @@ table[name="news-table"] td {
 }
 
 .flux-table input[attr="rem"]:hover {
-    background-color: rgba(250, 0, 0, .4)
+    background-color: rgba(140, 0, 0, .4)
 }
 
 .flux-table input[attr="add"]:hover {
-    background-color: rgba(0, 250, 0, .4)
+    background-color: rgba(0, 140, 0, .4)
 }
 
 [name="guid"],
