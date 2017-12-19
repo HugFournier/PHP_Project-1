@@ -7,7 +7,7 @@
 class Parseur
 {
     private $path;
-    private $element;
+    private $element=null;
     private $result;
     private $listeNews;
 
@@ -17,11 +17,10 @@ class Parseur
     {
         $this->path = $path;
         $this->listeNews=array();
-        $this->initialiseElement();
     }
 
     private function initialiseElement(){
-        $this->element = array_map(array(false,null),$this->elementsCible);
+        $this->element = array_combine($this->elementsCible,array_fill(0,sizeof($this->elementsCible),array(false,null)));
     }
 
     /**
@@ -30,6 +29,14 @@ class Parseur
     public function getResult() : String
     {
         return $this->result;
+    }
+
+    /**
+     * @return array
+     */
+    public function getListeNews(): array
+    {
+        return $this->listeNews;
     }
 
     /**
@@ -75,9 +82,13 @@ class Parseur
     {
         $name=strtolower($name);
         if($name == "item"){
-            $this->listeNews[] = null; //ajouter la new au tableau
+            $news=array();
+            foreach ($this->elementsCible as $key){
+                $news[$key]=$this->element[$key][1];
+            }
+            $news['origine']=$this->path;
+            $this->listeNews[] = $news; //ajouter la new au tableau
             $this->element = null;
-            echo "<br>";
         }
         $this->switchBoolean($name);
     }
@@ -90,7 +101,6 @@ class Parseur
             $balise=array_search(array(true,null),$this->element);
             if($balise!=false){
                 $this->element[$balise][1]=$data;
-                echo $balise . "->" . /*($balise!="description"?$data:"une desc")*/$data . "<br>";
             }
         }
     }

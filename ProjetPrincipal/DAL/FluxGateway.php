@@ -33,29 +33,27 @@ class FluxGateway
 
     public function delete($id)
     {
-        $query = "DELETE FROM `Flux` WHERE `Flux`.`ID` = :id";
+        $query = "SELECT lien FROM `Flux` WHERE `Flux`.`ID` = :id; ";
         $argument = array(
             ':id' => array($id, PDO::PARAM_STR)
         );
         $this->con->executeQuery($query, $argument);
-    }
 
-    /*
-    public function find($id){
-        $query = "SELECT * FROM FLUX WHERE id=:id";
+        $lien = $this->con->getResults()[0]["lien"];
+
+        $query="DELETE from `NEWS` WHERE origine like :lien;
+                DELETE FROM `Flux` WHERE lien like :lien;";
         $argument = array(
-            ':id'=>array($id, PDO::PARAM_STR)
+            ':lien' => array($lien, PDO::PARAM_STR)
         );
+
         $this->con->executeQuery($query, $argument);
-        return (new FluxFactory())->creerFlux($this->con->getResults());
     }
-    */
 
     public function findAll()
     {
         $query = "SELECT * FROM Flux";
         $this->con->executeQuery($query);
-        //foreach($l as $r)$retour[]=new News($r['titre'],$r['lien'],$r['description'],$r['date'],$r['guid']);
         return (new FluxFactory())->creerFlux($this->con->getResults());
     }
 }
