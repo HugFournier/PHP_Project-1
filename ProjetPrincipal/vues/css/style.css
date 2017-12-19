@@ -74,7 +74,7 @@ body {
 }
 
 a {
-    color: #0FF;
+    color: #09D;
     text-decoration: none
 }
 
@@ -89,8 +89,7 @@ h6 {
 }
 
 h1 {
-    font-size: 28pt;
-    margin: 20px
+    font-size: 28pt
 }
 
 h2 {
@@ -113,7 +112,7 @@ table {
     border-collapse: collapse;
     margin-top: 48px;
     margin-bottom: 48px;
-    background: rgba(0, 0, 0, .3)
+    background: rgba(0, 0, 0, .4)
 }
 
 table th {
@@ -152,10 +151,10 @@ hr {
  */
 .big-title {
     font-family: "Crimson Text", Arial, sans-serif;
-    font-size: 32pt;
+    font-size: 36pt;
     font-weight: 700;
-    margin: 20px auto;
-    text-align: center
+    text-align: center;
+    text-shadow: 4px 4px 2px #000;
 }
 
 sub,
