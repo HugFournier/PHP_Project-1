@@ -55,33 +55,25 @@ class Parseur
         if ($name = "item") {
             $this->initialiseElement();
         }
-        if (isset($news))
-            switch ($name) {
-                default :
-                    break;
-            }
-
-        echo "<p style='color:red'> $name</p>\n";
-        $this->depth++;
-        foreach ($attrs as $attribute => $text) {
-            $this->displayAttribute($attribute, $text);
-        }
-    }
-
-    private function displayAttribute($attribute, $text)
-    {
-        for ($i = 0; $i < $this->depth; $i++) {
-            echo "  ";
-        }
-
-        echo "A - $attribute = $text\n";
+        $this->switchBoolean($name);
     }
 
     private function endElement($parser, $name)
     {
-        $this->depth--;
-        echo "<p style='color:red'> $name</p>\n";
+        $name=strtolower($name);
+        if($name == "item"){
+            $this->listeNews[] = null; //ajouter la new au tableau
+            $this->element = null;
+        }
+        $this->switchBoolean($name);
+    }
 
+    private function switchBoolean($name){
+        if (isset($this->element)){
+            if(array_key_exists($name,$this->element)){
+                $this->element[$name][0]^=true;
+            }
+        }
     }
 
     private function characterData($parser, $data)

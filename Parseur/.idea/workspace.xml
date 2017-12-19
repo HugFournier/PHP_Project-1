@@ -23,12 +23,9 @@
             <file leaf-file-name="Parseur.php" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Parseur.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="345">
-                    <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-                    <folding>
-                      <marker date="1513614047773" expanded="true" signature="1844:1853" ph="..." />
-                      <marker date="1513614047773" expanded="true" signature="2312:2321" ph="..." />
-                    </folding>
+                  <state relative-caret-position="705">
+                    <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+                    <folding />
                   </state>
                 </provider>
               </entry>
@@ -67,8 +64,8 @@
       <file leaf-file-name="XmlParserFlux.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/XmlParserFlux.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+            <state relative-caret-position="534">
+              <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -93,9 +90,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="27" />
-    <option name="width" value="954" />
-    <option name="height" value="1173" />
+    <option name="width" value="962" />
+    <option name="height" value="1174" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -211,18 +209,18 @@
       <updated>1513178130725</updated>
       <workItem from="1513178131929" duration="3615000" />
       <workItem from="1513611583727" duration="2758000" />
-      <workItem from="1513683335053" duration="4000" />
+      <workItem from="1513683335053" duration="2735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6377000" />
+    <option name="totallyTimeSpent" value="9108000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="954" height="1173" extended-state="4" />
-    <editor active="true" />
+    <frame x="-1" y="27" width="962" height="1174" extended-state="4" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20063025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19895834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -286,10 +284,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1513614047773" expanded="true" signature="1844:1853" ph="..." />
-            <marker date="1513614047773" expanded="true" signature="2312:2321" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -326,21 +321,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parseur.php">
+    <entry file="file://$PROJECT_DIR$/XmlParserFlux.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding>
-            <marker date="1513614047773" expanded="true" signature="1844:1853" ph="..." />
-            <marker date="1513614047773" expanded="true" signature="2312:2321" ph="..." />
-          </folding>
+        <state relative-caret-position="534">
+          <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XmlParserFlux.php">
+    <entry file="file://$PROJECT_DIR$/Parseur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+        <state relative-caret-position="705">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
