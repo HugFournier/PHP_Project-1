@@ -65,12 +65,16 @@ img {
     width: 100%
 }
 
+.display-block {
+    display: block
+}
+
 body {
     background: url("../../img/bg.png") center/cover #000 /* Original picture: https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-73719.jpg */
 }
 
 a {
-    color: #C22;
+    color: #0FF;
     text-decoration: none
 }
 
@@ -166,6 +170,14 @@ sup {
 
 sub {
     bottom: -.25em
+}
+
+.text-bold {
+    font-weight: 700
+}
+
+.text-italic {
+    font-style: italic
 }
 
 .text-left {
@@ -266,8 +278,7 @@ input[type="TEXT"] {
  **************************
  *
  */
-[name="date"],
-[name="nom"] {
+[name="date"] {
     width: 15%
 }
 

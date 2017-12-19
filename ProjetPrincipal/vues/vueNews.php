@@ -26,14 +26,15 @@ global $front;
         <table attr-top="SPACED" attr-bottom="SPACED" class="full-width" name="news-table">
             <tr>
                 <th name="date">Date</th>
-                <th name="nom">Nom</th>
-                <th name="description">Description</th>
+                <th name="description">News</th>
             </tr>
             <?php
             foreach ($bdNews as $news) {
-                echo "<tr><td>" . $news->getDateNews() . "</td>";
-                echo "<td><a target='_blank' href=" . $news->getLien() . ">" . $news->getTitre() . "</a></td>";
-                echo "<td>" . $news->getDescription() . "</td></tr>";
+                echo "<tr><td class='text-center'>" . $news->getDateNews() . "</td>";
+                echo "<td><a class='display-block text-bold' target='_blank' href=" . $news->getLien() . ">" . $news->getTitre
+                    () . "
+</a><span class='text-italic'>" .
+                    $news->getDescription() . "</span></td></tr>";
             }
             }
             ?>
