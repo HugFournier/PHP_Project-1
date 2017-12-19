@@ -31,7 +31,9 @@ global $front;
             <?php
             foreach ($bdNews as $news) {
                 echo "<tr><td class='text-center'>" . $news->getDateNews() . "</td>";
-                echo "<td><a class='display-block text-bold' target='_blank' href=" . $news->getLien() . ">" . $news->getTitre
+                echo "<td name='minidesc'><a class='display-block text-bold' target='_blank' href=" . $news->getLien() .
+                    ">" .
+                    $news->getTitre
                     () . "
 </a><span class='text-italic'>" .
                     $news->getDescription() . "</span></td></tr>";

@@ -130,7 +130,7 @@ tr {
 td,
 th,
 tr {
-    padding: 5px
+    padding: 10px
 }
 
 hr {
@@ -286,7 +286,7 @@ input[type="NUMBER"]::-webkit-inner-spin-button {
     filter: opacity(.25);
 }
 
-table[name="news-table"] td {
+table[name="news-table"] td[name="minidesc"] {
     text-align: justify;
 }
 

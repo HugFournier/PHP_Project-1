@@ -30,7 +30,7 @@ global $front;
          */
         global $rep;
         if (!isset($bdFlux) || empty($bdFlux)) {
-            echo "Aucun flux à afficher<br>";
+            echo "<p class='error'>Aucun flux à afficher</p>";
         }
         else{
         ?>
@@ -72,7 +72,6 @@ global $front;
             </tr>
         </table>
         <?php if (isset($info)) echo "<h5>" . $info . "</h5>"; ?>
-        <br><br>
         <form>
             <input class="border-intermediate" type="button" onclick="window.location.href='?action=connectionAdmin'"
                    value="Déconnexion">
