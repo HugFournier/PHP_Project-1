@@ -9,11 +9,11 @@
  * 5. Flux properties
  ****************************************************************************************************************************************************************/
 /* Imports
- **************************
- * Title font:   Sarala
+ *********************************
+ * Title font:   Source Code Pro
  * Regular font: Montserrat
  */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarala:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Code+Pro:200,300,400,500,600,700,900');
 
 /* 1. Default properties
  **************************
@@ -62,7 +62,7 @@ body {
 }
 
 body {
-    background: url("../img/bg.jpg") center/cover #000 /* Original picture: https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-73719.jpg */
+    background: url("../img/bg.png") center/cover #000 /* Original picture: https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-73719.jpg */
 }
 
 a {
@@ -76,8 +76,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Sarala", Arial, sans-serif;
-    font-weight: 800
+    font-family: "Source Code Pro", Arial, sans-serif;
+    font-weight: 700
 }
 
 h1 {
@@ -138,7 +138,7 @@ hr {
  * Justify
  */
 .big-title {
-    font-family: "Sarala", Arial, sans-serif;
+    font-family: "Source Code Pro", Arial, sans-serif;
     font-size: 48pt;
     font-weight: 500;
     margin: 20px auto;
@@ -260,6 +260,10 @@ input[type="TEXT"] {
 [name="date"],
 [name="nom"] {
     width: 15%
+}
+
+input[type="NUMBER"]::-webkit-inner-spin-button {
+    filter: opacity(.25);
 }
 
 table[name="news-table"] td {
