@@ -12,16 +12,16 @@ global $front;
 
 <body>
 
-<div class="container">
-    <h1>ERREUR !</h1>
-    <?php
-    if (isset($dVueEreur)) {
-        foreach ($dVueEreur as $value) {
-            echo $value;
+    <div class="container">
+        <h1>ERREUR !</h1>
+        <?php
+        if (isset($dVueEreur)) {
+            foreach ($dVueEreur as $value) {
+                echo $value;
+            }
         }
-    }
-    ?>
-</div>
+        ?>
+    </div>
 
 </body>
 </html>
