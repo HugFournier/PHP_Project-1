@@ -8,8 +8,10 @@ class Parseur
 {
     private $path;
     private $element;
-    private $news;
+    private $result;
     private $listeNews;
+
+    private $elementsCible=["title","link","description","pubdate","guid"]; // attention ! les cibles doivent être en minuscule
 
     public function __construct(String $path)
     {
@@ -18,13 +20,22 @@ class Parseur
         $this->initialiseElement();
     }
 
-    private function initialiseElement():void{
-        $element=array("title"=>array(false,null), "link"=>array(false,null), "desc"=>array(false,null), "date"=>array(false,null), "guid"=>array(false,null));
+    private function initialiseElement(){
+        $this->element = array_map(array(false,null),$this->elementsCible);
     }
+
+    /**
+     * @return mixed
+     */
+    public function getResult() : String
+    {
+        return $this->result;
+    }
+
     /**
      * Parse le fichier et met le resultat dans Result
      */
-    public function parse():void
+    public function parse()
     {
         ob_start();
         $xml_parser = xml_parser_create();
@@ -49,13 +60,15 @@ class Parseur
         xml_parser_free($xml_parser);
     }
 
-    private function startElement($parser, $name, $attrs):void
+    private function startElement($parser, $name, $attrs)
     {
         $name = strtolower($name);
-        if ($name = "item") {
+        if ($name == "item") {
             $this->initialiseElement();
         }
         $this->switchBoolean($name);
+        //echo $name;
+        //var_dump($this->element);
     }
 
     private function endElement($parser, $name)
@@ -64,16 +77,9 @@ class Parseur
         if($name == "item"){
             $this->listeNews[] = null; //ajouter la new au tableau
             $this->element = null;
+            echo "<br>";
         }
         $this->switchBoolean($name);
-    }
-
-    private function switchBoolean($name){
-        if (isset($this->element)){
-            if(array_key_exists($name,$this->element)){
-                $this->element[$name][0]^=true;
-            }
-        }
     }
 
     private function characterData($parser, $data)
@@ -81,11 +87,19 @@ class Parseur
         $data = trim($data);
 
         if (strlen($data) > 0) {
-            for ($i = 0; $i < $this->depth; $i++) {
-                echo "  ";
+            $balise=array_search(array(true,null),$this->element);
+            if($balise!=false){
+                $this->element[$balise][1]=$data;
+                echo $balise . "->" . /*($balise!="description"?$data:"une desc")*/$data . "<br>";
             }
+        }
+    }
 
-            echo 'T :' . $data . "\n";
+    private function switchBoolean($name){
+        if (isset($this->element)){
+            if(array_key_exists($name,$this->element)){
+                $this->element[$name][0]^=true;
+            }
         }
     }
 }
