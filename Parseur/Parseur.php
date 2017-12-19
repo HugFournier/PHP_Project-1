@@ -7,26 +7,27 @@
 class Parseur
 {
     private $path;
-    private $element=null;
+    private $element = null;
     private $result;
     private $listeNews;
 
-    private $elementsCible=["title","link","description","pubdate","guid"]; // attention ! les cibles doivent être en minuscule
+    private $elementsCible = ["title", "link", "description", "pubdate", "guid"]; // attention ! les cibles doivent être en minuscule
 
     public function __construct(String $path)
     {
-        $this->path = $path;
-        $this->listeNews=array();
+        $this->path      = $path;
+        $this->listeNews = array();
     }
 
-    private function initialiseElement(){
-        $this->element = array_combine($this->elementsCible,array_fill(0,sizeof($this->elementsCible),array(false,null)));
+    private function initialiseElement()
+    {
+        $this->element = array_combine($this->elementsCible, array_fill(0, sizeof($this->elementsCible), array(false, null)));
     }
 
     /**
      * @return mixed
      */
-    public function getResult() : String
+    public function getResult(): String
     {
         return $this->result;
     }
@@ -80,15 +81,15 @@ class Parseur
 
     private function endElement($parser, $name)
     {
-        $name=strtolower($name);
-        if($name == "item"){
-            $news=array();
-            foreach ($this->elementsCible as $key){
-                $news[$key]=$this->element[$key][1];
+        $name = strtolower($name);
+        if ($name == "item") {
+            $news = array();
+            foreach ($this->elementsCible as $key) {
+                $news[$key] = $this->element[$key][1];
             }
-            $news['origine']=$this->path;
+            $news['origine']   = $this->path;
             $this->listeNews[] = $news; //ajouter la new au tableau
-            $this->element = null;
+            $this->element     = null;
         }
         $this->switchBoolean($name);
     }
@@ -98,17 +99,18 @@ class Parseur
         $data = trim($data);
 
         if (strlen($data) > 0) {
-            $balise=array_search(array(true,null),$this->element);
-            if($balise!=false){
-                $this->element[$balise][1]=$data;
+            $balise = array_search(array(true, null), $this->element);
+            if ($balise != false) {
+                $this->element[$balise][1] = $data;
             }
         }
     }
 
-    private function switchBoolean($name){
-        if (isset($this->element)){
-            if(array_key_exists($name,$this->element)){
-                $this->element[$name][0]^=true;
+    private function switchBoolean($name)
+    {
+        if (isset($this->element)) {
+            if (array_key_exists($name, $this->element)) {
+                $this->element[$name][0] ^= true;
             }
         }
     }

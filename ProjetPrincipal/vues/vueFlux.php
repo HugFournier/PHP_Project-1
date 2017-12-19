@@ -15,6 +15,12 @@ global $front;
 <body>
     <div class="container text-center">
         <h1 class="big-title">Liste des flux</h1>
+        <table class="flux-table full-width text-center">
+            <tr>
+                <th name="guid">ID</th>
+                <th name="lien">Lien</th>
+                <th name="action">Action</th>
+            </tr>
         <?php
         /**
          * Created by PhpStorm.
@@ -28,12 +34,7 @@ global $front;
         }
         else{
         ?>
-        <table class="flux-table full-width text-center">
-            <tr>
-                <th name="guid">ID</th>
-                <th name="lien">Lien</th>
-                <th name="action">Action</th>
-            </tr>
+
             <?php
             foreach ($bdFlux as $flux) {
                 echo "<tr><td>" . $flux->getId() . "</td>";

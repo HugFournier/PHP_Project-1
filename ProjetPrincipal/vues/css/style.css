@@ -48,6 +48,10 @@ body {
     width: 100%
 }
 
+img {
+    display: none
+}
+
 .container,
 .container-flex {
     padding: 10px 15px

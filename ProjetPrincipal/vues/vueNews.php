@@ -14,6 +14,7 @@ global $front;
 
 <body>
     <div class="container text-center">
+        <h1 class="big-title">Liste des news</h1>
         <?php
         global $rep;
         if (!isset($bdNews) || empty($bdNews)) {
@@ -21,8 +22,6 @@ global $front;
         }
         else{
         ?>
-
-        <h1 class="big-title">Liste des news</h1>
 
         <table attr-top="SPACED" attr-bottom="SPACED" class="full-width" name="news-table">
             <tr>
@@ -33,7 +32,7 @@ global $front;
             <?php
             foreach ($bdNews as $news) {
                 echo "<tr><td>" . $news->getDateNews() . "</td>";
-                echo "<td><a href=https://" . $news->getLien() . ">" . $news->getTitre() . "</a></td>";
+                echo "<td><a target='_blank' href=" . $news->getLien() . ">" . $news->getTitre() . "</a></td>";
                 echo "<td>" . $news->getDescription() . "</td></tr>";
             }
             }

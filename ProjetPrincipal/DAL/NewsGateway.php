@@ -13,8 +13,10 @@ class NewsGateway
         $this->con = $con;
     }
 
+    /*
     public function insertBrut($titre, $lien, $description, $dateNews, $id)
     {
+        $dateNews = date("Y-m-d H:i:s", strtotime($dateNews));
         $query = "INSERT INTO NEWS VALUES(:id,:dateNews,:description,:titre,:lien)";
         $argument = array(
             ':id' => array($id, PDO::PARAM_STR),
@@ -31,6 +33,7 @@ class NewsGateway
     {
         return $this->insertBrut($n->getTitre(), $n->getLien(), $n->getDescription(), $n->getDateNews(), $n->getId());
     }
+    */
 
     public function delete($id)
     {
