@@ -249,7 +249,8 @@ sub {
 }
 
 .error {
-    color: #A00
+    color: #A00;
+    font-weight: 500
 }
 
 input {

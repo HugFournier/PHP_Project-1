@@ -18,7 +18,7 @@ global $front;
         <?php
         global $rep;
         if (!isset($bdNews) || empty($bdNews)) {
-            echo "Aucune news à afficher<br>";
+            echo "<p class='error'>Aucune news à afficher</p>";
         }
         else{
         ?>

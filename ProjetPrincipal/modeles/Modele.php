@@ -19,11 +19,10 @@ class Modele
     static public function getTaillePage()
     {
         global $taillePage;
-        if (!Validation::val_taille_page($_COOKIE['taillePage'])) {
-            $taillePage = 10;
+        if (!Validation::val_taille_page($_COOKIE['taillePage']) || isset($_COOKIE["taillePage"])) {
             setcookie("taillePage", $taillePage, time() + 365 * 24 * 3600);
         }
-        return $_COOKIE['taillePage'];
+        return $_COOKIE["taillePage"];
     }
 
     static public function setTaillePage($nouvTaille)
