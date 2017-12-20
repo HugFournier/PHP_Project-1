@@ -70,7 +70,7 @@ img {
 }
 
 body {
-    background: url("../../img/bg.png") center/cover #000 /* Original picture: https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-73719.jpg */
+    background: url("../../vues/img/bg.png") center/cover #000 /* Original picture: https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-73719.jpg */
 }
 
 a {
