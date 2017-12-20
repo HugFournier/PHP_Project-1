@@ -14,6 +14,7 @@ class ModeleCookie
         global $taillePage;
         if (!Validation::val_taille_page($_COOKIE['taillePage'])) {
             setcookie("taillePage", $taillePage, time() + 365 * 24 * 3600);
+            return $taillePage;
         }
         return $_COOKIE["taillePage"];
     }
