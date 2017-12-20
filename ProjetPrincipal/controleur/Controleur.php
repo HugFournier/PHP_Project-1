@@ -29,7 +29,7 @@ class Controleur
                     $this->FormulaireConnexion();
                     break;
                 case "changerTaillePage":
-                    Modele::setTaillePage($_REQUEST['taillePage']);
+                    (new ModeleCookie())->setTaillePage($_REQUEST['taillePage']);
                     header('Location: index.php');
                     break;
                 case "soumettreConnexion":
@@ -47,12 +47,6 @@ class Controleur
                     require($rep . $vues['erreur']);
                     break;
             }
-
-            /*} catch (PDOException $e) {
-                //si erreur BD, pas le cas ici
-                $dVueEreur[] = "Erreur PDO inattendue!!! ";
-                require($rep . $vues['erreur']);
-            */
         } catch (Exception $e2) {
             $dVueEreur[] = "Erreur inattendue!!! " . $e2->getMessage();
             require($rep . $vues['erreur']);
@@ -67,9 +61,9 @@ class Controleur
     function Reinit()
     {
         global $rep, $vues;
-        $nbPage = Modele::nbPage();
+        $nbPage = (new Modele())->nbPage();
         $currentPage = Validation::val_page($_GET['page'], $nbPage);
-        $bdNews = Modele::listerNews($currentPage);
+        $bdNews = (new Modele())->listerNews($currentPage);
         require($rep . $vues['vueNews']);
     }
 

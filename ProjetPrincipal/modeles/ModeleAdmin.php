@@ -27,14 +27,14 @@ class ModeleAdmin
         $_SESSION = array();
     }
 
-    public static function listerFlux()
+    public function listerFlux()
     {
         global $base, $login, $mdp;
         $bdFlux = new FluxGateway(new Connection($base, $login, $mdp));
         return $bdFlux->findAll();
     }
 
-    public static function supprimerFlux($idFlux)
+    public function supprimerFlux($idFlux)
     {
         global $base, $login, $mdp;
         if (Validation::val_string($idFlux)) {
@@ -43,7 +43,7 @@ class ModeleAdmin
         } else throw new Exception("ID flux incorrect");
     }
 
-    public static function ajouterFlux($idFlux, $lienFlux, &$info)
+    public function ajouterFlux($idFlux, $lienFlux, &$info)
     {
         global $base, $login, $mdp;
         if (!Validation::val_string($idFlux) || !Validation::val_string($lienFlux)) {

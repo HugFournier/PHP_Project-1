@@ -60,9 +60,9 @@ class NewsGateway
             return NewsFactory::creerNews($this->con->getResults());
         }
     */
-    public function findN($placement)
+    public function findN($placement) : array
     {
-        $nbElt = intval(Modele::getTaillePage());
+        $nbElt = intval((new ModeleCookie())->getTaillePage());
         //var_dump($nbElt);
         //echo "cookie: ".$nbElt."<br>";
         if (!isset($placement) || $placement < 1) {
@@ -76,15 +76,15 @@ class NewsGateway
             ':y' => array($nbElt, PDO::PARAM_INT)
         );
         $this->con->executeQuery($query, $argument);
-        return NewsFactory::creerNews($this->con->getResults());
+        return (new NewsFactory())->creerNews($this->con->getResults());
     }
 
-    public function nbPage()
+    public function nbPage() : int
     {
         $query = "SELECT COUNT(guid) FROM NEWS";
         $this->con->executeQuery($query);
         $nbNews = $this->con->getResults();
-        $taillePage = Modele::getTaillePage();
+        $taillePage = (new ModeleCookie())->getTaillePage();
         return ceil($nbNews[0][0] / $taillePage);
     }
 }

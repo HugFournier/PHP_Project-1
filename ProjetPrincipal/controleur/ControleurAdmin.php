@@ -23,11 +23,11 @@ class ControleurAdmin
                     $this->ListerFlux();
                     break;
                 case "ajouterFlux":
-                    ModeleAdmin::ajouterFlux($_REQUEST["idFlux"], $_REQUEST["lienFlux"], $info);
+                    (new ModeleAdmin())->ajouterFlux($_REQUEST["idFlux"], $_REQUEST["lienFlux"], $info);
                     $this->ListerFlux($info);
                     break;
                 case "supprimerFlux":
-                    ModeleAdmin::supprimerFlux($_REQUEST['idFlux']);
+                    (new ModeleAdmin())->supprimerFlux($_REQUEST['idFlux']);
                     $this->ListerFlux();
                     break;
                 case "deconnectionAdmin":
@@ -56,7 +56,7 @@ class ControleurAdmin
     function ListerFlux($info = NULL)
     {
         global $rep, $vues;
-        $bdFlux = ModeleAdmin::listerFlux();
+        $bdFlux = (new ModeleAdmin())->listerFlux();
         require($rep . $vues['vueFlux']);
     }
 
