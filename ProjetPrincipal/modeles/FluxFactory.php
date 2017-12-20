@@ -2,7 +2,7 @@
 
 class FluxFactory
 {
-    public static function creerFlux($listeAttributFlux) : array
+    public static function creerFlux($listeAttributFlux): array
     {
         $listeRetour = [];
         foreach ($listeAttributFlux as $r)

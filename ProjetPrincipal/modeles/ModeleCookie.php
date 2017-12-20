@@ -9,7 +9,7 @@
 class ModeleCookie
 {
 
-    public function getTaillePage(): int
+    public function getTaillePage()
     {
         global $taillePage;
         if (!Validation::val_taille_page($_COOKIE['taillePage'])) {

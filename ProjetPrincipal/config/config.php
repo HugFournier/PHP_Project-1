@@ -9,14 +9,14 @@ $taillePage = 10;
 $front['style'] = "vues/css/style.css";
 
 // BD
-$base = "mysql:host=localhost;dbname=dbhufournier";
+$base  = "mysql:host=localhost;dbname=dbhufournier";
 $login = "hufournier";
-$mdp = "hufournier";
+$mdp   = "hufournier";
 
 // Vues
-$vues['erreur'] = 'vues/erreur.php';
-$vues['vueNews'] = 'vues/vueNews.php';
-$vues['vueFlux'] = 'vues/vueFlux.php';
+$vues['erreur']             = 'vues/erreur.php';
+$vues['vueNews']            = 'vues/vueNews.php';
+$vues['vueFlux']            = 'vues/vueFlux.php';
 $vues['vueConnectionAdmin'] = 'vues/vueConnectionAdmin.php';
 
 /** Actions: **/

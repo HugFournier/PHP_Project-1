@@ -15,12 +15,12 @@ class Controleur
         } elseif (isset($_REQUEST["action"]) && $_REQUEST["action"] == "restart") {
             ob_end_flush();
             flush();
-            time_nanosleep(15,0);
+            time_nanosleep(3600, 0); // sleep(3600);
             include_once("SessionParseur.php");
             (new SessionParseur())->start();
             ob_end_clean();
         } else {
-            echo "<a href='?action=start'>Start</a>";
+            echo "<h1><a href='?action=start'>Start</a></h1>";
         }
     }
 }

@@ -9,6 +9,7 @@ global $front;
 <head>
     <meta charset="utf-8">
     <title>Connexion</title>
+    <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="<?php echo $front['style'] ?>">
 </head>
 

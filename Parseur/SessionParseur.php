@@ -24,7 +24,6 @@ class SessionParseur
             echo $e->getMessage();
         }
 
-
         $rejet = 0;
         $ajout = 0;
 
@@ -69,8 +68,8 @@ class SessionParseur
                     $rejet++;
                 }
             }
-            echo $ajout . " : News ajoutée(s)" . "<br>";
-            echo $rejet . " : News rejetée(s)" . "<br>";
+            echo "<p style='color:#0F0'>" . $ajout . " : News ajoutée(s)" . "</p>";
+            echo "<p style='color:#F00'>" . $rejet . " : News rejetée(s)" . "</p>";
         }
         echo "<h2><a href=\"?action=stop\">Stop</a></h2>";
 
