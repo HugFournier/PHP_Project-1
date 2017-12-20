@@ -5,7 +5,7 @@ $rep = __DIR__ . '/../';
 
 $taillePage = 10;
 
-// Bootstrap
+// CSS
 $front['style'] = "vues/css/style.css";
 
 // BD
