@@ -33,7 +33,7 @@ class FluxGateway
 
     public function delete($id)
     {
-        $query = "SELECT lien FROM `Flux` WHERE `Flux`.`ID` = :id; ";
+        $query    = "SELECT lien FROM `Flux` WHERE `Flux`.`ID` = :id; ";
         $argument = array(
             ':id' => array($id, PDO::PARAM_STR)
         );
@@ -41,7 +41,7 @@ class FluxGateway
 
         $lien = $this->con->getResults()[0]["lien"];
 
-        $query="DELETE from `NEWS` WHERE origine like :lien;
+        $query    = "DELETE from `NEWS` WHERE origine like :lien;
                 DELETE FROM `Flux` WHERE lien like :lien;";
         $argument = array(
             ':lien' => array($lien, PDO::PARAM_STR)

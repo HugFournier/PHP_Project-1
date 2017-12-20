@@ -15,25 +15,28 @@ class News
      * @param $titre
      * @param $lien
      */
-    public function __construct($titre, $lien, $description, $dateNews = null, $id = null)
+    public function __construct(string $titre, string $lien, string $description, string $dateNews = null, string $id = null)
     {
         if ($dateNews == null) {
             $dateNews = date('Y-m-d h:i:s');
         }
+        if (gettype($dateNews) != "string") {
+            $dateNews = date("Y-m-d H:i:s", strtotime($dateNews));
+        }
         if ($id == null) {
             $id = $lien;
         }
-        $this->id = $id;
-        $this->dateNews = $dateNews;
+        $this->id          = $id;
+        $this->dateNews    = $dateNews;
         $this->description = $description;
-        $this->titre = $titre;
-        $this->lien = $lien;
+        $this->titre       = $titre;
+        $this->lien        = $lien;
     }
 
     /**
      * @return null
      */
-    public function getId()
+    public function getId(): string
     {
         return $this->id;
     }
@@ -41,7 +44,7 @@ class News
     /**
      * @param null $id
      */
-    private function setId($id)
+    private function setId(string $id)
     {
         $this->id = $id;
     }
@@ -49,7 +52,7 @@ class News
     /**
      * @return false|null|string
      */
-    public function getDateNews()
+    public function getDateNews(): string
     {
         return $this->dateNews;
     }
@@ -57,7 +60,7 @@ class News
     /**
      * @param false|null|string $dateNews
      */
-    private function setDateNews($dateNews)
+    private function setDateNews(string $dateNews)
     {
         $this->dateNews = $dateNews;
     }
@@ -65,7 +68,7 @@ class News
     /**
      * @return mixed
      */
-    public function getDescription()
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -73,7 +76,7 @@ class News
     /**
      * @param mixed $description
      */
-    private function setDescription($description)
+    private function setDescription(string $description)
     {
         $this->description = $description;
     }
@@ -81,7 +84,7 @@ class News
     /**
      * @return mixed
      */
-    public function getTitre()
+    public function getTitre(): string
     {
         return $this->titre;
     }
@@ -89,7 +92,7 @@ class News
     /**
      * @param mixed $titre
      */
-    private function setTitre($titre)
+    private function setTitre(string $titre)
     {
         $this->titre = $titre;
     }
@@ -97,7 +100,7 @@ class News
     /**
      * @return mixed
      */
-    public function getLien()
+    public function getLien(): string
     {
         return $this->lien;
     }
@@ -105,12 +108,12 @@ class News
     /**
      * @param mixed $lien
      */
-    private function setLien($lien)
+    private function setLien(string $lien)
     {
         $this->lien = $lien;
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         return "|_" . $this->getId() . "_|_" . $this->getDateNews() . "_|_" . $this->getTitre() . "_|_" . $this->getDescription() . "_|_<a href=https://" . $this->getLien() . ">Lien</a>_|";
     }

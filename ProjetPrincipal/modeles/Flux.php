@@ -15,14 +15,14 @@ class Flux
         if ($id == null) {
             $id = $lien;
         }
-        $this->id = $id;
+        $this->id   = $id;
         $this->lien = $lien;
     }
 
     /**********************************************************************
      * @return mixed
      **********************************************************************/
-    public function getId()
+    public function getId(): string
     {
         return $this->id;
     }
@@ -30,7 +30,7 @@ class Flux
     /**********************************************************************
      * @param mixed $id
      **********************************************************************/
-    private function setId($id)
+    private function setId(string $id)
     {
         $this->id = $id;
     }
@@ -38,7 +38,7 @@ class Flux
     /**********************************************************************
      * @return mixed
      **********************************************************************/
-    public function getLien()
+    public function getLien(): string
     {
         return $this->lien;
     }
@@ -46,12 +46,12 @@ class Flux
     /**********************************************************************
      * @param mixed $lien
      **********************************************************************/
-    private function setLien($lien)
+    private function setLien(string $lien)
     {
         $this->lien = $lien;
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         return "|_" . $this->getId() . "_|_<a href=https://" . $this->getLien() . ">Lien</a>_|";
     }

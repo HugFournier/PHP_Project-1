@@ -2,7 +2,7 @@
 
 class Validation
 {
-    static function val_string(string $mot)
+    static function val_string(string $mot): bool
     {
         return
             isset($mot) &&
@@ -10,7 +10,7 @@ class Validation
             $mot == filter_var($mot, FILTER_SANITIZE_STRING);
     }
 
-    static function val_page($current, $nbPage)
+    static function val_page($current, $nbPage): int
     {
         if (Validation::val_int($current)) {
             if ($current < 1) return 1;
@@ -21,7 +21,7 @@ class Validation
         }
     }
 
-    static function val_int($entier)
+    static function val_int($entier): bool
     {
         return
             isset($entier) &&
@@ -31,7 +31,7 @@ class Validation
     }
 
 
-    static function val_url($url)
+    static function val_url($url): bool
     {
         return
             isset($url) &&
@@ -39,7 +39,7 @@ class Validation
             filter_var($url, FILTER_VALIDATE_URL);
     }
 
-    static function val_taille_page($taille)
+    static function val_taille_page($taille): bool
     {
         return self::val_int($taille) && $taille > 0 && $taille < 21;
     }

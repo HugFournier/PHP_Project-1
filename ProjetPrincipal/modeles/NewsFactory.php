@@ -2,7 +2,7 @@
 
 class NewsFactory
 {
-    public function creerNews($listeAttributNews) : array
+    public function creerNews($listeAttributNews): array
     {
         $listeRetour = [];
         foreach ($listeAttributNews as $r)

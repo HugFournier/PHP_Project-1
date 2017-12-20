@@ -37,7 +37,7 @@ class NewsGateway
 
     public function delete($id)
     {
-        $query = "DELETE FROM NEWS WHERE guid=:id";
+        $query    = "DELETE FROM NEWS WHERE guid=:id";
         $argument = array(
             ':id' => array($id, PDO::PARAM_STR)
         );
@@ -60,7 +60,7 @@ class NewsGateway
             return NewsFactory::creerNews($this->con->getResults());
         }
     */
-    public function findN($placement) : array
+    public function findN($placement): array
     {
         $nbElt = intval((new ModeleCookie())->getTaillePage());
         //var_dump($nbElt);
@@ -70,7 +70,7 @@ class NewsGateway
         }
         $placement = ($placement - 1) * $nbElt;
         //var_dump($placement);
-        $query = "SELECT * FROM NEWS ORDER BY date DESC LIMIT :x, :y";
+        $query    = "SELECT * FROM NEWS ORDER BY date DESC LIMIT :x, :y";
         $argument = array(
             ':x' => array($placement, PDO::PARAM_INT),
             ':y' => array($nbElt, PDO::PARAM_INT)
@@ -79,12 +79,13 @@ class NewsGateway
         return (new NewsFactory())->creerNews($this->con->getResults());
     }
 
-    public function nbPage() : int
+    public function nbPage(): int
     {
         $query = "SELECT COUNT(guid) FROM NEWS";
         $this->con->executeQuery($query);
-        $nbNews = $this->con->getResults();
+        $nbNews     = $this->con->getResults();
         $taillePage = (new ModeleCookie())->getTaillePage();
-        return ceil($nbNews[0][0] / $taillePage);
+        $nbPage     = ceil($nbNews[0][0] / $taillePage);
+        return ($nbPage < 1 ? 1 : $nbPage);
     }
 }

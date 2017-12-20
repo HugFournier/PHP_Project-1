@@ -2,7 +2,7 @@
 
 class ModeleAdmin
 {
-    public static function connexion($id, $motDePasse, &$info)
+    public static function connexion(string $id, string $motDePasse, &$info): bool
     {
         global $base, $login, $mdp;
         if (!Validation::val_string($id) || !Validation::val_string($motDePasse)) {
@@ -11,11 +11,11 @@ class ModeleAdmin
         }
         $bdAdmin = new AdminGateway(new Connection($base, $login, $mdp));
         if ($bdAdmin->verifConnection($id, $motDePasse)) {
-            $_SESSION['role'] = 'admin';
+            $_SESSION['role']  = 'admin';
             $_SESSION['login'] = $id;
             return true;
         } else {
-            $info = "Identifiant et/ou mot de passe incorrects";
+            $info = "Identifiant et/ou mot de passe incorrects !";
             return false;
         }
     }
@@ -27,14 +27,14 @@ class ModeleAdmin
         $_SESSION = array();
     }
 
-    public function listerFlux()
+    public function listerFlux(): array
     {
         global $base, $login, $mdp;
         $bdFlux = new FluxGateway(new Connection($base, $login, $mdp));
         return $bdFlux->findAll();
     }
 
-    public function supprimerFlux($idFlux)
+    public function supprimerFlux(string $idFlux)
     {
         global $base, $login, $mdp;
         if (Validation::val_string($idFlux)) {
@@ -43,7 +43,7 @@ class ModeleAdmin
         } else throw new Exception("ID flux incorrect");
     }
 
-    public function ajouterFlux($idFlux, $lienFlux, &$info)
+    public function ajouterFlux(string $idFlux, string $lienFlux, &$info)
     {
         global $base, $login, $mdp;
         if (!Validation::val_string($idFlux) || !Validation::val_string($lienFlux)) {
@@ -66,7 +66,7 @@ class ModeleAdmin
         }
     }
 
-    public static function isAdmin()
+    public static function isAdmin(): bool
     {
         return isset($_SESSION['login']) && isset($_SESSION['role']) && Validation::val_string($_SESSION['login']) && Validation::val_string($_SESSION['role']);
     }

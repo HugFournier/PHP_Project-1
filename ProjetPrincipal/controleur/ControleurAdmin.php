@@ -53,14 +53,14 @@ class ControleurAdmin
         }
     }//fin constructeur
 
-    function ListerFlux($info = NULL)
+    function ListerFlux(string $info = NULL)
     {
         global $rep, $vues;
         $bdFlux = (new ModeleAdmin())->listerFlux();
         require($rep . $vues['vueFlux']);
     }
 
-    function Reinit($info = NULL)
+    function Reinit(string $info = NULL)
     {
         $_REQUEST['action'] = "connectionAdmin";
         new FrontControleur();

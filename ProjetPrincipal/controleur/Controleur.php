@@ -61,13 +61,13 @@ class Controleur
     function Reinit()
     {
         global $rep, $vues;
-        $nbPage = (new Modele())->nbPage();
+        $nbPage      = (new Modele())->nbPage();
         $currentPage = Validation::val_page($_GET['page'], $nbPage);
-        $bdNews = (new Modele())->listerNews($currentPage);
+        $bdNews      = (new Modele())->listerNews($currentPage);
         require($rep . $vues['vueNews']);
     }
 
-    function FormulaireConnexion($info = NULL)
+    function FormulaireConnexion(string $info = NULL)
     {
         global $rep, $vues;
         require($rep . $vues['vueConnectionAdmin']);
