@@ -18,7 +18,7 @@ class ModeleCookie
         return $_COOKIE["taillePage"];
     }
 
-    public function setTaillePage(int $nouvTaille)
+    public function setTaillePage($nouvTaille)
     {
         global $taillePage;
         if (!Validation::val_taille_page(($nouvTaille))) {
